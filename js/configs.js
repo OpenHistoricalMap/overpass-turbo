@@ -1,12 +1,7 @@
 export default {
   appname: "overpass-turbo",
-  defaultServer: "//overpass-api.de/api/",
-  suggestedServers: [
-    "//overpass-api.de/api/",
-    "https://overpass.kumi.systems/api/",
-    "http://overpass.openstreetmap.ru/cgi/",
-    "//overpass.openstreetmap.fr/api/"
-  ],
+  defaultServer: "//staging-overpass-api.openhistoricalmap.org/api/",
+  suggestedServers: ["//staging-overpass-api.openhistoricalmap.org/api/"],
   defaultTiles: "//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
   tileServerAttribution:
     "&copy; OpenStreetMap.org contributors&ensp;<small>Data:ODbL, Map:cc-by-sa</small>",
