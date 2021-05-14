@@ -2,20 +2,22 @@ export default {
   appname: "overpass-turbo",
   defaultServer: "https://staging-overpass-api.openhistoricalmap.org/api/",
   suggestedServers: ["https://staging-overpass-api.openhistoricalmap.org/api/"],
-  defaultTiles: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-  tileServerAttribution:
-    "&copy; OpenStreetMap.org contributors&ensp;<small>Data:ODbL, Map:cc-by-sa</small>",
+  vectorTileStyleUrl:
+    "https://openhistoricalmap.github.io/map-styles/ohm_timeslider_tegola/tegola-ohm.json",
+  vectorTileAttribution:
+    "Historical vector tiles &copy; OpenStreetMap.org contributors&ensp;<small>Data:ODbL, Map:cc-by-sa</small>",
+  defaultTiles: "//:0",
   suggestedTiles: [
-    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    //"https://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
-    //"https://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png",
-    //"https://{s}.tile3.opencyclemap.org/landscape/{z}/{x}/{y}.png",
-    //"https://otile1.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg",
+    /* perhaps not useful to offer alternative tiles, as the OHM basemap includes full land/sea cover
+    'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}',
+    */
   ],
   defaultMapView: {
-    lat: 41.89,
-    lon: 12.492,
-    zoom: 16
+    lat: 0,
+    lon: 0,
+    zoom: 1
   },
   maxMapZoom: 20,
   short_url_service: "",
