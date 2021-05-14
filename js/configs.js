@@ -1,16 +1,16 @@
 export default {
   appname: "overpass-turbo",
-  defaultServer: "//staging-overpass-api.openhistoricalmap.org/api/",
-  suggestedServers: ["//staging-overpass-api.openhistoricalmap.org/api/"],
-  defaultTiles: "//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+  defaultServer: "https://staging-overpass-api.openhistoricalmap.org/api/",
+  suggestedServers: ["https://staging-overpass-api.openhistoricalmap.org/api/"],
+  defaultTiles: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
   tileServerAttribution:
     "&copy; OpenStreetMap.org contributors&ensp;<small>Data:ODbL, Map:cc-by-sa</small>",
   suggestedTiles: [
-    "//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    //"http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
-    //"http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png",
-    //"http://{s}.tile3.opencyclemap.org/landscape/{z}/{x}/{y}.png",
-    //"http://otile1.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg",
+    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    //"https://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
+    //"https://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png",
+    //"https://{s}.tile3.opencyclemap.org/landscape/{z}/{x}/{y}.png",
+    //"https://otile1.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg",
   ],
   defaultMapView: {
     lat: 41.89,

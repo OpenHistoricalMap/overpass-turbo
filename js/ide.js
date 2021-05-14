@@ -11,6 +11,7 @@ import rgbcolor from "canvg/rgbcolor";
 import canvg from "canvg";
 import "./promise-polyfill";
 import L from "leaflet";
+import "mapbox-gl-leaflet";
 import CodeMirror from "codemirror/lib/codemirror.js";
 import tokml from "tokml";
 import togpx from "togpx";
@@ -817,11 +818,9 @@ var ide = new (function () {
       .appendTo("#map");
     if (settings.enable_crosshairs) $(".crosshairs").show();
 
-    ide.map.bboxfilter = new L.LocationFilter({
-      enable: !true,
-      adjustButton: false,
-      enableButton: false
-    }).addTo(ide.map);
+    // GDA
+    ide.map.bboxfilter = new L.LocationFilter({});
+    ide.map.addControl(ide.map.bboxfilter);
 
     ide.map.on("popupopen popupclose", function (e) {
       if (typeof e.popup.layer != "undefined") {
