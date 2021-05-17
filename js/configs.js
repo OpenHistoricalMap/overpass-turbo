@@ -5,7 +5,7 @@ export default {
   vectorTileStyleUrl:
     "https://openhistoricalmap.github.io/map-styles/ohm_timeslider_tegola/tegola-ohm.json",
   vectorTileAttribution:
-    "Historical vector tiles &copy; OpenStreetMap.org contributors&ensp;<small>Data:ODbL, Map:cc-by-sa</small>",
+    "Historical vector tiles, OpenHistoricalMap.org</small>",
   defaultTiles: "//:0",
   suggestedTiles: [
     /* perhaps not useful to offer alternative tiles, as the OHM basemap includes full land/sea cover
