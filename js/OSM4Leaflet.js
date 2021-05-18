@@ -1,7 +1,7 @@
 import L from "leaflet";
 import osmtogeojson from "osmtogeojson";
 
-L.OSM4Leaflet = L.Class.extend({
+L.OSM4Leaflet = L.GeoJSON.extend({
   initialize: function (data, options) {
     this.options = {
       data_mode: "xml",
@@ -10,10 +10,7 @@ L.OSM4Leaflet = L.Class.extend({
     };
     L.Util.setOptions(this, options);
 
-    this._baseLayer = new this.options.baseLayerClass(
-      null,
-      this.options.baseLayerOptions
-    );
+    this._baseLayer = new L.GeoJSON(null, this.options.baseLayerOptions);
     this._resultData = null;
     // if data
     if (data) this.addData(data);
@@ -25,6 +22,7 @@ L.OSM4Leaflet = L.Class.extend({
       var geojson = osmtogeojson(data, {flatProperties: false});
       obj._resultData = geojson;
       if (obj.options.afterParse) obj.options.afterParse();
+
       setTimeout(function () {
         // 2. add to baseLayer
         obj._baseLayer.addData(geojson);

@@ -509,9 +509,6 @@ var overpass = new (function () {
                 afterParse: function () {
                   fire("onProgress", "rendering geoJSON");
                 },
-                baseLayerClass: settings.disable_poiomatic
-                  ? L.GeoJSON
-                  : L_GeoJsonNoVanish,
                 baseLayerOptions: {
                   threshold: 9 * Math.sqrt(2) * 2,
                   compress: function (feature) {

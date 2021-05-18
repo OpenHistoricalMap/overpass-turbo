@@ -3,7 +3,7 @@ import "jquery-ui";
 
 import "leaflet";
 import "leaflet-polylineoffset";
-import "leaflet.locationfilter";
+import "../js/locationfilter";
 
 import "codemirror/lib/codemirror";
 import "codemirror/mode/javascript/javascript";
@@ -18,7 +18,7 @@ import "html2canvas";
 // include the CSS files
 import "codemirror/lib/codemirror.css";
 import "leaflet/dist/leaflet.css";
-import "leaflet.locationfilter/src/locationfilter.css";
+import "../css/locationfilter.css";
 import "jquery-ui/themes/base/all.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "bulma/css/bulma.css";

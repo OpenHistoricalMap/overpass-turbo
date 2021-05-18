@@ -11,6 +11,7 @@ import rgbcolor from "canvg/rgbcolor";
 import canvg from "canvg";
 import "./promise-polyfill";
 import L from "leaflet";
+import "mapbox-gl-leaflet";
 import CodeMirror from "codemirror/lib/codemirror.js";
 import tokml from "tokml";
 import togpx from "togpx";
@@ -498,25 +499,33 @@ var ide = new (function () {
     });
 
     // init leaflet
+    // the default basemap/tilelayer is nothing at all, and we always add OHM vector style above the basemap
     ide.map = new L.Map("map", {
-      attributionControl: false,
       minZoom: 0,
       maxZoom: configs.maxMapZoom,
       worldCopyJump: false
     });
+    var pos = new L.LatLng(settings.coords_lat, settings.coords_lon);
+    ide.map.setView(pos, settings.coords_zoom);
+
     var tilesUrl = settings.tile_server;
-    var tilesAttrib = configs.tileServerAttribution;
     var tiles = new L.TileLayer(tilesUrl, {
-      attribution: tilesAttrib,
+      attribution: configs.vectorTileAttribution,
       noWrap: true,
       maxNativeZoom: 19,
       maxZoom: ide.map.options.maxZoom
     });
-    attribControl = new L.Control.Attribution({prefix: ""});
-    attribControl.addAttribution(tilesAttrib);
-    var pos = new L.LatLng(settings.coords_lat, settings.coords_lon);
-    ide.map.setView(pos, settings.coords_zoom).addLayer(tiles);
+    ide.map.addLayer(tiles);
     ide.map.tile_layer = tiles;
+
+    ide.map.createPane("vectiles");
+    ide.map.getPane("vectiles").style.zIndex = 210; // slightly > tilePane 200
+    ide.map.getPane("vectiles").style.pointerEvents = "none";
+    ide.map.vectortiles = L.mapboxGL({
+      style: configs.vectorTileStyleUrl,
+      pane: "vectiles"
+    }).addTo(ide.map);
+
     // inverse opacity layer
     ide.map.inv_opacity_layer = L.tileLayer(
       "data:image/gif;base64,R0lGODlhAQABAIAAAP7//wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
@@ -817,11 +826,9 @@ var ide = new (function () {
       .appendTo("#map");
     if (settings.enable_crosshairs) $(".crosshairs").show();
 
-    ide.map.bboxfilter = new L.LocationFilter({
-      enable: !true,
-      adjustButton: false,
-      enableButton: false
-    }).addTo(ide.map);
+    // GDA
+    ide.map.bboxfilter = new L.LocationFilter({});
+    ide.map.addControl(ide.map.bboxfilter);
 
     ide.map.on("popupopen popupclose", function (e) {
       if (typeof e.popup.layer != "undefined") {
