@@ -658,7 +658,7 @@ var overpass = new (function () {
                           "</a></h4>";
                       else if (feature.properties.type == "relation")
                         popup +=
-                          "<h4 class='title is-4'>Relation <a hrefhttps://www.openhistoricalmap.org/relation/" +
+                          "<h4 class='title is-4'>Relation <a href='https://www.openhistoricalmap.org/relation/" +
                           feature.properties.id +
                           "' target='_blank'>" +
                           feature.properties.id +
