@@ -644,21 +644,21 @@ var overpass = new (function () {
                       var popup = "";
                       if (feature.properties.type == "node")
                         popup +=
-                          "<h4 class='title is-4'>Node <a href='//www.openstreetmap.org/node/" +
+                          "<h4 class='title is-4'>Node <a href='https://www.openhistoricalmap.org/node/" +
                           feature.properties.id +
                           "' target='_blank'>" +
                           feature.properties.id +
                           "</a></h4>";
                       else if (feature.properties.type == "way")
                         popup +=
-                          "<h4 class='title is-4'>Way <a href='//www.openstreetmap.org/way/" +
+                          "<h4 class='title is-4'>Way <a href='https://www.openhistoricalmap.org/way/" +
                           feature.properties.id +
                           "' target='_blank'>" +
                           feature.properties.id +
                           "</a></h4>";
                       else if (feature.properties.type == "relation")
                         popup +=
-                          "<h4 class='title is-4'>Relation <a href='//www.openstreetmap.org/relation/" +
+                          "<h4 class='title is-4'>Relation <a hrefhttps://www.openhistoricalmap.org/relation/" +
                           feature.properties.id +
                           "' target='_blank'>" +
                           feature.properties.id +
@@ -796,7 +796,7 @@ var overpass = new (function () {
                         popup += "</h3><ul>";
                         $.each(feature.properties.relations, function (k, v) {
                           popup +=
-                            "<li><a href='//www.openstreetmap.org/relation/" +
+                            "<li><a href='https://www.openhistoricalmap.org/relation/" +
                             v["rel"] +
                             "' target='_blank'>" +
                             v["rel"] +
@@ -837,14 +837,14 @@ var overpass = new (function () {
                           v = htmlentities(v);
                           if (k == "user")
                             v =
-                              '<a href="//www.openstreetmap.org/user/' +
+                              '<a href="https://www.openhistoricalmap.org/user/' +
                               v +
                               '" target="_blank">' +
                               v +
                               "</a>";
                           if (k == "changeset")
                             v =
-                              '<a href="//www.openstreetmap.org/changeset/' +
+                              '<a href="https://www.openhistoricalmap.org/changeset/' +
                               v +
                               '" target="_blank">' +
                               v +
