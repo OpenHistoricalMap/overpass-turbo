@@ -1,7 +1,7 @@
 export default {
   appname: "overpass-turbo",
-  defaultServer: "https://staging-overpass-api.openhistoricalmap.org/api/",
-  suggestedServers: ["https://staging-overpass-api.openhistoricalmap.org/api/"],
+  defaultServer: "https://overpass-api.openhistoricalmap.org/api/",
+  suggestedServers: ["https://overpass-api.openhistoricalmap.org/api/"],
   vectorTileStyleUrl:
     "https://openhistoricalmap.github.io/map-styles/ohm_timeslider_tegola/tegola-ohm-production.json",
   vectorTileAttribution:
