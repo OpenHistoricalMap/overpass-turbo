@@ -18,7 +18,7 @@ module.exports = function (config) {
     preprocessors: {
       [tests]: ["webpack"]
     },
-
+    browserNoActivityTimeout: 20000,
     webpack: webpackConfig
   });
 };
