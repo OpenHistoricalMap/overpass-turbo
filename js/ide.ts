@@ -5,6 +5,7 @@ import jQuery from "jquery";
 import html2canvas from "html2canvas";
 import {Canvg} from "canvg";
 import "leaflet";
+import "maplibre-gl";
 import "codemirror/lib/codemirror.js";
 import tokml from "tokml";
 import togpx from "togpx";
@@ -23,6 +24,7 @@ import Autorepair from "./autorepair";
 import {Base64, htmlentities, lzw_encode, lzw_decode} from "./misc";
 import sync from "./sync-with-osm";
 import shortcuts from "./shortcuts";
+// import "@maplibre/maplibre-gl-leaflet";
 
 declare const CodeMirror;
 
@@ -494,6 +496,16 @@ class IDE {
     const pos = new L.LatLng(settings.coords_lat, settings.coords_lon);
     ide.map.setView(pos, settings.coords_zoom).addLayer(tiles);
     ide.map.tile_layer = tiles;
+
+    // OHM: add vector layer
+    // ide.map.createPane("ohm_vectortiles");
+    // ide.map.getPane("ohm_vectortiles").style.zIndex = '210'; // slightly > tilePane 200
+    // ide.map.getPane("ohm_vectortiles").style.pointerEvents = "none";
+    // ide.map.vectortiles = L.maplibreGL({
+    //   style: configs.vectorTileStyleUrl,
+    //   pane: "ohm_vectortiles"
+    // }).addTo(ide.map);
+
     // inverse opacity layer
     ide.map.inv_opacity_layer = L.tileLayer(
       "data:image/gif;base64,R0lGODlhAQABAIAAAP7//wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
