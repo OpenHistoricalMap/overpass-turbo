@@ -5,6 +5,10 @@ export default {
   defaultServer: "https://overpass-api.openhistoricalmap.org/api/",
   // https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass#Query_examples
   suggestedServers: [],
+  vectorTileStyleUrl:
+    "https://openhistoricalmap.github.io/map-styles/ohm_timeslider_tegola/tegola-ohm.json",
+  vectorTileAttribution:
+    "Historical vector tiles, OpenHistoricalMap.org</small>",
   defaultTiles: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   // https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines
   // > Attribution must be to "OpenStreetMap".
