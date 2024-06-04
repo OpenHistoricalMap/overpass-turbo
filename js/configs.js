@@ -3,7 +3,7 @@ export default {
   defaultServer: "https://overpass-api.openhistoricalmap.org/api/",
   suggestedServers: ["https://overpass-api.openhistoricalmap.org/api/"],
   vectorTileStyleUrl:
-    "https://openhistoricalmap.github.io/map-styles/ohm_timeslider_tegola/tegola-ohm.json",
+    "https://openhistoricalmap.github.io/map-styles/main/main.json",
   vectorTileAttribution:
     "Historical vector tiles, OpenHistoricalMap.org</small>",
   defaultTiles: "//:0",
