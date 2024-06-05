@@ -6,7 +6,7 @@ export default {
   // https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass#Query_examples
   suggestedServers: [],
   vectorTileStyleUrl:
-    "https://openhistoricalmap.github.io/map-styles/ohm_timeslider_tegola/tegola-ohm.json",
+    "https://openhistoricalmap.github.io/map-styles/main/main.json",
   vectorTileAttribution:
     "Historical vector tiles, OpenHistoricalMap.org</small>",
   defaultTiles: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",

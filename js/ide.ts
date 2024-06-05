@@ -483,7 +483,7 @@ class IDE {
       worldCopyJump: false
     });
     const tilesUrl = settings.tile_server;
-    const tilesAttrib = configs.tileServerAttribution;
+    const tilesAttrib = configs.vectorTileAttribution;
     const tiles = new L.TileLayer(tilesUrl, {
       attribution: tilesAttrib,
       noWrap: true,
