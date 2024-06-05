@@ -180,7 +180,7 @@ const MaplibreLayer = L.Layer.extend({
     }
   },
 
-  _update: function (e: any) {
+  _update: function (_e: any) {
     // update the offset so we can correct for it later when we zoom
     this._offset = this._map.containerPointToLayerPoint([0, 0]);
 
@@ -228,7 +228,7 @@ const MaplibreLayer = L.Layer.extend({
   },
 
   // update the map constantly during a pinch zoom
-  _pinchZoom: function (e: any) {
+  _pinchZoom: function (_e: any) {
     this._glMap.jumpTo({
       zoom: this._map.getZoom() - 1,
       center: this._map.getCenter()
@@ -261,7 +261,7 @@ const MaplibreLayer = L.Layer.extend({
     );
   },
 
-  _zoomStart: function (e: any) {
+  _zoomStart: function (_e: any) {
     this._zooming = true;
   },
 
@@ -280,7 +280,7 @@ const MaplibreLayer = L.Layer.extend({
     this._update();
   },
 
-  _transitionEnd: function (e: any) {
+  _transitionEnd: function (_e: any) {
     L.Util.requestAnimFrame(function (this: any) {
       const zoom = this._map.getZoom();
       const center = this._map.getCenter();
