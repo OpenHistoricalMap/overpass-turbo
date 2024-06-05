@@ -1,3 +1,6 @@
+// Based on https://github.com/duswies code at
+// https://github.com/maplibre/maplibre-gl-leaflet/issues/44#issuecomment-1919448448
+
 import "leaflet";
 import mapLibre, {Map, MapOptions} from "maplibre-gl";
 
@@ -41,7 +44,7 @@ const MaplibreLayer = L.Layer.extend({
       this._initContainer();
     }
 
-    var paneName = this.getPaneName();
+    const paneName = this.getPaneName();
     map.getPane(paneName)!.appendChild(this._container);
 
     this._initGL();
@@ -68,7 +71,7 @@ const MaplibreLayer = L.Layer.extend({
         this
       );
     }
-    var paneName = this.getPaneName();
+    const paneName = this.getPaneName();
     map.getPane(paneName).removeChild(this._container);
 
     this._glMap.remove();
@@ -99,8 +102,8 @@ const MaplibreLayer = L.Layer.extend({
   },
 
   getBounds: function () {
-    var halfSize = this.getSize().multiplyBy(0.5);
-    var center = this._map.latLngToContainerPoint(this._map.getCenter());
+    const halfSize = this.getSize().multiplyBy(0.5);
+    const center = this._map.latLngToContainerPoint(this._map.getCenter());
     return latLngBounds(
       this._map.containerPointToLatLng(center.subtract(halfSize)),
       this._map.containerPointToLatLng(center.add(halfSize))
@@ -123,25 +126,27 @@ const MaplibreLayer = L.Layer.extend({
   },
 
   _initContainer: function () {
-    var container = (this._container = L.DomUtil.create(
+    const container = (this._container = L.DomUtil.create(
       "div",
       "leaflet-gl-layer"
     ));
 
-    var size = this.getSize();
-    var offset = this._map.getSize().multiplyBy(this.options.padding);
-    container.style.width = size.x + "px";
-    container.style.height = size.y + "px";
+    const size = this.getSize();
+    const offset = this._map.getSize().multiplyBy(this.options.padding);
+    container.style.width = `${size.x}px`;
+    container.style.height = `${size.y}px`;
 
-    var topLeft = this._map.containerPointToLayerPoint([0, 0]).subtract(offset);
+    const topLeft = this._map
+      .containerPointToLayerPoint([0, 0])
+      .subtract(offset);
 
     L.DomUtil.setPosition(container, this._roundPoint(topLeft));
   },
 
   _initGL: function () {
-    var center = this._map.getCenter();
+    const center = this._map.getCenter();
 
-    var options = L.extend({}, this.options, {
+    const options = L.extend({}, this.options, {
       container: this._container,
       center: [center.lng, center.lat],
       zoom: this._map.getZoom() - 1,
@@ -164,7 +169,7 @@ const MaplibreLayer = L.Layer.extend({
     }
 
     // treat child <canvas> element like L.ImageOverlay
-    var canvas = this._glMap._actualCanvas;
+    const canvas = this._glMap._actualCanvas;
     L.DomUtil.addClass(canvas, "leaflet-image-layer");
     L.DomUtil.addClass(canvas, "leaflet-zoom-animated");
     if (this.options.interactive) {
@@ -183,7 +188,7 @@ const MaplibreLayer = L.Layer.extend({
       return;
     }
 
-    var size = this.getSize(),
+    const size = this.getSize(),
       container = this._container,
       gl = this._glMap,
       offset = this._map.getSize().multiplyBy(this.options.padding),
@@ -194,8 +199,8 @@ const MaplibreLayer = L.Layer.extend({
     this._transformGL(gl);
 
     if (gl.transform.width !== size.x || gl.transform.height !== size.y) {
-      container.style.width = size.x + "px";
-      container.style.height = size.y + "px";
+      container.style.width = `${size.x}px`;
+      container.style.height = `${size.y}px`;
       if (gl._resize !== null && gl._resize !== undefined) {
         gl._resize();
       } else {
@@ -212,12 +217,12 @@ const MaplibreLayer = L.Layer.extend({
   },
 
   _transformGL: function (gl: any) {
-    var center = this._map.getCenter();
+    const center = this._map.getCenter();
 
     // gl.setView([center.lat, center.lng], this._map.getZoom() - 1, 0);
     // calling setView directly causes sync issues because it uses requestAnimFrame
 
-    var tr = gl.transform;
+    const tr = gl.transform;
     tr.center = mapLibre.LngLat.convert([center.lng, center.lat]);
     tr.zoom = this._map.getZoom() - 1;
   },
@@ -233,17 +238,19 @@ const MaplibreLayer = L.Layer.extend({
   // borrowed from L.ImageOverlay
   // https://github.com/Leaflet/Leaflet/blob/master/src/layer/ImageOverlay.js#L139-L144
   _animateZoom: function (e: any) {
-    var scale = this._map.getZoomScale(e.zoom);
-    var padding = this._map.getSize().multiplyBy(this.options.padding * scale);
-    var viewHalf = this.getSize()._divideBy(2);
+    const scale = this._map.getZoomScale(e.zoom);
+    const padding = this._map
+      .getSize()
+      .multiplyBy(this.options.padding * scale);
+    const viewHalf = this.getSize()._divideBy(2);
     // corrections for padding (scaled), adapted from
     // https://github.com/Leaflet/Leaflet/blob/master/src/map/Map.js#L1490-L1508
-    var topLeft = this._map
+    const topLeft = this._map
       .project(e.center, e.zoom)
       ._subtract(viewHalf)
       ._add(this._map._getMapPanePos().add(padding))
       ._round();
-    var offset = this._map
+    const offset = this._map
       .project(this._map.getBounds().getNorthWest(), e.zoom)
       ._subtract(topLeft);
 
@@ -259,12 +266,12 @@ const MaplibreLayer = L.Layer.extend({
   },
 
   _zoomEnd: function () {
-    var scale = this._map.getZoomScale(this._map.getZoom());
+    const scale = this._map.getZoomScale(this._map.getZoom());
 
     L.DomUtil.setTransform(
       this._glMap._actualCanvas,
       // https://github.com/mapbox/mapbox-gl-leaflet/pull/130
-      new Point(0, 0),
+      new L.Point(0, 0),
       scale
     );
 
@@ -275,9 +282,9 @@ const MaplibreLayer = L.Layer.extend({
 
   _transitionEnd: function (e: any) {
     L.Util.requestAnimFrame(function (this: any) {
-      var zoom = this._map.getZoom();
-      var center = this._map.getCenter();
-      var offset = this._map.latLngToContainerPoint(
+      const zoom = this._map.getZoom();
+      const center = this._map.getCenter();
+      const offset = this._map.latLngToContainerPoint(
         this._map.getBounds().getNorthWest()
       );
 
