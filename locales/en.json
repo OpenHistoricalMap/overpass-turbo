@@ -69,9 +69,9 @@
   "load.title": "Load",
   "load.delete_query": "delete this query",
   "load.saved_queries-local": "Saved Queries (local)",
-  "load.saved_queries-osm": "Saved Queries (osm.org)",
-  "load.saved_queries-osm-loading": "Loading saved queries from osm.org...",
-  "load.saved_queries-osm-error": "An error occurred while loading saved queries from osm.org :(",
+  "load.saved_queries-osm": "Saved Queries (openhistoricalmap.org)",
+  "load.saved_queries-osm-loading": "Loading saved queries from openhistoricalmap.org...",
+  "load.saved_queries-osm-error": "An error occurred while loading saved queries from openhistoricalmap.org :(",
   "load.examples": "Examples",
   "load.no_saved_query": "no saved query yet",
 
@@ -89,19 +89,19 @@
 
   "export.section.data": "Data",
   "export.generic_download_copy": "<div class=\"field-label is-normal\"><span class=\"format\"></span></div><div class=\"field-body\"><span class=\"buttons has-addons\"><a class=\"export button is-small is-link is-outlined\" title=\"saves the exported data as a file\">download</a><a class=\"copy button is-small is-link is-outlined\" title=\"copies export output to clipboard\">copy</a></span></div>",
-  "export.raw_data": "raw OSM data",
+  "export.raw_data": "raw OHM data",
   "export.raw_interpreter": "raw data directly from <a id=\"export-overpass-api\" href=\"\" target=\"_blank\" class=\"external\">Overpass API</a>",
   "export.save_geoJSON_gist": "save GeoJSON to <a id=\"export-geoJSON-gist\" href=\"\" class=\"external\">gist</a>",
 
   "export.section.query": "Query",
   "export.format_text": "<abbr title=\"For direct use with the Overpass API, has expanded shortcuts and doesn't include additional overpass turbo features such as MapCSS.\">standalone query</abbr>",
   "export.format_text_raw": "<abbr title=\"Unaltered overpass turbo query – just as in the code editor\">raw query</abbr>",
-  "export.format_text_wiki": "<abbr title=\"For usage in the OSM wiki as a OverpassTurboExample-Template\">osm wiki</abbr>",
+  "export.format_text_wiki": "<abbr title=\"For usage in the OHM wiki as a OverpassTurboExample-Template\">ohm wiki</abbr>",
   "export.format_text_umap": "<abbr title=\"For usage with umap.openstreetmap.fr\">umap</abbr> remote data url",
   "export.to_xml": "convert to <a id=\"export-convert-xml\" href=\"\" target=\"_blank\" class=\"external\">Overpass-XML</a>",
   "export.to_ql": "convert to (<a id=\"export-convert-compact\" href=\"\" target=\"_blank\" class=\"external\">compact</a>) <a id=\"export-convert-ql\" href=\"\" target=\"_blank\" class=\"external\">OverpassQL</a>",
 
-  "export.editors": "load data into an OSM editor:",
+  "export.editors": "load data into an OHM editor:",
 
   "export.geoJSON.title": "Export - GeoJSON",
   "export.geoJSON.expl": "The currently shown data as GeoJSON:",
@@ -125,7 +125,7 @@
 
   "export.map_view.title": "Current Map View",
   "export.map_view.permalink": "Permalink",
-  "export.map_view.permalink_osm": "to osm.org",
+  "export.map_view.permalink_osm": "to openhistoricalmap.org",
   "export.map_view.center": "Center",
   "export.map_view.center_expl": "lat, lon",
   "export.map_view.bounds": "Bounds",
