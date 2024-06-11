@@ -119,13 +119,13 @@ class Settings {
 
 // examples
 const examples = {
-  "Drinking Water": {
+  "Theatres in 1975": {
     overpass:
-      "/*\nThis is an example Overpass query.\nTry it out by pressing the Run button above!\nYou can find more examples with the Load tool.\n*/\nnode\n  [amenity=drinking_water]\n  ({{bbox}});\nout;"
+      '/*\nThis is an example Overpass query for OpenHistoricalMap.\nTry it out by pressing the Run button above!\nYou can find more examples in the Load tab.\n*/\nnode\n  [amenity=theatre]["start_date"](if:\n  t["start_date"] < "1976" &&\n  (!is_tag("end_date") || t["end_date"] >= "1975"));\nout;'
   },
-  "Cycle Network": {
+  "Oldest building in Ohio": {
     overpass:
-      "/*\nThis shows the cycleway and cycleroute network.\n*/\n\n[out:json];\n\n(\n  // get cycle route relations\n  relation[route=bicycle]({{bbox}})->.cr;\n  // get cycleways\n  way[highway=cycleway]({{bbox}});\n  way[highway=path][bicycle=designated]({{bbox}});\n);\n\nout body;\n>;\nout skel qt;"
+      '// Get present-day Ohio as an area.\nrelation(id:2663622);\nmap_to_area->.ohio;\n\n// Get buildings in Ohio with start dates.\nwr["building"]["start_date"](area.ohio)->.buildings;\n\n// Only include buildings whose start dates are as old\n// as the oldest start date of any building in Ohio.\nwr.buildings(if: t["start_date"] == lrs_min(buildings.set(t["start_date"])));\n\n// Output the building geometry.\nout geom;'
   },
   "Where am I?": {
     overpass:
@@ -144,7 +144,7 @@ const examples = {
       "/*\nThis example shows how the data can be styled.\nHere, some common amenities are displayed in \ndifferent colors.\n\nRead more: http://wiki.openstreetmap.org/wiki/Overpass_turbo/MapCSS\n*/\n[out:json];\n\n(\n  node[amenity]({{bbox}});\n  way[amenity]({{bbox}});\n  relation[amenity]({{bbox}});\n);\nout body;\n>;\nout skel qt;\n\n{{style: /* this is the MapCSS stylesheet */\nnode, area\n{ color:gray; fill-color:gray; }\n\nnode[amenity=drinking_water],\nnode[amenity=fountain]\n{ color:blue; fill-color:blue; }\n\nnode[amenity=place_of_worship],\narea[amenity=place_of_worship]\n{ color:grey; fill-color:grey; }\n\nnode[amenity=~/(restaurant|hotel|cafe)/],\narea[amenity=~/(restaurant|hotel|cafe)/]\n{ color:red; fill-color:red; }\n\nnode[amenity=parking],\narea[amenity=parking]\n{ color:yellow; fill-color:yellow; }\n\nnode[amenity=bench]\n{ color:brown; fill-color:brown; }\n\nnode[amenity=~/(kindergarten|school|university)/],\narea[amenity=~/(kindergarten|school|university)/]\n{ color:green; fill-color:green; }\n}}"
   }
 };
-const examples_initial_example = "Drinking Water";
+const examples_initial_example = "Theatres in 1975";
 
 // global settings object
 const settings = new Settings(
@@ -384,8 +384,8 @@ settings.define_upgrade_callback(31, (s) => {
   _.each(s.saves, (save, name) => {
     if (save.type !== "example") return;
     switch (name) {
-      case "Drinking Water":
-      case "Cycle Network":
+      case "Theatres in 1975":
+      case "Oldest building in Ohio":
       case "Mountains in Area":
       case "Map Call":
       case "Where am I?":
@@ -396,7 +396,7 @@ settings.define_upgrade_callback(31, (s) => {
         return;
     }
   });
-  delete s.saves["Drinking Water (Overpass QL)"];
+  delete s.saves["Theatres in 1975 (Overpass QL)"];
   s.save();
 });
 
@@ -436,10 +436,9 @@ settings.define_upgrade_callback(34, (s) => {
 settings.define_upgrade_callback(36, (s) => {
   s.saves["Mountains in Area"].overpass =
     '/*\nThis shows all mountains (peaks) in the Dolomites.\nYou may want to use the "zoom onto data" button. =>\n*/\n[out:json];\n// search the relation of the Dolomites\nrel\n  [place=region]\n  ["region:type"="mountain_area"]\n  ["name:en"="Dolomites"];\n// show the outline\nout geom;\n// turn the relation into an area\nmap_to_area;\n// get all peaks in the area\nnode\n  [natural=peak]\n  (area);\nout body qt;';
-  s.saves["Cycle Network"].overpass = s.saves["Cycle Network"].overpass.replace(
-    "->.cr",
-    ""
-  );
+  s.saves["Oldest building in Ohio"].overpass = s.saves[
+    "Oldest building in Ohio"
+  ].overpass.replace("->.cr", "");
 });
 settings.define_upgrade_callback(37, (s) => {
   // Update the Rambler API endpoint
