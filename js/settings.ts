@@ -120,16 +120,66 @@ class Settings {
 // examples
 const examples = {
   "Theatres in 1975": {
-    overpass:
-      '/*\nThis is an example Overpass query for OpenHistoricalMap.\nTry it out by pressing the Run button above!\nYou can find more examples in the Load tab.\n*/\nnode\n  [amenity=theatre]["start_date"](if:\n  t["start_date"] < "1976" &&\n  (!is_tag("end_date") || t["end_date"] >= "1975"));\nout;'
+    overpass: `
+/*
+ * This is an example Overpass query for 
+ * OpenHistoricalMap. Try it out by pressing 
+ * the Run button above, then "zoom to data" 
+ * on the resulting map. You can find more 
+ * examples using the Load button above.
+ */
+ 
+nwr["amenity"="theatre"]["start_date"](if:
+  t["start_date"] < "1976" &&
+  (!is_tag("end_date") || t["end_date"] >= "1975"));
+  
+out geom;`
   },
   "Oldest building in Ohio": {
-    overpass:
-      '// Get present-day Ohio as an area.\nrelation(id:2663622);\nmap_to_area->.ohio;\n\n// Get buildings in Ohio with start dates.\nwr["building"]["start_date"](area.ohio)->.buildings;\n\n// Only include buildings whose start dates are as old\n// as the oldest start date of any building in Ohio.\nwr.buildings(if: t["start_date"] == lrs_min(buildings.set(t["start_date"])));\n\n// Output the building geometry.\nout geom;'
+    overpass: `
+/*
+ * This query returns the oldest mapped 
+ * building in Ohio; that is, the building 
+ * with the minimum start_date=* tag. It 
+ * relies on the fact that you can sort 
+ * ISO 8601 dates chronologically by sorting
+ * them alphanumerically.
+ */
+ 
+// Get present-day Ohio as an area.
+relation(id:2663622);
+map_to_area->.ohio;
+
+// Get buildings in Ohio with start dates.
+wr["building"]["start_date"](area.ohio)->.buildings;
+
+/* Only include buildings whose start dates
+ * are as old as the oldest start date of 
+ * any building in Ohio.
+ */
+wr.buildings(if: t["start_date"] ==
+  lrs_min(buildings.set(t["start_date"])));
+
+// Output the building geometry.
+out geom;`
   },
-  "Where am I?": {
-    overpass:
-      "/*\nThis lists all areas which include the map center point.\n*/\n[out:json];\nis_in({{center}});\nout;"
+  "Total railway distance in 1975": {
+    overpass: `
+/*
+ * This query returns the sum total distance
+ * of railroad tracks that existed in the 
+ * year 1975 in meters. It returns a JSON
+ * object, not a map.
+ */
+
+[out:json];
+
+way["railway"]["start_date"](if:
+  t["start_date"] < "1976" &&
+  (!is_tag("end_date") || t["end_date"] >= "1975"));
+
+make stats length=sum(length());
+out;`
   },
   "Mountains in Area": {
     overpass:
@@ -295,8 +345,8 @@ settings.define_upgrade_callback(25, (s) => {
 });
 settings.define_upgrade_callback(27, (s) => {
   // rename "List Areas" to "Where am I?"
-  if (!s.saves["Where am I?"]) {
-    s.saves["Where am I?"] = s.saves["List Areas"];
+  if (!s.saves["Total railway distance in 1975"]) {
+    s.saves["Total railway distance in 1975"] = s.saves["List Areas"];
     delete s.saves["List Areas"];
   }
   // add mapcss example
