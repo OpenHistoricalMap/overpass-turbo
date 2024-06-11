@@ -253,6 +253,48 @@ relation["type"="chronology"]["source:name"="Newberry Library Atlas of Historica
  */
  
 out meta;`
+  },
+  "Incomplete chronologies": {
+    overpass: `
+/*
+ * A type=chronology relation represents a 
+ * single feature as its geometry or tags 
+ * change over time; each member represents 
+ * a stage in the feature's evolution. A 
+ * chronology relation can be used to 
+ * indicate that the feature's creation or 
+ * establishment predates the currently 
+ * mapped stages. For example, a statue may 
+ * have been created centuries ago in a 
+ * different place than where it is today, 
+ * but we haven't mapped its original 
+ * location or don't even know it. This 
+ * query returns the earliest stage of a 
+ * chronology if the chronology's 
+ * start_date=* tag doesn't match one of its 
+ * stages' start_date=* tags:
+ */
+
+// Get chronology relations with start dates.
+relation["type"="chronology"]["start_date"];
+
+// Get the members of each chronology.
+nwr(r)(if:
+  /* 
+   * Filter out all but the earliest stage. 
+   * This assumes the stages are sorted 
+   * chronologically within the relation.
+   */
+  lrs_in(id(), set(per_member(pos() == 1 ? ref() : 0))) &&
+  /*
+   * Filter out the chronology’s stages if 
+   * the chronology’s start date matches one
+   * of its stages’ start dates.
+   */
+  !lrs_in(t["start_date"], set(per_member(t["start_date"]))));
+
+// Output the earliest stage.
+out geom;`
   }
 };
 const examples_initial_example = "Theatres in 1975";
@@ -416,6 +458,12 @@ settings.define_upgrade_callback(27, (s) => {
     overpass: examples["Chronology relations"]
   };
   s.save();
+  // add Incomplete chronologies example
+  s.saves["Incomplete chronologies"] = {
+    type: "example",
+    overpass: examples["Incomplete chronologies"]
+  };
+  s.save();
 });
 settings.define_upgrade_callback(28, (s) => {
   // generalize URLs to not explicitly use http protocol
@@ -501,6 +549,7 @@ settings.define_upgrade_callback(31, (s) => {
       case "Changes on this day in history":
       case "Where am I?":
       case "Chronology relations":
+      case "Incomplete chronologies":
         save.overpass = examples[name].overpass;
         break;
       default:
