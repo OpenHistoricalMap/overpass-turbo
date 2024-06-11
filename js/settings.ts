@@ -185,9 +185,24 @@ out;`
     overpass:
       '/*\nThis shows all mountains (peaks) in the Dolomites.\nYou may want to use the "zoom onto data" button. =>\n*/\n\n[out:json];\n\n// search the area of the Dolmites\narea\n  [place=region]\n  ["region:type"="mountain_area"]\n  ["name:en"="Dolomites"];\nout body;\n\n// get all peaks in the area\nnode\n  [natural=peak]\n  (area);\nout body qt;\n\n// additionally, show the outline of the area\nrelation\n  [place=region]\n  ["region:type"="mountain_area"]\n  ["name:en"="Dolomites"];\nout body;\n>;\nout skel qt;'
   },
-  "Map Call": {
-    overpass:
-      "/*\nThis is a simple map call.\nIt returns all data in the bounding box.\n*/\n[out:xml];\n(\n  node({{bbox}});\n  <;\n);\nout meta;"
+  "Changes on this day in history": {
+    overpass: `
+/*
+ * This query uses a regular expression to 
+ * find features that began or ended on the 
+ * current day in years past (here, we're 
+ * using June 11th). The OpenHistoricalMap 
+ * portal's "On this day in 
+ * OpenHistoricalMap" feature curates some 
+ * notable and interesting changes using 
+ * this query.
+ */
+ 
+(
+  nwr["start_date"~"-06-11"];
+  nwr["end_date"~"-06-11"];
+);
+out geom;`
   },
   "MapCSS styling": {
     overpass:
@@ -437,7 +452,7 @@ settings.define_upgrade_callback(31, (s) => {
       case "Theatres in 1975":
       case "Oldest building in Ohio":
       case "Mountains in Area":
-      case "Map Call":
+      case "Changes on this day in history":
       case "Where am I?":
       case "MapCSS styling":
         save.overpass = examples[name].overpass;
