@@ -128,7 +128,6 @@ const examples = {
  * on the resulting map. You can find more 
  * examples using the Load button above.
  */
- 
 nwr["amenity"="theatre"]["start_date"](if:
   t["start_date"] < "1976" &&
   (!is_tag("end_date") || t["end_date"] >= "1975"));
@@ -181,9 +180,45 @@ way["railway"]["start_date"](if:
 make stats length=sum(length());
 out;`
   },
-  "Mountains in Area": {
-    overpass:
-      '/*\nThis shows all mountains (peaks) in the Dolomites.\nYou may want to use the "zoom onto data" button. =>\n*/\n\n[out:json];\n\n// search the area of the Dolmites\narea\n  [place=region]\n  ["region:type"="mountain_area"]\n  ["name:en"="Dolomites"];\nout body;\n\n// get all peaks in the area\nnode\n  [natural=peak]\n  (area);\nout body qt;\n\n// additionally, show the outline of the area\nrelation\n  [place=region]\n  ["region:type"="mountain_area"]\n  ["name:en"="Dolomites"];\nout body;\n>;\nout skel qt;'
+  "Contemporaneous surrounding areas": {
+    overpass: `
+/*
+ * When recounting a historical event or 
+ * someone's biography, you typically need 
+ * to qualify a place with the country, 
+ * region, etc. that the place was in at the 
+ * time, not where it's located in the 
+ * present day. This query returns the areas 
+ * that contained a specific coordinate pair 
+ * on a specific date.
+ */
+ 
+// Convert the query point to an area.
+is_in(50.92812,11.58791)->.a;
+
+/*
+ * Get all ways that intersect this area, but 
+ * only if they existed in the same time 
+ * period as the city of Jena. This relies on 
+ * the fact that ISO 8601 dates sort 
+ * lexicographically.
+ */
+way(pivot.a)(if: t["start_date"] >= "1975")[!"end_date"];
+
+// Output their geometries.
+out geom;
+
+out ids geom(50.92785,11.58656,50.92855,11.58949);
+
+/*
+ * Get all relations that intersect this area, 
+ * but only if they existed in the same time 
+ * period as the city of Jena.
+ */
+relation(pivot.a)(if: t["start_date"] >= "1975")[!"end_date"];
+
+// Output their geometries.
+out geom;`
   },
   "Changes on this day in history": {
     overpass: `
@@ -197,11 +232,11 @@ out;`
  * notable and interesting changes using 
  * this query.
  */
- 
 (
   nwr["start_date"~"-06-11"];
   nwr["end_date"~"-06-11"];
 );
+
 out geom;`
   },
   "Chronology relations": {
@@ -236,14 +271,12 @@ out geom;`
  * Get chronology relations with other 
  * appropriate criteria.
  */
- 
 relation["type"="chronology"]["source:name"="Newberry Library Atlas of Historical County Boundaries"];
 
 /*
  * Recurse down and get the members 
  * of each chronology.
  */
- 
 (._;>;);
 
 /*
@@ -251,7 +284,6 @@ relation["type"="chronology"]["source:name"="Newberry Library Atlas of Historica
  * non-tag metadata - from the query, even
  * if no geometry is included.
  */
- 
 out meta;`
   },
   "Incomplete chronologies": {
@@ -381,7 +413,8 @@ settings.define_upgrade_callback(18, (s) => {
 });
 settings.define_upgrade_callback(20, (s) => {
   // update "Mountains in Area" example
-  s.saves["Mountains in Area"] = examples["Mountains in Area"];
+  s.saves["Contemporaneous surrounding areas"] =
+    examples["Contemporaneous surrounding areas"];
   s.save();
 });
 settings.define_upgrade_callback(22, (s) => {
@@ -545,7 +578,7 @@ settings.define_upgrade_callback(31, (s) => {
     switch (name) {
       case "Theatres in 1975":
       case "Oldest building in Ohio":
-      case "Mountains in Area":
+      case "Contemporaneous surrounding areas":
       case "Changes on this day in history":
       case "Where am I?":
       case "Chronology relations":
@@ -594,8 +627,6 @@ settings.define_upgrade_callback(34, (s) => {
 });
 
 settings.define_upgrade_callback(36, (s) => {
-  s.saves["Mountains in Area"].overpass =
-    '/*\nThis shows all mountains (peaks) in the Dolomites.\nYou may want to use the "zoom onto data" button. =>\n*/\n[out:json];\n// search the relation of the Dolomites\nrel\n  [place=region]\n  ["region:type"="mountain_area"]\n  ["name:en"="Dolomites"];\n// show the outline\nout geom;\n// turn the relation into an area\nmap_to_area;\n// get all peaks in the area\nnode\n  [natural=peak]\n  (area);\nout body qt;';
   s.saves["Oldest building in Ohio"].overpass = s.saves[
     "Oldest building in Ohio"
   ].overpass.replace("->.cr", "");
