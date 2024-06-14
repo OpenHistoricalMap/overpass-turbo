@@ -239,7 +239,7 @@ out geom;`
 
 out geom;`
   },
-  "Chronology relations": {
+  "Chronology relations with boundary geometries": {
     overpass: `
 /*
  * type=chronology relations can be tricky to 
@@ -486,9 +486,9 @@ settings.define_upgrade_callback(27, (s) => {
     delete s.saves["List Areas"];
   }
   // add Chronology relations example
-  s.saves["Chronology relations"] = {
+  s.saves["Chronology relations with boundary geometries"] = {
     type: "example",
-    overpass: examples["Chronology relations"]
+    overpass: examples["Chronology relations with boundary geometries"]
   };
   s.save();
   // add Incomplete chronologies example
@@ -581,7 +581,7 @@ settings.define_upgrade_callback(31, (s) => {
       case "Contemporaneous surrounding areas":
       case "Changes on this day in history":
       case "Where am I?":
-      case "Chronology relations":
+      case "Chronology relations with boundary geometries":
       case "Incomplete chronologies":
         save.overpass = examples[name].overpass;
         break;
@@ -595,8 +595,8 @@ settings.define_upgrade_callback(31, (s) => {
 
 settings.define_upgrade_callback(32, (s) => {
   // fix typo in query definition
-  s.saves["Chronology relations"].overpass = s.saves[
-    "Chronology relations"
+  s.saves["Chronology relations with boundary geometries"].overpass = s.saves[
+    "Chronology relations with boundary geometries"
   ].overpass.replace("<;", ">;");
   s.save();
 });
