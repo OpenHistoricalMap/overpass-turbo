@@ -1671,7 +1671,7 @@ class IDE {
       .bind("click", () => {
         const content =
           `<h4>${i18n.t("export.map_view.permalink")}</h4>` +
-          `<p><a href="//www.openstreetmap.org/#map=${this.map.getZoom()}/${L.Util.formatNum(
+          `<p><a href="//www.openhistoricalmap.org/#map=${this.map.getZoom()}/${L.Util.formatNum(
             this.map.getCenter().lat
           )}/${L.Util.formatNum(
             this.map.getCenter().lng
