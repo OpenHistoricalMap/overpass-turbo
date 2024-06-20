@@ -1,8 +1,9 @@
 {
   "name": "overpass-turbo",
-  "description": "A web based data mining tool for OpenStreetMap using Overpass API",
+  "version": "2.0.1",
+  "description": "A web based data mining tool for OpenHistoricalMap using Overpass API",
   "homepage": "http://overpass-turbo.eu/",
-  "repository": "git+https://github.com/tyrasd/overpass-turbo.git",
+  "repository": "git+https://github.com/OpenHistoricalMap/overpass-turbo.git",
   "license": "MIT",
   "scripts": {
     "test": "yarn run test:eslint && yarn run test:style && yarn run test:vitest",

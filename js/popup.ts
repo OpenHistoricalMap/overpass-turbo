@@ -11,20 +11,20 @@ export function featurePopupContent(feature: GeoJSON.Feature) {
   if (feature.properties.type == "node")
     popup +=
       `<h4 class="title is-4"><span class="t" data-t="popup.node">Node</span>` +
-      ` <a href="//www.openstreetmap.org/node/${feature.properties.id}" target="_blank">${feature.properties.id}</a>` +
-      ` <a href="//www.openstreetmap.org/edit?node=${feature.properties.id}" target="_blank">✏</a>` +
+      ` <a href="//www.openhistoricalmap.org/node/${feature.properties.id}" target="_blank">${feature.properties.id}</a>` +
+      ` <a href="//www.openhistoricalmap.org/edit?node=${feature.properties.id}" target="_blank">✏</a>` +
       `</h4>`;
   else if (feature.properties.type == "way")
     popup +=
       `<h4 class="title is-4"><span class="t" data-t="popup.way">Way</span>` +
-      ` <a href="//www.openstreetmap.org/way/${feature.properties.id}" target="_blank">${feature.properties.id}</a>` +
-      ` <a href="//www.openstreetmap.org/edit?way=${feature.properties.id}" target="_blank">✏</a>` +
+      ` <a href="//www.openhistoricalmap.org/way/${feature.properties.id}" target="_blank">${feature.properties.id}</a>` +
+      ` <a href="//www.openhistoricalmap.org/edit?way=${feature.properties.id}" target="_blank">✏</a>` +
       `</h4>`;
   else if (feature.properties.type == "relation")
     popup +=
       `<h4 class="title is-4"><span class="t" data-t="popup.relation">Relation</span>` +
-      ` <a href="//www.openstreetmap.org/relation/${feature.properties.id}" target="_blank">${feature.properties.id}</a>` +
-      ` <a href="//www.openstreetmap.org/edit?relation=${feature.properties.id}" target="_blank">✏</a>` +
+      ` <a href="//www.openhistoricalmap.org/relation/${feature.properties.id}" target="_blank">${feature.properties.id}</a>` +
+      ` <a href="//www.openhistoricalmap.org/edit?relation=${feature.properties.id}" target="_blank">✏</a>` +
       `</h4>`;
   else
     popup += `<h5 class="subtitle is-5">${feature.properties.type} #${feature.properties.id}</h5>`;
@@ -115,7 +115,7 @@ export function featurePopupContent(feature: GeoJSON.Feature) {
     }
     popup += "</h3><ul>";
     $.each(feature.properties.relations, (k, v) => {
-      popup += `<li><a href="//www.openstreetmap.org/relation/${v["rel"]}" target="_blank">${v["rel"]}</a>`;
+      popup += `<li><a href="//www.openhistoricalmap.org/relation/${v["rel"]}" target="_blank">${v["rel"]}</a>`;
       if (v.reltags && (v.reltags.name || v.reltags.ref || v.reltags.type))
         popup += ` <i>${$.trim(
           (v.reltags.type ? `${htmlentities(v.reltags.type)} ` : "") +
@@ -137,9 +137,9 @@ export function featurePopupContent(feature: GeoJSON.Feature) {
       k = htmlentities(k);
       v = htmlentities(v);
       if (k == "user")
-        v = `<a href="//www.openstreetmap.org/user/${v}" target="_blank">${v}</a>`;
+        v = `<a href="//www.openhistoricalmap.org/user/${v}" target="_blank">${v}</a>`;
       if (k == "changeset")
-        v = `<a href="//www.openstreetmap.org/changeset/${v}" target="_blank">${v}</a>`;
+        v = `<a href="//www.openhistoricalmap.org/changeset/${v}" target="_blank">${v}</a>`;
       popup += `<li><span class="is-family-monospace">${k} = ${v}</span></li>`;
     });
     popup += "</ul>";

@@ -9,7 +9,7 @@ export default class nominatim {
   static request(search, callback) {
     // ajax (GET) request to nominatim
     $.ajax(
-      `https://nominatim.openstreetmap.org/search` +
+      `https://nominatim.openhistoricalmap.org/search` +
         `?X-Requested-With=${configs.appname}`,
       {
         data: {
@@ -29,7 +29,7 @@ export default class nominatim {
         },
         error() {
           const err =
-            "An error occurred while contacting the osm search server nominatim.openstreetmap.org :(";
+            "An error occurred while contacting the osm search server nominatim.openhistoricalmap.org :(";
           console.log(err);
           callback(err, null);
         }
