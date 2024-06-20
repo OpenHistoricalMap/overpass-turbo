@@ -493,8 +493,9 @@ class IDE {
     ide.attribControl = new L.Control.Attribution({prefix: false});
     ide.attribControl.addAttribution(tilesAttrib);
     const pos = new L.LatLng(settings.coords_lat, settings.coords_lon);
-    ide.map.setView(pos, settings.coords_zoom).addLayer(tiles);
-    ide.map.tile_layer = tiles;
+    ide.map.setView(pos, settings.coords_zoom);
+    //  .addLayer(tiles);
+    // ide.map.tile_layer = tiles;
 
     // OHM: add vector layer
     ide.map.createPane("ohm_vectortiles");
