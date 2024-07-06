@@ -3,10 +3,33 @@
 import i18n from "../i18n";
 import {levenshteinDistance} from "../misc";
 
-const freeFormQuery = {};
-let presets = {};
+type Presets = Record<string, Preset>;
 
-export function setPresets(newPresets) {
+type Preset = {
+  // overpass-turbo
+  name?: string;
+  nameCased?: string;
+  terms?: string[];
+  translated?: boolean;
+  // upstream
+  fields?: string[];
+  moreFields?: string[];
+  geometry: string[];
+  tags: {[key: string]: string};
+  searchable?: boolean;
+  icon?: string;
+  matchScore?: number;
+  addTags?: {[key: string]: string};
+  removeTags?: Record<string, string>;
+  reference?: {key: string; value?: string};
+  replacement?: string;
+  locationSet?: {exclude?: string[]; include?: string[]};
+};
+
+const freeFormQuery = {};
+let presets: Presets = {};
+
+export function setPresets(newPresets: Presets) {
   presets = newPresets;
   Object.values(presets).forEach((preset) => {
     preset.nameCased = preset.name;
@@ -40,16 +63,23 @@ export default function ffs_free(callback) {
   }
   // load preset translations
   async function loadPresetTranslations() {
-    const language = i18n.getLanguage();
+    let language = i18n.getLanguage();
     if (!language) return;
     try {
       let {default: data} = await import(
         `../../node_modules/@openstreetmap/id-tagging-schema/dist/translations/${language}.json`
       );
+      if (language.length > 2 && !data[language]?.presets?.presets) {
+        language = language.slice(0, 2);
+        const {default: data2} = await import(
+          `../../node_modules/@openstreetmap/id-tagging-schema/dist/translations/${language}.json`
+        );
+        data = data2;
+      }
       data = data[language].presets.presets;
       // load translated names and terms into presets object
-      Object.entries(data).forEach(([preset, translation]) => {
-        preset = presets[preset];
+      Object.entries(data).forEach(([presetName, translation]) => {
+        const preset = presets[presetName];
         preset.translated = true;
         // save original preset name under alternative terms
         const oriPresetName = preset.name;
@@ -134,8 +164,8 @@ freeFormQuery.fuzzy_search = (condition) => {
   }
   const candidates = Object.values(presets).filter((preset) => {
     if (preset.searchable === false) return false;
-    if (fuzzyMatch(preset.name)) return true;
-    return preset.terms.some(fuzzyMatch);
+    if (preset.name && fuzzyMatch(preset.name)) return true;
+    return Array.isArray(preset.terms) && preset.terms.some(fuzzyMatch);
   });
   if (candidates.length === 0) return false;
   // sort candidates

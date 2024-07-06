@@ -2,7 +2,7 @@
 import {type Plugin, defineConfig, createFilter} from "vite";
 import vitePluginFaviconsInject from "vite-plugin-favicons-inject";
 import inject from "@rollup/plugin-inject";
-import {type ParserBuildOptions, generate} from "peggy";
+import peggy from "peggy";
 
 import {readFileSync} from "fs";
 import {resolve} from "path";
@@ -40,6 +40,7 @@ export default defineConfig(() => ({
     exclude: ["leaflet"]
   },
   build: {
+    sourcemap: true,
     rollupOptions: {
       input: [
         resolve(__dirname, "index.html"),
@@ -58,7 +59,7 @@ export default defineConfig(() => ({
       $: "jquery",
       jQuery: "jquery"
     }),
-    peggy(),
+    peggyPlugin(),
     vitePluginFaviconsInject("./turbo.svg")
   ],
   // https://vitest.dev/config/
@@ -68,14 +69,14 @@ export default defineConfig(() => ({
   }
 }));
 
-function peggy(options: ParserBuildOptions = {}): Plugin {
+function peggyPlugin(options: peggy.ParserBuildOptions = {}): Plugin {
   return {
     name: "peggy",
     transform(grammar, id) {
       const {include = ["*.pegjs", "**/*.pegjs"], exclude} = options;
       const filter = createFilter(include, exclude);
       if (!filter(id)) return null;
-      const code = generate(grammar, {output: "source", ...options});
+      const code = peggy.generate(grammar, {output: "source", ...options});
       return {
         code: `export default ${code};`,
         map: {mappings: ""}
