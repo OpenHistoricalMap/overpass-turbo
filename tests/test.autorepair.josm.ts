@@ -81,8 +81,8 @@ describe("ide.autorepair.josm", () => {
       },
       {
         // more complex real world example
-        inp: '<osm-script output="xml">\n  <query type="node">\n    <has-kv k="amenity" v="drinking_water"/>\n    <bbox-query {{bbox}}/>\n  </query>\n  <print mode="body" order="quadtile"/>\n</osm-script>',
-        outp: '<osm-script output="xml">\n  <query type="node">\n    <has-kv k="amenity" v="drinking_water"/>\n    <bbox-query {{bbox}}/>\n  </query>\n  <print mode="meta" order="quadtile"></print><!-- fixed by auto repair -->\n</osm-script>'
+        inp: '<osm-script output="xml">\n  <query type="node">\n    <has-kv k="amenity" v="drinking_water"/>\n    <bbox-query {{bbox}}/>\n  </query>\n  <print order="quadtile" mode="body"/>\n</osm-script>',
+        outp: '<osm-script output="xml">\n  <query type="node">\n    <has-kv k="amenity" v="drinking_water"/>\n    <bbox-query {{bbox}}/>\n  </query>\n  <print order="quadtile" mode="meta"></print><!-- fixed by auto repair -->\n</osm-script>'
       }
     ];
     vi.spyOn(ide, "getQueryLang").mockImplementation(() => "xml");
@@ -121,6 +121,10 @@ describe("ide.autorepair.josm", () => {
         // more complex real world example
         inp: '/*bla*/\n[out:xml];\nway\n  ["amenity"]\n  ({{bbox}})\n->.foo;\n.foo out qt;',
         outp: '/*bla*/\n[out:xml];\nway\n  ["amenity"]\n  ({{bbox}})\n->.foo;\n.foo out meta qt;/*fixed by auto repair*/'
+      },
+      {
+        inp: "{{geocodeArea:South Carolina}}->.searchArea;",
+        outp: "{{geocodeArea:South Carolina}}->.searchArea;"
       }
     ];
     vi.spyOn(ide, "getQueryLang").mockImplementation(() => "OverpassQL");

@@ -5,7 +5,9 @@
   "homepage": "http://overpass-turbo.eu/",
   "repository": "git+https://github.com/OpenHistoricalMap/overpass-turbo.git",
   "license": "MIT",
+  "packageManager": "yarn@4.3.1",
   "scripts": {
+    "prepare": "husky",
     "test": "yarn run test:eslint && yarn run test:style && yarn run test:vitest",
     "test:eslint": "eslint .",
     "test:style": "prettier --check .",
@@ -23,16 +25,16 @@
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "eslint": "^8.38.0",
-    "happy-dom": "^8.1.5",
-    "husky": "^4.3.0",
-    "lint-staged": "^13.2.1",
+    "happy-dom": "^14.12.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "peggy": "^3.0.2",
-    "prettier": "^2.8.7",
+    "prettier": "^3.3.2",
     "request": "^2.67.0",
     "typescript": "^5.0.4",
-    "vite": "^4.5.2",
+    "vite": "^5.2.13",
     "vite-plugin-favicons-inject": "^2.2.0",
-    "vitest": "^0.29.8"
+    "vitest": "^1.6.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
@@ -61,11 +63,6 @@
   "prettier": {
     "bracketSpacing": false,
     "trailingComma": "none"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
