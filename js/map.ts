@@ -131,7 +131,8 @@ $(document).ready(() => {
   const tilesUrl = settings.tileServer;
   const tilesAttrib = configs.tileServerAttribution;
   const tiles = new L.TileLayer(tilesUrl, {attribution: tilesAttrib});
-  ide.map.setView([0, 0], 1).addLayer(tiles);
+  ide.map.setView([0, 0], 1);
+  // .addLayer(tiles);
   const scaleControl = new L.Control.Scale({metric: true, imperial: false});
   scaleControl.addTo(ide.map);
   // wait spinner
