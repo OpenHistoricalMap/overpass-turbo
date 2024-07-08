@@ -7,7 +7,6 @@
 git checkout main
 git branch -D the-sacrifice
 git checkout -b the-sacrifice
-git remote add upstream git@github.com:tyrasd/overpass-turbo.git
 git fetch upstream master
 
 mkdir upstream
