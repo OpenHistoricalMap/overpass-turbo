@@ -15,9 +15,9 @@ jobs:
       run:
         shell: bash
     steps:
-      - name: Check out our repository to the runner
+      - name: Check out our repository
         uses: actions/checkout@v4
-      - name: Check out the upstream repository to the runner
+      - name: Check out the upstream repository
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           UPSTREAM: https://github.com/tyrasd/overpass-turbo
