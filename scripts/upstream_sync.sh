@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# As we enter this script we are on the `main` branch and have `get fetch`ed
-# upstream/master.
+# As we enter this script we have created `the-sacrifice` from our `main` branch and
+# have `git fetch`ed upstream/master.
 
-git checkout main
-git branch -D the-sacrifice
-git checkout -b the-sacrifice
-
-mkdir upstream
+if [ ! -d "upstream" ]; then
+  mkdir upstream
+fi
 for i in $(git ls-tree upstream/master --name-only); do
   if [[ $i == *.md ]];then
     echo $i

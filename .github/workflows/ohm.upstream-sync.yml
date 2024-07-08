@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Check out our repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Check out the upstream repository
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -26,6 +28,8 @@ jobs:
           git config --global user.email "github-actions@users.noreply.github.com"
           git remote add upstream "${UPSTREAM}"
           git fetch upstream master
+          git branch -D the-sacrifice
+          git checkout -b the-sacrifice
       - name: Make our script executable
         run: chmod +x ./scripts/upstream_sync.sh
       - name: Run sync script
