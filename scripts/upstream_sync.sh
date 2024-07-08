@@ -3,7 +3,7 @@
 # As we enter this script we are on the `main` branch and have `get fetch`ed
 # upstream/master.
 
-git checkout master
+git checkout main
 git branch -D the-sacrifice
 git checkout -b the-sacrifice
 
