@@ -9,6 +9,7 @@ git checkout -b the-sacrifice
 
 mkdir upstream
 for i in $(git ls-tree upstream/master --name-only); do
+  echo $i
   if [[ $i == *.md ]];then
     git show upstream/master:$i > upstream/$i
   fi
@@ -18,6 +19,8 @@ git add upstream
 if [ -n "$(git status --porcelain)" ]; then
   git commit -m 'Preserving upstream markdown & text files.'
 fi
+
+git status
 
 #git merge --no-ff --no-commit upstream/master
 #concerns=('js/ide.js' 'js/map.ts')
