@@ -1,13 +1,11 @@
 #!/bin/bash
 
-#
-#
-#
+# As we enter this script we are on the `main` branch and have `get fetch`ed
+# upstream/master.
 
-git checkout main
+git checkout master
 git branch -D the-sacrifice
 git checkout -b the-sacrifice
-git fetch upstream master
 
 mkdir upstream
 for i in $(git ls-tree upstream/master --name-only); do
