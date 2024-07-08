@@ -20,4 +20,4 @@ jobs:
       - name: Make the script files executable
         run: chmod +x ./scripts/upstream_sync.sh
       - name: Run sync script
-        uses: ./scripts/upstream_sync.sh
+        run: ./scripts/upstream_sync.sh
