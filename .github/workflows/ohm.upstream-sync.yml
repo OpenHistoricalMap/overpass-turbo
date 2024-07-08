@@ -1,4 +1,4 @@
-name: Upstream Sync
+name: OHM Upstream Sync
 
 on:
   schedule:
@@ -7,9 +7,13 @@ on:
 
 jobs:
   upstream-sync:
+    name: Upstream Sync
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     defaults:
       run:
+        shell: bash
         working-directory: ./scripts
     steps:
       - name: Check out the repository to the runner
