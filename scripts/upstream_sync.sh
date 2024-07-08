@@ -3,6 +3,9 @@
 # As we enter this script we have created `the-sacrifice` from our `main` branch and
 # have `git fetch`ed upstream/master.
 
+git branch -D the-sacrifice &>/dev/null
+git checkout -b the-sacrifice
+
 if [ ! -d "upstream" ]; then
   mkdir upstream
 fi
