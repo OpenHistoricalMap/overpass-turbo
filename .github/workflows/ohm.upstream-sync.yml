@@ -18,6 +18,6 @@ jobs:
       - name: Check out the repository to the runner
         uses: actions/checkout@v4
       - name: Make the script files executable
-        run: chmod +x upstream_sync.sh
+        run: chmod +x ./scripts/upstream_sync.sh
       - name: Run sync script
         uses: ./scripts/upstream_sync.sh
