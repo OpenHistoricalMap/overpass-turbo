@@ -9,8 +9,8 @@ git checkout -b the-sacrifice
 
 mkdir upstream
 for i in $(git ls-tree upstream/master --name-only); do
-  echo $i
   if [[ $i == *.md ]];then
+    echo $i
     git show upstream/master:$i > upstream/$i
   fi
 done
@@ -22,7 +22,7 @@ fi
 
 git status
 
-#git merge --no-ff --no-commit upstream/master
+git merge --no-ff --no-commit upstream/master
 #concerns=('js/ide.js' 'js/map.ts')
 #for i in $(git diff --name-only --diff-filter=U --relative);do
 #  echo "$i"
