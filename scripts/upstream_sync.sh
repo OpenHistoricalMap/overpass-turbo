@@ -17,7 +17,9 @@ for i in $(git ls-tree upstream/master --name-only); do
 done
 git show upstream/master:LICENSE > upstream/LICENSE
 git add upstream
-git commit -m 'Preserving upstream markdown & text files.'
+if [ -n "$(git status --porcelain)" ]; then
+  git commit -m 'Preserving upstream markdown & text files.'
+fi
 
 git merge --no-ff --no-commit upstream/master
 concerns=('js/ide.js' 'js/map.ts')
@@ -32,5 +34,7 @@ for i in $(git diff --name-only --diff-filter=U --relative);do
   done
 done
 
-iso=$(date -Iminutes)
-git commit -m "Merge upstream ("$iso")."
+if [ -n "$(git status --porcelain)" ]; then
+  iso=$(date -Iminutes)
+  git commit -m "Merge upstream ("$iso")."
+fi
