@@ -52,7 +52,7 @@ jobs:
 
       - name: List all branches
         run: |
-          git branch --all | egrep 'main|master|sacrifice'
+          git branch --all | egrep 'main|master|sacrifice|candidate'
 
       - name: Make our scripts executable
         run: chmod +x ./scripts/*.sh
