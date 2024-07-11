@@ -37,7 +37,7 @@ jobs:
 
       - name: Delete previous sacrificial branch
         run: |
-          git branch -D origin/the-sacrifice
+          git branch --remote -D origin/the-sacrifice
 #      - name: Create new sacrificial branch
 #        env:
 #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
