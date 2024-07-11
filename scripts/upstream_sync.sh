@@ -18,8 +18,6 @@ if [ -n "$(git status --porcelain)" ]; then
   git commit -m 'Preserving upstream markdown & text files.'
 fi
 
-git status
-
 git merge --no-ff --no-commit upstream/master
 concerns=('js/ide.js' 'js/map.ts')
 for i in $(git diff --name-only --diff-filter=U --relative);do
