@@ -15,16 +15,20 @@ jobs:
       run:
         shell: bash
     steps:
-      - name: Delete previous sacrificial branch
+      - name: Check out our repository
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Delete previous sacrificial branch
         run: |
           git branch -D 'the-sacrifice'
       - name: Create new sacrificial branch
         uses: peterjgrainger/action-create-branch@v3.0.0
         with:
           branch: 'the-sacrifice'
-      - name: Check main out to sacrificial branch
+      - name: Check out sacrificial branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
