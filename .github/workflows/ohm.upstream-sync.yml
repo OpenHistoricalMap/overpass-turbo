@@ -51,10 +51,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: List all branches
-        run: |
-          git branch --all | egrep 'main|master|sacrifice|candidate'
-
       - name: Check out 'release-candidate', our new sacrificial branch
         uses: actions/checkout@v4
         env:
@@ -62,6 +58,10 @@ jobs:
         with:
           ref: 'release-candidate'
           fetch-depth: 0
+
+      - name: List all branches
+        run: |
+          git branch --all | egrep 'main|master|sacrifice|candidate'
 
       - name: Make our scripts executable
         run: chmod +x ./scripts/*.sh
@@ -78,4 +78,4 @@ jobs:
 
       - name: Push updates
         run: |
-          git push origin/release-candidate
+          git push release-candidate
