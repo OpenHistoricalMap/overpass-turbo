@@ -44,15 +44,16 @@ jobs:
           git branch --all | egrep 'main|master|sacrifice'
 
       - name: Check out new sacrificial branch
-        uses: actions/checkout@v4
+        uses: peterjgrainger/action-create-branch@v3.0.0
         with:
-          fetch-depth: 0
-          ref: 'the-sacrifice'
+          branch: 'the-sacrifice'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: List all branches
         run: |
           git branch --all | egrep 'main|master|sacrifice'
-          git diff origin/main
+          git diff origin/main --name-only
 
       - name: Make our scripts executable
         run: chmod +x ./scripts/*.sh
