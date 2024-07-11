@@ -53,16 +53,20 @@ jobs:
       - name: List all branches
         run: |
           git branch --all | egrep 'main|master|sacrifice'
-          git diff origin/main --name-only
 
       - name: Make our scripts executable
         run: chmod +x ./scripts/*.sh
       - name: Preserve upstream docs
         run: ./scripts/preserve_upstream_docs.sh
 
-      - name: Do a diff and start a merge
+      - name: Start the merge
         run: |
-          git diff main
-          git diff upstream/master
           git merge --no-ff --no-commit upstream/master
           git status
+
+      - name: Continue the merge where there are no concerns
+        run: ./scripts/upstream_sync.sh
+
+      - name: Push updates
+        run: |
+          git push origin the-sacrifice

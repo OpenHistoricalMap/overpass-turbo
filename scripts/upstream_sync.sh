@@ -1,8 +1,5 @@
 #!/bin/bash
 
-
-
-
 concerns=('js/ide.js' 'js/map.ts')
 for i in $(git diff --name-only --diff-filter=U --relative);do
   echo "$i"
@@ -19,4 +16,3 @@ if [ -n "$(git status --porcelain)" ]; then
   iso=$(date -Iminutes)
   git commit -m "Merge upstream ("$iso")."
 fi
-git push origin the-sacrifice
