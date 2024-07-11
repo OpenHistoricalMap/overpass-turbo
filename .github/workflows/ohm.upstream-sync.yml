@@ -19,6 +19,8 @@ jobs:
         uses: peterjgrainger/action-create-branch@v3.0.0
         with:
           branch: 'the-sacrifice'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Check out our repository
         uses: actions/checkout@v4
         with:
@@ -26,7 +28,6 @@ jobs:
           ref: 'the-sacrifice'
       - name: Check out the upstream repository
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           UPSTREAM: https://github.com/tyrasd/overpass-turbo
         run: |
           git config --global user.name "github-actions"
