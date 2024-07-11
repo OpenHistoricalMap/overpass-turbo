@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# As we enter this script we have created `the-sacrifice` from our `main` branch and
-# have `git fetch`ed upstream/master.
-
 if [ ! -d "upstream" ]; then
   mkdir upstream
 fi
@@ -17,6 +14,8 @@ git add upstream
 if [ -n "$(git status --porcelain)" ]; then
   git commit -m 'Preserving upstream markdown & text files.'
 fi
+
+git diff upstream/master
 
 git merge --no-ff --no-commit upstream/master
 concerns=('js/ide.js' 'js/map.ts')
