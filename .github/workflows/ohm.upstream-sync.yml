@@ -67,16 +67,16 @@ jobs:
         run: |
           git branch --all | egrep 'main|master|sacrifice|candidate'
 
-#      - name: Make our scripts executable
-#        run: chmod +x ./scripts/*.sh
-#      - name: Preserve upstream docs
-#        run: ./scripts/preserve_upstream_docs.sh
-#
-#      - name: Start the merge
-#        run: |
-#          git merge --no-ff --no-commit upstream/master
-#          git status
-#
+      - name: Make our scripts executable
+        run: chmod +x ./scripts/*.sh
+      - name: Preserve upstream docs
+        run: ./scripts/preserve_upstream_docs.sh
+
+      - name: Start the merge
+        run: |
+          git merge --no-ff --no-commit upstream/master
+          git status
+
 #      - name: Continue the merge where there are no concerns
 #        run: ./scripts/upstream_sync.sh
 #
