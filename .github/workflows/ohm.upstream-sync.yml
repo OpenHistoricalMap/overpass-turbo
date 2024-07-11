@@ -25,6 +25,18 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: List all branches
+        run: |
+          git branch --all | egrep 'main|master|sacrifice|candidate'
+
+      - name: Delete previous sacrificial branch
+        run: |
+          git branch --remote -D origin/release-candidate
+
+      - name: List all branches
+        run: |
+          git branch --all | egrep 'main|master|sacrifice'
+
       - name: Check out upstream master
         env:
           UPSTREAM: https://github.com/tyrasd/overpass-turbo
@@ -38,16 +50,8 @@ jobs:
         run: |
           git branch --all | egrep 'main|master|sacrifice|candidate'
 
-      - name: Delete previous sacrificial branch
-        run: |
-          git branch --remote -D origin/release-candidate
-
-      - name: List all branches
-        run: |
-          git branch --all | egrep 'main|master|sacrifice'
-
       - name: Create 'release-candidate', our new sacrificial branch
-        uses: peterjgrainger/action-create-branch@v2.2.0
+        uses: peterjgrainger/action-create-branch@v3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -63,19 +67,19 @@ jobs:
         run: |
           git branch --all | egrep 'main|master|sacrifice|candidate'
 
-      - name: Make our scripts executable
-        run: chmod +x ./scripts/*.sh
-      - name: Preserve upstream docs
-        run: ./scripts/preserve_upstream_docs.sh
-
-      - name: Start the merge
-        run: |
-          git merge --no-ff --no-commit upstream/master
-          git status
-
-      - name: Continue the merge where there are no concerns
-        run: ./scripts/upstream_sync.sh
-
-      - name: Push updates
-        run: |
-          git push release-candidate
+#      - name: Make our scripts executable
+#        run: chmod +x ./scripts/*.sh
+#      - name: Preserve upstream docs
+#        run: ./scripts/preserve_upstream_docs.sh
+#
+#      - name: Start the merge
+#        run: |
+#          git merge --no-ff --no-commit upstream/master
+#          git status
+#
+#      - name: Continue the merge where there are no concerns
+#        run: ./scripts/upstream_sync.sh
+#
+#      - name: Push updates
+#        run: |
+#          git push release-candidate
