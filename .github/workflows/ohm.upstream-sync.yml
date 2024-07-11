@@ -1,6 +1,9 @@
 name: OHM Upstream Sync
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "20 5,17 * * *"
   workflow_dispatch:
@@ -44,7 +47,7 @@ jobs:
           git branch --all | egrep 'main|master|sacrifice'
 
       - name: Check out new sacrificial branch
-        uses: peterjgrainger/action-create-branch@v3.0.0
+        uses: peterjgrainger/action-create-branch@v2.2.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
