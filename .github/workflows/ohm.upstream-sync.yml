@@ -15,18 +15,21 @@ jobs:
       run:
         shell: bash
     steps:
-      - name: Create sacrificial branch
+      - name: Delete previous sacrificial branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git branch -D 'the-sacrifice'
+      - name: Create new sacrificial branch
         uses: peterjgrainger/action-create-branch@v3.0.0
         with:
           branch: 'the-sacrifice'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Check out our repository
+      - name: Check main out to sacrificial branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: 'the-sacrifice'
-      - name: Check out the upstream repository
+      - name: Check out upstream master
         env:
           UPSTREAM: https://github.com/tyrasd/overpass-turbo
         run: |
