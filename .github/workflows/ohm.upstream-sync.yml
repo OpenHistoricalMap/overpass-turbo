@@ -36,26 +36,32 @@ jobs:
 
       - name: List all branches
         run: |
-          git branch --all | egrep 'main|master|sacrifice'
+          git branch --all | egrep 'main|master|sacrifice|candidate'
 
       - name: Delete previous sacrificial branch
         run: |
-          git branch --remote -D origin/the-sacrifice
+          git branch --remote -D origin/release-candidate
 
       - name: List all branches
         run: |
           git branch --all | egrep 'main|master|sacrifice'
 
-      - name: Check out new sacrificial branch
+      - name: Create 'release-candidate', our new sacrificial branch
         uses: peterjgrainger/action-create-branch@v2.2.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          branch: 'the-sacrifice'
 
       - name: List all branches
         run: |
           git branch --all | egrep 'main|master|sacrifice|candidate'
+
+      - name: Check out 'release-candidate', our new sacrificial branch
+        uses: actions/checkout@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          ref: 'release-candidate'
+          fetch-depth: 0
 
       - name: Make our scripts executable
         run: chmod +x ./scripts/*.sh
@@ -72,4 +78,4 @@ jobs:
 
       - name: Push updates
         run: |
-          git push origin the-sacrifice
+          git push origin/release-candidate
