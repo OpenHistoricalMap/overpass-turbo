@@ -8,7 +8,7 @@ export default {
   vectorTileStyleUrl:
     "https://openhistoricalmap.github.io/map-styles/main/main.json",
   vectorTileAttribution:
-    "Historical vector tiles, OpenHistoricalMap.org</small>",
+    'Historical vector tiles, OpenHistoricalMap.org &hearts; <a href="https://openstreetmap.app.neoncrm.com/forms/ohm">Make a Donation</a></small>',
   defaultTiles: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   // https://wiki.osmfoundation.org/wiki/Licence/Attribution_Guidelines
   // > Attribution must be to "OpenStreetMap".
