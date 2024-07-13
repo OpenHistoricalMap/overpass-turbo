@@ -25,5 +25,20 @@
     "prefer-const": "warn",
     "prefer-template": "warn",
     "prefer-arrow-callback": "warn"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["js/MaplibreLayer.ts"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-non-null-assertion": "off"
+      }
+    },
+    {
+      "files": ["js/ide.ts", "js/map.ts"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ]
 }

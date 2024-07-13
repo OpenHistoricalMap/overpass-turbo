@@ -1,6 +1,6 @@
 # The OpenHistoricalMap fork of overpass-turbo
 
-This is the OpenHistoricalMap (OHM) fork of [overpass-turbo](https://github.com/tyrasd/overpass-turbo). It's a workbench for crafting & running queries using the [Overpass-API](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL) and the [OHM extensions](https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass) to that API. It can be seen in operation at [https://overpass-turbo.openhistoricalmap.org/](https://overpass-turbo.openhistoricalmap.org/) where a number of example queries are included under the __Load__ button.
+This is the OpenHistoricalMap (OHM) fork of [overpass-turbo](https://github.com/tyrasd/overpass-turbo). It's a workbench for crafting & running queries using the [Overpass-API](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL) and the [OHM extensions](https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass) to that API. It can be seen in operation at [https://overpass-turbo.openhistoricalmap.org/](https://overpass-turbo.openhistoricalmap.org/) where a number of example queries are included under the **Load** button.
 
 ![ohm_overpass_turbo_screenshot.png](ohm_overpass_turbo_screenshot.png)
 
@@ -27,22 +27,21 @@ Upstream `overpass-turbo` makes extensive use of `localStorage`. If your code al
 
 ## Translations
 
-overpass-turbo translations that are not specific to OHM–__and that is most of them!__–should be submitted via the upstream system at [Transifex](https://www.transifex.com/projects/p/overpass-turbo). Our limited need for translation is handled by [translatewiki.net](https://translatewiki.net/wiki/Special:Translate/ohm-overpass-turbo).
-
+overpass-turbo translations that are not specific to OHM–**and that is most of them!**–should be submitted via the upstream system at [Transifex](https://www.transifex.com/projects/p/overpass-turbo). Our limited need for translation is handled by [translatewiki.net](https://translatewiki.net/wiki/Special:Translate/ohm-overpass-turbo).
 
 ## Testing
+
 ### Black box
 
-* maps should display OHM data using OHM style & OHM attribution
-* OSM basemaps should not appear, even momentarily
-* query results, permalinks, etc. should link to OHM, not OSM, nodes, ways, and relations
-* query results should include OHM specifics such as `start_date`
-* __Help__ documentation should refer to OHM unless a general OSM document is superior and appropriate
+- maps should display OHM data using OHM style & OHM attribution
+- OSM basemaps should not appear, even momentarily
+- query results, permalinks, etc. should link to OHM, not OSM, nodes, ways, and relations
+- query results should include OHM specifics such as `start_date`
+- **Help** documentation should refer to OHM unless a general OSM document is superior and appropriate
 
 ### White box
 
 TBD.
-
 
 ## Continuous integration
 
