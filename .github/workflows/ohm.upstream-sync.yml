@@ -1,11 +1,8 @@
 name: OHM Upstream Sync
 
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: "20 5,17 * * *"
+    - cron: "34 12 * * *"
   workflow_dispatch:
 
 jobs:
@@ -37,7 +34,7 @@ jobs:
 
       - name: List all branches
         run: |
-          git branch --all | egrep 'main|master|sacrifice'
+          git branch --all | egrep 'main|master|sacrifice|candidate'
 
       - name: Check out upstream master
         env:
