@@ -31,7 +31,9 @@ jobs:
 
       - name: Delete previous sacrificial branch
         run: |
-          git branch --remote -D origin/release-candidate
+          if git show-ref --quiet refs/heads/release-candidate; then
+            git branch --remote -D origin/release-candidate
+          fi
 
       - name: List all branches
         run: |
