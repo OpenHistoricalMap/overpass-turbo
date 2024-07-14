@@ -41,6 +41,6 @@ export default {
   // }
   osmAuth: {
     url: "https://www.openhistoricalmap.org",
-    client_id: "iddJpAQ2BU2ERK__yddtXt14KIfygCGsJVlZ_YRTTWQ"
+    client_id: "CH-v_CNb_YyMPVsyvVTWD648gosdmYnLJkFBhHi95Bk"
   }
 };
