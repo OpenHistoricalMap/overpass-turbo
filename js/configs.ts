@@ -35,10 +35,6 @@ export default {
   // api key for osmnames geocoder, go to http://osmnames.org/api/ to get one if you run your own overpass instance
   osmnamesApiKey: "gtXyh2mBSaN5zWqqqQRh",
   // osmAuth configuration object (used for syncing saved queries). expects an osm-auth config object (min. the oauth_consumer_key and oauth_secret must be given), see https://github.com/osmlab/osm-auth#getting-keys
-  // osmAuth: {
-  //   url: "https://www.openstreetmap.org",
-  //   client_id: "lIifli2M7Enpi1LUqCxSNe3yDXhBHwf_n8HzJ03mKFg"
-  // }
   osmAuth: {
     url: "https://www.openhistoricalmap.org",
     client_id: "CH-v_CNb_YyMPVsyvVTWD648gosdmYnLJkFBhHi95Bk"
