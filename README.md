@@ -33,6 +33,14 @@ overpass-turbo translations that are not specific to OHM–**and that is most of
 
 ### Black box
 
+v2.0.2
+- maps should display a correct link to make a donation
+- clicking on __Save__ should
+  - include a __save on openhistoricalmap.org__ button
+  - initiate & complete an oauth2 interaction with openhistoricalmap.org; this will not work on staging
+- OSM basemap raster tiles should never be visible during initial page load or page refresh
+
+v2.0.1
 - maps should display OHM data using OHM style & OHM attribution
 - OSM basemaps should not appear, even momentarily
 - query results, permalinks, etc. should link to OHM, not OSM, nodes, ways, and relations
