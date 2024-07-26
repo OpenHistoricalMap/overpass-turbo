@@ -27,7 +27,11 @@ Upstream `overpass-turbo` makes extensive use of `localStorage`. If your code al
 
 ## Translations
 
-overpass-turbo translations that are not specific to OHM–**and that is most of them!**–should be submitted via the upstream system at [Transifex](https://www.transifex.com/projects/p/overpass-turbo). Our limited need for translation is handled by [translatewiki.net](https://translatewiki.net/wiki/Special:Translate/ohm-overpass-turbo).
+overpass-turbo translations that are not specific to OHM–and that is most of them!–**should** be submitted via the upstream system at [Transifex](https://www.transifex.com/projects/p/overpass-turbo). However, while our need for OHM-specific translation is limited, we are getting substantial amounts of translated strings from [translatewiki.net](https://translatewiki.net/wiki/Special:Translate/ohm-overpass-turbo) and incorporating those. We have thus diverged from upstream here.
+
+`git diff` variants I'm finding useful in managing `locales` files are, issued from the `main` branch:
+- `git diff -w --numstat twn | sort -h`: ignores whitespace changes, outputs the number of lines removed & added 
+- `git diff -w twn -- locales/fr.json`: shows what's been changed in a particular file
 
 ## Testing
 
