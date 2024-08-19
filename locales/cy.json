@@ -1,11 +1,13 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Ceirios"
+		]
 	},
 	"nav.run": "Gweithredu",
 	"nav.run_tt": "Gweithredu'r ymholiad hwn ar Overpass API",
 	"nav.rerender_tt": "parse the MapCSS and rerender the map",
-	"nav.share": "Share",
+	"nav.share": "Rhannu",
 	"nav.share_tt": "get a permalink for this query",
 	"nav.export": "Allforio",
 	"nav.export_tt": "various export tools",
@@ -13,7 +15,7 @@
 	"nav.save_tt": "cadw yr ymholiad hwn",
 	"nav.load": "Llwytho",
 	"nav.load_tt": "load saved query or example",
-	"nav.wizard": "Wizard",
+	"nav.wizard": "Dewin",
 	"nav.wizard_tt": "a query builder",
 	"nav.settings": "Gosodiadau",
 	"nav.settings_tt": "various settings",
@@ -26,7 +28,7 @@
 	"tabs.data": "Data",
 	"tabs.data_tt": "golwg data",
 	"map_controlls.zoom_to_data": "chwyddo i ddata",
-	"map_controlls.localize_user": "locate me!",
+	"map_controlls.localize_user": "lleolwch fi!",
 	"map_controlls.localize_user_disabled": "disabled because overpass turbo has not been loaded via https://",
 	"map_controlls.select_bbox": "manually select bbox",
 	"map_controlls.select_bbox_disabled": "disabled as the current query doesn't require a bbox",
@@ -50,7 +52,7 @@
 	"settings.show_crosshairs": "Show crosshairs at the map center.",
 	"settings.disable_poiomatic": "Don't display small features as POIs.",
 	"settings.show_data_stats": "Show some stats about loaded and displayed data.",
-	"settings.section.sharing": "Sharing",
+	"settings.section.sharing": "Rhannu",
 	"settings.include_map_state": "Include current map state in shared links",
 	"settings.compression": "Compression",
 	"settings.section.export": "Allforio",
@@ -179,8 +181,8 @@
 	"ffs.expl": "The <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard\" target=\"_blank\">wizard</a> assists you with creating Overpass queries. Here are some usage examples:",
 	"ffs.parse_error": "Sorry, this search cannot be understood.",
 	"ffs.parse_error_expl": "Note that you must use quotation marks with strings containing spaces or special characters and that multiple search filters must be separated by appropriate boolean operators (<i>and</i> or <i>or</i>). Read the <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard\" target=\"_blank\">documentation</a> for more information.",
-	"ffs.typo": "Did you mean:",
-	"dialog.dismiss": "dismiss",
+	"ffs.typo": "Oeddech chi'n golygu:",
+	"dialog.dismiss": "cau",
 	"dialog.cancel": "canslo",
 	"dialog.save": "cadw",
 	"dialog.save-local": "cadw (lleol)",
