@@ -50,7 +50,6 @@
 	"settings.tile_server": "Tile-Server",
 	"settings.tile_opacity": "Opacidade dos ladrilhos",
 	"settings.tile_opacity_expl": "transparency of background tiles: 0=transparent … 1=visible",
-	"settings.show_crosshairs": "Show crosshairs at the map center.",
 	"settings.disable_poiomatic": "Don't display small features as POIs.",
 	"settings.show_data_stats": "Mostrar algumas estatísticas sobre dados carregados e exibidos.",
 	"settings.section.sharing": "Compartilhamento",
