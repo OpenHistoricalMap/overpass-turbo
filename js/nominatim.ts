@@ -9,7 +9,7 @@ export default class nominatim {
   static request(search, callback) {
     // ajax (GET) request to nominatim
     $.ajax(
-      `https://nominatim.openhistoricalmap.org/search` +
+      `https://nominatim-api.openhistoricalmap.org/search` +
         `?X-Requested-With=${configs.appname}`,
       {
         data: {
