@@ -202,7 +202,7 @@
 	"dialog.continue_anyway": "pluigi malgraŭ tio",
 	"dialog.show_data": "montri datumojn",
 	"dialog.wizard_build": "konstrui informpeton",
-	"dialog.wizard.run": "konstrui k ruli informpeton",
+	"dialog.wizard_run": "konstrui k ruli informpeton",
 	"dialog.styler_run": "apply style",
 	"dialog.delete_query.title": "Ĉu forigi informpeton?",
 	"dialog.delete_query.expl": "Ĉu vi certe volas forigi la jenajn informpeton",

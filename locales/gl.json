@@ -202,7 +202,7 @@
 	"dialog.continue_anyway": "continuar de todos xeitos",
 	"dialog.show_data": "amosar os datos",
 	"dialog.wizard_build": "construír consulta",
-	"dialog.wizard.run": "construír e executar a consulta",
+	"dialog.wizard_run": "construír e executar a consulta",
 	"dialog.styler_run": "apply style",
 	"dialog.delete_query.title": "Eliminar consulta?",
 	"dialog.delete_query.expl": "Verdadeiramente desexas eliminar a seguinte consulta?",

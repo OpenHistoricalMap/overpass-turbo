@@ -6,8 +6,11 @@ import html2canvas from "html2canvas";
 import {Canvg} from "canvg";
 import "leaflet";
 import "codemirror/lib/codemirror.js";
+import colormap from "colormap";
 import tokml from "tokml";
 import togpx from "togpx";
+import {default as colorbrewer} from "colorbrewer";
+//import { schemegroups as colorbrewer } from "colorbrewer";
 import configs from "./configs";
 import Query from "./query";
 import {
@@ -763,7 +766,7 @@ class IDE {
                 error() {
                   // todo: better error handling
                   console.error(
-                    "An error occured while contacting the search server osmnames.org :("
+                    "An error occurred while contacting the search server osmnames.org :("
                   );
                 }
               }
@@ -1030,6 +1033,8 @@ class IDE {
       if (typeof ide.run_query_on_startup === "function") {
         ide.run_query_on_startup();
       }
+      // enable auto-styler
+      $("#styler-button").show();
       // display stats
       if (settings.show_data_stats) {
         const stats = overpass.stats;
@@ -1206,7 +1211,7 @@ class IDE {
       return "xml";
     else return "OverpassQL";
   }
-  /* this is for repairig obvious mistakes in the query, such as missing recurse statements */
+  /* this is for repairing obvious mistakes in the query, such as missing recurse statements */
   repairQuery(repair) {
     // - preparations -
     const q = this.getRawQuery(), // get original query
@@ -1842,7 +1847,7 @@ class IDE {
           })
           .fail((jqXHR) => {
             alert(
-              `an error occured during the creation of the overpass gist:\n${JSON.stringify(
+              `an error occurred during the creation of the overpass gist:\n${JSON.stringify(
                 jqXHR
               )}`
             );
@@ -2352,6 +2357,102 @@ class IDE {
       }
     });
   }
+  onStylerClick() {
+    if (!overpass.geojson || overpass.geojson.features.length === 0) return;
+    $("#styler-dialog").addClass("is-active");
+    let allTags = {};
+    overpass.geojson.features.forEach(
+      (feature) => (allTags = {...allTags, ...feature.properties.tags})
+    );
+    make_combobox(
+      $("#styler-dialog input[name=attribute]"),
+      Object.keys(allTags)
+    );
+    function checkTag(key?) {
+      key = key || $("#styler-dialog input[type=text]").first().val();
+      if (allTags[key] !== undefined) {
+        $("#styler-dialog button.is-success").removeAttr("disabled");
+        return true;
+      } else {
+        $("#styler-dialog button.is-success").attr("disabled", "disabled");
+        return false;
+      }
+    }
+    $("#styler-dialog input[type=text]")
+      .first()
+      .unbind("keypress")
+      .bind("keypress", (e) => {
+        if (e.key === "Enter") {
+          if (checkTag()) {
+            this.onStylerRun();
+            e.preventDefault();
+          }
+        }
+      })
+      .unbind("input")
+      .bind("input", checkTag)
+      .unbind("autocompleteselect")
+      .bind("autocompleteselect", (_, ui) => checkTag(ui.item.value))
+      .focus();
+  }
+  onStylerRun() {
+    if (!overpass.geojson || overpass.geojson.features.length === 0) return;
+    const key = $("#styler-dialog input[name=attribute]").val();
+    const values = [
+      ...new Set(
+        overpass.geojson.features
+          .map((f) => f.properties.tags[key])
+          .filter(Boolean)
+      )
+    ].sort((a, b) =>
+      isFinite(a) && isFinite(b) ? a - b : a < b ? -1 : a > b ? 1 : 0
+    );
+
+    let colors: string[];
+    if (
+      $("#styler-dialog input[name=palette]:checked").val() === "qualitative"
+    ) {
+      colors = colorbrewer["Set1"][Math.min(Math.max(values.length, 3), 9)];
+    } else if (values.length <= 9) {
+      colors = colorbrewer["YlOrRd"][Math.max(values.length, 3)];
+    } else {
+      colors = colormap({
+        colormap: "inferno",
+        nshades: values.length,
+        format: "hex",
+        alpha: 1
+      }).reverse();
+    }
+
+    const mapCssColors = {};
+    values.forEach((value, i) => {
+      const color = colors[i % colors.length];
+      if (!mapCssColors[color]) mapCssColors[color] = [];
+      mapCssColors[color].push(`*[${key}=${value}]`);
+    });
+    const mapcss = Object.keys(mapCssColors)
+      .map(
+        (color) =>
+          `${mapCssColors[color].join(",\n")}\n{ color: ${color}; fill-color:${color}; }`
+      )
+      .join("\n");
+
+    let query = ide.getRawQuery();
+    // drop previous auto-styler mapcss
+    query = query.replace(
+      /(\n\n)?{{style: \/\* added by auto-styler \*\/[\s\S]*?}}/,
+      ""
+    );
+    ide.setQuery(
+      `${query}\n\n{{style: /* added by auto-styler */\n${mapcss}\n}}`
+    );
+
+    this.rerender_map();
+    this.onStylerClose();
+  }
+  onStylerClose() {
+    $("#styler-dialog").removeClass("is-active");
+  }
   onSettingsClick() {
     $("#settings-dialog input[name=ui_language]")[0].value =
       settings.ui_language;
@@ -2573,14 +2674,26 @@ class IDE {
       (event.key == "i" &&
         (event.ctrlKey || event.metaKey) &&
         !event.shiftKey &&
-        !event.altKey) || // Ctrl+I
-      (event.key == "f" &&
+        !event.altKey) ||
+      (event.key == "F" &&
         (event.ctrlKey || event.metaKey) &&
         event.shiftKey &&
         !event.altKey)
     ) {
-      // Ctrl+Shift+F
+      // Ctrl+I or Ctrl+Shift+F
       this.onFfsClick();
+      event.preventDefault();
+    }
+    if (
+      event.key == "k" &&
+      (event.ctrlKey || event.metaKey) &&
+      !event.shiftKey &&
+      !event.altKey
+    ) {
+      // Ctrl+K
+      if (overpass.geojson) {
+        this.onStylerClick();
+      }
       event.preventDefault();
     }
 

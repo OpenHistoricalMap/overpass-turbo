@@ -1,8 +1,8 @@
 {
   "name": "overpass-turbo",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "A web based data mining tool for OpenHistoricalMap using Overpass API",
-  "homepage": "http://overpass-turbo.eu/",
+  "homepage": "https://overpass-turbo.openhistoricalmap.org/",
   "repository": "git+https://github.com/OpenHistoricalMap/overpass-turbo.git",
   "license": "MIT",
   "packageManager": "yarn@4.3.1",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-inject": "^5.0.3",
+    "@types/colormap": "^2",
     "@types/jquery": "^3.5.16",
     "@types/jqueryui": "^1.12.22",
     "@types/leaflet": "^1.9.3",
@@ -32,7 +33,7 @@
     "prettier": "^3.3.2",
     "request": "^2.67.0",
     "typescript": "^5.0.4",
-    "vite": "^5.2.13",
+    "vite": "^5.2.14",
     "vite-plugin-favicons-inject": "^2.2.0",
     "vitest": "^1.6.0"
   },
@@ -43,6 +44,8 @@
     "bulma": "^0.9.4",
     "canvg": "4.0.1",
     "codemirror": "https://github.com/codemirror/CodeMirror/archive/v2.38.tar.gz",
+    "colorbrewer": "^1.5.7",
+    "colormap": "^2.3.2",
     "html2canvas": "^1.4.1",
     "jquery": "3.7.1",
     "jquery-ui": "1.13.2",
