@@ -228,7 +228,7 @@
 	"warning.incomplete.expl.1": "A consulta não retornou nenhum ponto. No OHM, somente pontos possuem coordenadas. Por exemplo, uma linha não pode ser exibida sem os seus pontos.",
 	"warning.incomplete.expl.2": "Se não é isso que você pretende obter, <i>overpass turbo</i> pode ajudá-lo a reparar (preencher automaticamente) a consulta, escolhendo \"reparar consulta\" abaixo. Caso contrário, você pode continuar com os dados.",
 	"warning.incomplete.not_again": "não mostre essa menssagem novamente",
-	"warning.incomplete.remote.expl.1": "Parece que essa consulta não retornará dados do OSM em formato XML com metadados. Editores como JOHM requerem que os dados estejam nesse formato.",
+	"warning.incomplete.remote.expl.1": "Parece que essa consulta não retornará dados do OSM em formato XML com metadados. Editores como JOSM requerem que os dados estejam nesse formato.",
 	"warning.incomplete.remote.expl.2": "<i>overpass turbo</i> pode ajudar você a consertar a consultar selecionando \"reparar consulta\" abaixo.",
 	"warning.share.long": "Aviso: Este link de compartilhamento é bastante longo. Pode não funcionar em certas circunstâncias",
 	"warning.share.very_long": "Aviso: Este link de compartilhamento é muito longo. É provável que falhe em circunstâncias normais (navegadores, servidores da web). Use com cautela!",

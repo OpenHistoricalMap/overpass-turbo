@@ -226,7 +226,7 @@
 	"warning.incomplete.expl.1": "这次查询未返回任何点。在OHM，只有点才包含坐标信息。举个例子，您无法在没有点的情况下显示一条路径。",
 	"warning.incomplete.expl.2": "如果这不是你要的结果，<i>Overpass Turbo</i>可以通过点击下方的“修复查询”按钮帮你自动修正查询。当然你也可以直接使用数据。",
 	"warning.incomplete.not_again": "不要再提示这条消息了",
-	"warning.incomplete.remote.expl.1": "看上去这次查询并没有以XML格式返回任何带元数据的OSM数据。但JOHM之类的编辑器需要这种格式的数据。",
+	"warning.incomplete.remote.expl.1": "看上去这次查询并没有以XML格式返回任何带元数据的OSM数据。但JOSM之类的编辑器需要这种格式的数据。",
 	"warning.incomplete.remote.expl.2": "点击“修复查询”按钮，<i>Overpass Turbo</i>可以帮你自动修正你的查询。",
 	"warning.share.long": "注意：分享链接有点长，在某些场景下可能无法正常工作。",
 	"warning.share.very_long": "注意：分享链接非常昌，一般浏览器或网站下很可能无法正常使用，请特别注意！",

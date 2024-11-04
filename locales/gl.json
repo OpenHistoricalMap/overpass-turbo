@@ -226,7 +226,7 @@
 	"warning.incomplete.expl.1": "Esta consulta non devolveu ningún nó. No OHM, só os nós conteñen coordenadas. Por exemplo, unha vía non se pode amosar sen os seus nós.",
 	"warning.incomplete.expl.2": "Se isto non é o que desexabas obter, o <i>overpass turbo</i> pode axudarche a arranxar (autocompletar) a consulta escollendo deseguido \"arranxar consulta\". Pola contra, podes continuar cos datos.",
 	"warning.incomplete.not_again": "non amosar esta mensaxe de novo.",
-	"warning.incomplete.remote.expl.1": "Semella como se esta consulta non devolvera os datos do OSM no formato XML cos metadatos. Porén, os editores coma o JOHM requiren que os datos estean nese formato.",
+	"warning.incomplete.remote.expl.1": "Semella como se esta consulta non devolvera os datos do OSM no formato XML cos metadatos. Porén, os editores coma o JOSM requiren que os datos estean nese formato.",
 	"warning.incomplete.remote.expl.2": "O <i>overpass turbo</i> pódeche axudar a corrixir a consulta escollendo \"arranxar consulta\" deseguido.",
 	"warning.share.long": "Aviso: Esta ligazón compartida é moi longa. Pode non funcionar nunhas circunstancias determinadas",
 	"warning.share.very_long": "Aviso: Esta ligazón compartida é moi longa. Probábelmente falle en circunstancias normais (navegadores, servidores web). Empregaa con coidado!",
