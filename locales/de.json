@@ -15,6 +15,8 @@
 	"nav.load_tt": "Eine Abfrage oder ein Beispiel laden",
 	"nav.wizard": "Wizard",
 	"nav.wizard_tt": "Hilft dabei, Overpass-Abfragen zu erstellen.",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Einstellungen",
 	"nav.settings_tt": "Verschiedene Einstellungen",
 	"nav.help": "Hilfe",

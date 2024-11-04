@@ -15,6 +15,8 @@
 	"nav.load_tt": "저장된 질의문이나 예시를 불러옵니다",
 	"nav.wizard": "마법사",
 	"nav.wizard_tt": "질의문 생성기",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "설정",
 	"nav.settings_tt": "다양한 설정",
 	"nav.help": "도움말",

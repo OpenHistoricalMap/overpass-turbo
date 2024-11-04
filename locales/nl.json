@@ -17,6 +17,8 @@
 	"nav.load_tt": "opgeslagen bevraging of voorbeeld laden",
 	"nav.wizard": "Assistent",
 	"nav.wizard_tt": "gereedschap dat helpt om bevragingen op te stellen",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Instellingen",
 	"nav.settings_tt": "allerlei instellingen",
 	"nav.help": "Hulp",

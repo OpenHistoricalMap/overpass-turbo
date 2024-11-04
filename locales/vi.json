@@ -17,6 +17,8 @@
 	"nav.load_tt": "tải truy vấn đã lưu hoặc ví dụ",
 	"nav.wizard": "Trình thuật sĩ",
 	"nav.wizard_tt": "trình xây dựng truy vấn",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Tùy chọn",
 	"nav.settings_tt": "nhiều tùy chọn",
 	"nav.help": "Trợ giúp",

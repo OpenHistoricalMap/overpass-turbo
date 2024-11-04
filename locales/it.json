@@ -15,6 +15,8 @@
 	"nav.load_tt": "Carica la richiesta salvata o l'esempio",
 	"nav.wizard": "Wizard",
 	"nav.wizard_tt": "un compositore di richieste",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Impostazioni",
 	"nav.settings_tt": "impostazioni varie",
 	"nav.help": "Aiuto",

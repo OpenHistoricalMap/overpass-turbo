@@ -17,6 +17,8 @@
 	"nav.load_tt": "保存したクエリやサンプルの読み込み",
 	"nav.wizard": "ウィザード",
 	"nav.wizard_tt": "クエリビルダー",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "設定",
 	"nav.settings_tt": "各種設定",
 	"nav.help": "ヘルプ",

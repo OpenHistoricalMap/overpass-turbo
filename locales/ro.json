@@ -15,6 +15,8 @@
 	"nav.load_tt": "Incarca o interogare existenta sau un exemplu",
 	"nav.wizard": "Generator",
 	"nav.wizard_tt": "Constructor de interogari",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Setari",
 	"nav.settings_tt": "Diverse setari",
 	"nav.help": "Ajutor",

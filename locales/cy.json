@@ -17,6 +17,8 @@
 	"nav.load_tt": "load saved query or example",
 	"nav.wizard": "Dewin",
 	"nav.wizard_tt": "a query builder",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Gosodiadau",
 	"nav.settings_tt": "various settings",
 	"nav.help": "Cymorth",

@@ -17,6 +17,8 @@
 	"nav.load_tt": "indlæs gemt søgning eller eksempel",
 	"nav.wizard": "Guide",
 	"nav.wizard_tt": "en søgeopbygger",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Indstillinger",
 	"nav.settings_tt": "forskellige indstillinger",
 	"nav.help": "Hjælp",

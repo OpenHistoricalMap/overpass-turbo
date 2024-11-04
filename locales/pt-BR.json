@@ -17,6 +17,8 @@
 	"nav.load_tt": "Carregar consulta ou exemplo salvo",
 	"nav.wizard": "Assistente",
 	"nav.wizard_tt": "Um construtor de consultas",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Configurações",
 	"nav.settings_tt": "Várias configurações",
 	"nav.help": "Ajuda",

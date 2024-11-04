@@ -15,6 +15,8 @@
 	"nav.load_tt": "load saved query or example",
 	"nav.wizard": "Čarovnik",
 	"nav.wizard_tt": "a query builder",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Nastavitve",
 	"nav.settings_tt": "razne nastavitve",
 	"nav.help": "Pomoč",

@@ -17,6 +17,8 @@
 	"nav.load_tt": "ladda in sparad sökfråga eller exempel",
 	"nav.wizard": "Guide",
 	"nav.wizard_tt": "en sökfrågebyggare",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Inställningar",
 	"nav.settings_tt": "diverse inställningar",
 	"nav.help": "Hjälp",

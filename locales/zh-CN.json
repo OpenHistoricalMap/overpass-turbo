@@ -15,6 +15,8 @@
 	"nav.load_tt": "加载已保存的查询或样例",
 	"nav.wizard": "助手精灵",
 	"nav.wizard_tt": "查询构建器",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "设置",
 	"nav.settings_tt": "多种可设置项",
 	"nav.help": "帮助",

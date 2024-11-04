@@ -15,6 +15,8 @@
 	"nav.load_tt": "ŝargi konservitan informpeton aŭ ekzemplon",
 	"nav.wizard": "Asistilo",
 	"nav.wizard_tt": "informpeta helpilo",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Agordoj",
 	"nav.settings_tt": "diversaj agordoj",
 	"nav.help": "Helpo",

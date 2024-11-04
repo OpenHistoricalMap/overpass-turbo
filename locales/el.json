@@ -17,6 +17,8 @@
 	"nav.load_tt": "φόρτωση αποθηκευμένου ερωτήματος ή παραδείγματος",
 	"nav.wizard": "Οδηγός",
 	"nav.wizard_tt": "ένας κατασκευαστής ερωτήματος",
+	"nav.styler": "Style",
+	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Ρυθμίσεις",
 	"nav.settings_tt": "διάφορες ρυθμίσεις",
 	"nav.help": "Βοήθεια",
