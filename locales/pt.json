@@ -200,6 +200,7 @@
     "dialog.show_data": "mostrar dados",
     "dialog.wizard_build": "construir consulta",
     "dialog.wizard_run": "construir e executar a consulta",
+    "dialog.styler_run": "apply style",
     "dialog.delete_query.title": "Eliminar Consulta?",
     "dialog.delete_query.expl": "Quer mesmo eliminar a seguinte consulta?",
     "dialog.delete_query.expl-osm": "Quer mesmo eliminar a seguinte consulta sincronizada?",
