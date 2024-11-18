@@ -226,7 +226,7 @@
 	"warning.incomplete.expl.1": "A lekérdezés nem adott vissza pontokat. Az OHM-ben csak a pontoknak van koordinátája. Egy vonal például nem jeleníthető meg a pontjai nélkül.",
 	"warning.incomplete.expl.2": "Ha nem ezt szerette volna, az <i>overpass turbo</i> segít kijavítani (kiegészíteni) a lekérdezést a „lekérdezés javítása” gombra nyomva. Ellenkező esetben folytathatja az adatok megtekintésével.",
 	"warning.incomplete.not_again": "ne mutassa újra ezt az üzenetet.",
-	"warning.incomplete.remote.expl.1": "Úgy tűnik, ez a lekérdezés az OSM adatokat nem XML formában fogja visszaadni metaadatokkal. A szerkesztőprogramok, mint a JOHM az adatokat ilyen formában várják.",
+	"warning.incomplete.remote.expl.1": "Úgy tűnik, ez a lekérdezés az OSM adatokat nem XML formában fogja visszaadni metaadatokkal. A szerkesztőprogramok, mint a JOSM az adatokat ilyen formában várják.",
 	"warning.incomplete.remote.expl.2": "Az <i>overpass turbo</i> segít helyesbíteni a lekérdezést a „lekérdezés javítása” gombra nyomva",
 	"warning.share.long": "Figyelmeztetés: Ez a megosztási link elég hosszú. Nem biztos, hogy minden körülmények közt működni fog",
 	"warning.share.very_long": "Figyelmeztetés: Ez a megosztási link nagyon hosszú. Normál körülmények között (böngésző, webszerver) nem fog működni. Használja óvatosan!",

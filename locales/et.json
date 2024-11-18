@@ -226,7 +226,7 @@
 	"warning.incomplete.expl.1": "See päring ei andnud tulemuseks sõlmi. OHMis saavad ainult sõlmed omada koordinaate. Näiteks joont ei saa kuvada ilma selle sõlmedeta.",
 	"warning.incomplete.expl.2": "Kui see pole see, mida ootasid, siis võib <i>overpass turbo</i> aidata sul päringut parandada (automaatse lõpetada) valides allpool \"paranda päring\". Vastasel juhul võid aga jätkata avades andmed.",
 	"warning.incomplete.not_again": "ära näita rohkem.",
-	"warning.incomplete.remote.expl.1": "Paistab, et see päring ei anna tulemuseks OSM andmeid XML vormingus koos metaandmetega. Ent JOHM redaktor nõuab, et need andmed oleksid antud vormingus.",
+	"warning.incomplete.remote.expl.1": "Paistab, et see päring ei anna tulemuseks OSM andmeid XML vormingus koos metaandmetega. Ent JOSM redaktor nõuab, et need andmed oleksid antud vormingus.",
 	"warning.incomplete.remote.expl.2": "<i>overpass turbo</i> võib aidata sul seda päringut parandada, valides allpool \"paranda päring\".",
 	"warning.share.long": "Hoiatus: see jagamislink on üsna pikk. See ei pruugi teatud juhtudel töötada.",
 	"warning.share.very_long": "Hoiatus: see jagamislink on väga pikk. On tõenäoline, et see ei tööta tavatingimustes (sirvikutes, veebiserverites). Kasuta ettevaatlikult!",

@@ -226,7 +226,7 @@
 	"warning.incomplete.expl.1": "Diese Abfrage hat keine Punkte zurückgeliefert. In OHM werden Koordinaten nur in den Punkten gespeichert. Das heißt, dass ein Weg ohne seine Punkte auf der Karte nicht angezeigt werden kann.",
 	"warning.incomplete.expl.2": "Wenn aber gewünscht ist, dass diese Daten auch angezeigt werden, kann <i>overpass turbo</i> dabei helfen, die Abfrage automatisch zu vervollständigen (zu \"reparieren\"). Anderenfalls wird zur Datenansicht gewechselt.",
 	"warning.incomplete.not_again": "Diese Meldung nicht wieder anzeigen.",
-	"warning.incomplete.remote.expl.1": "Diese Abfrage wird wahrscheinlich keine gültigen XML-Daten mit Metadaten liefern. Editoren wie JOHM benötigen dieses Format aber, um Bearbeitungen vornehmen zu können.",
+	"warning.incomplete.remote.expl.1": "Diese Abfrage wird wahrscheinlich keine gültigen XML-Daten mit Metadaten liefern. Editoren wie JOSM benötigen dieses Format aber, um Bearbeitungen vornehmen zu können.",
 	"warning.incomplete.remote.expl.2": "<i>overpass turbo</i> kann helfen, die Abfrage entsprechend zu korrigieren.",
 	"warning.share.long": "Warnung: Dieser Permalink ist recht lang. Es kann sein, dass er unter bestimmten Umständen nicht wie gewünscht funktioniert.",
 	"warning.share.very_long": "Warnung: Dieser Permalink ist sehr lang. Es ist wahrscheinlich, dass er unter normalen Umständen (Browser, Webserver) nicht funktioniert. Nur unter Vorbehalt verwenden!",

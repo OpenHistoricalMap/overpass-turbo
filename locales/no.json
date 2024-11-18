@@ -226,7 +226,7 @@
 	"warning.incomplete.expl.1": "Dette søker returnerte ingen noder. I OHM kan bare noder inneholde koordinater, og en strekning kan derfor ikke vises uten tilhørende noder.",
 	"warning.incomplete.expl.2": "If this is not what you meant to get, <i>overpass turbo</i> can help you to repair (auto-complete) the query by choosing \"repair query\" below. Otherwise you can continue to the data.",
 	"warning.incomplete.not_again": "ikke vis denne meldingen igjen",
-	"warning.incomplete.remote.expl.1": "Søket vil tilsynelatende ikke returnere OSM data i XML format med metadata. Editorer som JOHM krever at dataene er i det formatet.",
+	"warning.incomplete.remote.expl.1": "Søket vil tilsynelatende ikke returnere OSM data i XML format med metadata. Editorer som JOSM krever at dataene er i det formatet.",
 	"warning.incomplete.remote.expl.2": "<i>overpass turbo</i> kan hjelpe deg med å fikse søket ved å velge \"reparer søk\" nedenfor.",
 	"warning.share.long": "Advarsel: Denne lenken er lang. Det kan feile under bestemte omstendigheter",
 	"warning.share.very_long": "Advarsel: Denne lenken er veldig lang. Det er sannsynlig at den vil feile under normale omstendigheter (nettlesere, webservere). Bruk med forsiktighet!",

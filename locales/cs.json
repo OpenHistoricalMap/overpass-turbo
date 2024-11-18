@@ -226,7 +226,7 @@
 	"warning.incomplete.expl.1": "Tento databázový dotaz nevrátil žádné uzly. V OHM obsahují souřadnice pouze uzly. Například cestu nelze zobrazit bez jejích uzlů.",
 	"warning.incomplete.expl.2": "Pokud to není to, co jste chtěli získat, <i>overpass turbo</i> vám může pomoci opravit (auto-dokončením) databázový dotaz výběrem \"opravit dotaz\" níže. Jinak můžete pokračovat k datům.",
 	"warning.incomplete.not_again": "už nezobrazovat tuto zprávu.",
-	"warning.incomplete.remote.expl.1": "Vypadá to, že tento dotaz nevrátí data OSM ve formátu XML s metadaty. Software jako JOHM však vyžadují, aby data byla v tomto formátu.",
+	"warning.incomplete.remote.expl.1": "Vypadá to, že tento dotaz nevrátí data OSM ve formátu XML s metadaty. Software jako JOSM však vyžadují, aby data byla v tomto formátu.",
 	"warning.incomplete.remote.expl.2": "<i>overpass turbo</i> vám pomůže opravit dotaz výběrem \"opravit dotaz\" níže.",
 	"warning.share.long": "Upozornění: Tento odkaz na sdílení je poměrně dlouhý. Za určitých okolností nemusí fungovat",
 	"warning.share.very_long": "Upozornění: Tento odkaz na sdílení je velmi dlouhý. Za normálních okolností (prohlížeče, webové servery) pravděpodobně selže. Používejte opatrně!",
