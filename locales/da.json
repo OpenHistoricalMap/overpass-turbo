@@ -228,7 +228,7 @@
 	"warning.incomplete.expl.1": "Denne søgning gav ingen punkter retur, kun punkter indeholder koordinater. For eksempel en vej/polygon kan ikke blive  vist uden punkterne der hører til.",
 	"warning.incomplete.expl.2": "Hvis dette ikke var hvad du forventede at få, kan <i>overpass turbo</i> hjælpe dig med at reparere (auto-fuldføre) forespørgslen ved at vælge \"reparerer søgning\" nedenfor. Ellers kan du fortsætte til data.",
 	"warning.incomplete.not_again": "vis ikke denne besked igen.",
-	"warning.incomplete.remote.expl.1": "Det ser ud til at denne søgning ikke vil sende OSM Geodata i et XML format med metadata. Editorer som JOSM kræver at geodata er i det format.",
+	"warning.incomplete.remote.expl.1": "Det ser ud til at denne søgning ikke vil sende OSM Geodata i et XML format med metadata. Editorer som JOHM kræver at geodata er i det format.",
 	"warning.incomplete.remote.expl.2": "<i>overpass turbo</i> kan hjælpe dig med rette søgningen ved at vælge \"reparerer søgning\" nedenfor.",
 	"warning.share.long": "Advarsel: Dele linket er meget langt. Det vil nok ikke virke under nogle betingelser",
 	"warning.share.very_long": "Advarsel: Dele linket er meget langt. Det vil temmeligt sikkert nok fejle under normale betingelser (browsere, webservere). Brug med forsigtighed!",

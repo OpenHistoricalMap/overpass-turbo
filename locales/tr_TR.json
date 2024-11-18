@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Jelican9"
+		]
 	},
 	"nav.run": "Run",
 	"nav.run_tt": "execute this query on Overpass API",
@@ -15,7 +17,7 @@
 	"nav.load_tt": "load saved query or example",
 	"nav.wizard": "Wizard",
 	"nav.wizard_tt": "a query builder",
-	"nav.styler": "Style",
+	"nav.styler": "Stil",
 	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "Ayarlar",
 	"nav.settings_tt": "various settings",
@@ -184,8 +186,8 @@
 	"ffs.typo": "Did you mean:",
 	"styler.title": "Auto Styler",
 	"styler.expl": "Style the query result based on the values of the specified tag",
-	"styler.placeholder": "Select a tag key",
-	"styler.palette": "Choose a palette:",
+	"styler.placeholder": "Bir etiket anahtarı seçin",
+	"styler.palette": "Bir palet seçin:",
 	"styler.palette.sequential": "sequential",
 	"styler.palette.qualitative": "qualitative",
 	"dialog.dismiss": "dismiss",
@@ -202,8 +204,8 @@
 	"dialog.continue_anyway": "continue anyway",
 	"dialog.show_data": "show data",
 	"dialog.wizard_build": "build query",
-	"dialog.wizard.run": "build and run query",
-	"dialog.styler_run": "apply style",
+	"dialog.wizard_run": "build and run query",
+	"dialog.styler_run": "stili uygula",
 	"dialog.delete_query.title": "Delete Query?",
 	"dialog.delete_query.expl": "Do you really want to delete the following query",
 	"dialog.delete_query.expl-osm": "Do you really want to delete the following synchronized query",

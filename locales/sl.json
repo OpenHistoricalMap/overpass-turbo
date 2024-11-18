@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Eleassar"
+		]
 	},
 	"nav.run": "Poženi",
 	"nav.run_tt": "execute this query on Overpass API",
@@ -142,7 +144,7 @@
 	"help.intro.shortcuts.more": "More overpass-turbo shortcuts, additional information about the above and usage examples can be found in the <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/Extended_Overpass_Queries\">OSM wiki</a>.",
 	"help.section.ide": "IDE",
 	"help.ide.share.title": "Deljenje",
-	"help.ide.share.expl": "It is possible to send a permalink with the query you are currently working on to someone else. This is found in the <i>Share</i> tool and shows you a link which you can send to a friend or post online. (Note that others will work on their own copy of the query.)",
+	"help.ide.share.expl": "Mogoče je poslati trajno povezavo s poizvedbo, ki jo trenutno obdelujete, drugi osebi. To je na voljo v orodju <i>Share</i> in prikaže povezavo, ki jo lahko pošljete prijatelju ali objavite na spletu. (Upoštevajte, da bodo drugi urejali lastno kopijo poizvedbe).",
 	"help.ide.save_load.title": "Save and Load",
 	"help.ide.save_load.expl": "You can also save and load your queries. For a start, there are a few example queries preloaded. Take a look at them for a short glimpse of what overpass can do.",
 	"help.ide.keyboard.title": "Keyboard shortcuts:",
@@ -183,7 +185,7 @@
 	"ffs.parse_error_expl": "Note that you must use quotation marks with strings containing spaces or special characters and that multiple search filters must be separated by appropriate boolean operators (<i>and</i> or <i>or</i>). Read the <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard\" target=\"_blank\">documentation</a> for more information.",
 	"ffs.typo": "Ali ste mislili:",
 	"styler.title": "Auto Styler",
-	"styler.expl": "Style the query result based on the values of the specified tag",
+	"styler.expl": "Oblikuj rezultat poizvedbe na podlagi vrednosti določene oznake",
 	"styler.placeholder": "Select a tag key",
 	"styler.palette": "Choose a palette:",
 	"styler.palette.sequential": "sequential",
@@ -226,7 +228,7 @@
 	"warning.incomplete.expl.1": "This query returned no nodes. In OHM, only nodes contain coordinates. For example, a way cannot be displayed without its nodes.",
 	"warning.incomplete.expl.2": "If this is not what you meant to get, <i>overpass turbo</i> can help you to repair (auto-complete) the query by choosing \"repair query\" below. Otherwise you can continue to the data.",
 	"warning.incomplete.not_again": "do not show this message again.",
-	"warning.incomplete.remote.expl.1": "It looks like if this query will not return OSM data in XML format with metadata. Editors like JOSM require the data to be in that format, though.",
+	"warning.incomplete.remote.expl.1": "It looks like if this query will not return OSM data in XML format with metadata. Editors like JOHM require the data to be in that format, though.",
 	"warning.incomplete.remote.expl.2": "<i>overpass turbo</i> can help you to correct the query by choosing \"repair query\" below.",
 	"warning.share.long": "Warning: This share-link is quite long. It may not work under certain circumstances",
 	"warning.share.very_long": "Warning: This share-link is very long. It is likely to fail under normal circumstances (browsers, webservers). Use with caution!",

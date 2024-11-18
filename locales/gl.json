@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Toliño"
+		]
 	},
 	"nav.run": "Executar",
 	"nav.run_tt": "executar esta consulta no Overpass API",
@@ -204,7 +206,7 @@
 	"dialog.wizard_build": "construír consulta",
 	"dialog.wizard_run": "construír e executar a consulta",
 	"dialog.styler_run": "apply style",
-	"dialog.delete_query.title": "Eliminar consulta?",
+	"dialog.delete_query.title": "Eliminar a consulta?",
 	"dialog.delete_query.expl": "Verdadeiramente desexas eliminar a seguinte consulta?",
 	"dialog.delete_query.expl-osm": "Verdadeiramente desexas eliminar a seguinte consulta sincronizada?",
 	"error.query.title": "Erro na consulta",
@@ -226,7 +228,7 @@
 	"warning.incomplete.expl.1": "Esta consulta non devolveu ningún nó. No OHM, só os nós conteñen coordenadas. Por exemplo, unha vía non se pode amosar sen os seus nós.",
 	"warning.incomplete.expl.2": "Se isto non é o que desexabas obter, o <i>overpass turbo</i> pode axudarche a arranxar (autocompletar) a consulta escollendo deseguido \"arranxar consulta\". Pola contra, podes continuar cos datos.",
 	"warning.incomplete.not_again": "non amosar esta mensaxe de novo.",
-	"warning.incomplete.remote.expl.1": "Semella como se esta consulta non devolvera os datos do OSM no formato XML cos metadatos. Porén, os editores coma o JOSM requiren que os datos estean nese formato.",
+	"warning.incomplete.remote.expl.1": "Semella como se esta consulta non devolvera os datos do OSM no formato XML cos metadatos. Porén, os editores coma o JOHM requiren que os datos estean nese formato.",
 	"warning.incomplete.remote.expl.2": "O <i>overpass turbo</i> pódeche axudar a corrixir a consulta escollendo \"arranxar consulta\" deseguido.",
 	"warning.share.long": "Aviso: Esta ligazón compartida é moi longa. Pode non funcionar nunhas circunstancias determinadas",
 	"warning.share.very_long": "Aviso: Esta ligazón compartida é moi longa. Probábelmente falle en circunstancias normais (navegadores, servidores web). Empregaa con coidado!",
@@ -250,13 +252,13 @@
 	"data_stats.lag.expl": "detrás da principal base de datos do OHM",
 	"popup.tags": "Tags",
 	"popup.metadata": "Metadata",
-	"popup.coordinates": "Coordinates",
-	"popup.node": "Node",
-	"popup.nodes": "Nodes",
-	"popup.way": "Way",
-	"popup.ways": "Ways",
-	"popup.relation": "Relation",
-	"popup.relations": "Relations",
-	"popup.incomplete_geometry": "Attention: incomplete geometry (e.g. some nodes missing)",
+	"popup.coordinates": "Coordenadas",
+	"popup.node": "Nó",
+	"popup.nodes": "Nós",
+	"popup.way": "Vía",
+	"popup.ways": "Vías",
+	"popup.relation": "Relación",
+	"popup.relations": "Relacións",
+	"popup.incomplete_geometry": "Atención: xeometría incompleta (por exemplo, faltan algúns nós)",
 	"map.intentionally_blank": "Este mapa deixouse en branco de xeito intencional."
 }

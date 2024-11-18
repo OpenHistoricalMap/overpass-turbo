@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"WiiUf"
+		]
 	},
 	"nav.run": "运行",
 	"nav.run_tt": "使用Overpass API执行查询",
@@ -15,7 +17,7 @@
 	"nav.load_tt": "加载已保存的查询或样例",
 	"nav.wizard": "助手精灵",
 	"nav.wizard_tt": "查询构建器",
-	"nav.styler": "Style",
+	"nav.styler": "样式",
 	"nav.styler_tt": "style the result based on a given tag",
 	"nav.settings": "设置",
 	"nav.settings_tt": "多种可设置项",
@@ -202,7 +204,7 @@
 	"dialog.continue_anyway": "无条件继续",
 	"dialog.show_data": "展示数据",
 	"dialog.wizard_build": "构建查询",
-	"dialog.wizard.run": "构建并运行查询",
+	"dialog.wizard_run": "构建并运行查询",
 	"dialog.styler_run": "apply style",
 	"dialog.delete_query.title": "是否删除查询",
 	"dialog.delete_query.expl": "您真的想要删除如下查询吗？",
