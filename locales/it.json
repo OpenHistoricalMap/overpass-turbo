@@ -226,7 +226,7 @@
 	"warning.incomplete.expl.1": "La query non ha restituito alcun node. In OHM, solo i nodi contengono coordinate. Ad esempio, una linea (way) non può essere rappresentata senza i suoi nodi.",
 	"warning.incomplete.expl.2": "Se questo non è il risultato che ti attendevi, <i>overpass turbo</i> può aiutarti a sistemare (auto-completare) la query selezionando sotto \"ripara query\". In alternativa puoi andare direttamente ai dati.",
 	"warning.incomplete.not_again": "non mostrare di nuovo questo messaggio",
-	"warning.incomplete.remote.expl.1": "Sembra che questa query non restituirà i dati OSM nel formato XML con metadati. Editor come JOSM richiedono però che i dati siano in quel formato.",
+	"warning.incomplete.remote.expl.1": "Sembra che questa query non restituirà i dati OSM nel formato XML con metadati. Editor come JOHM richiedono però che i dati siano in quel formato.",
 	"warning.incomplete.remote.expl.2": "<i>overpass turbo</i> può aiutare correggendo la query selezionando \"ripara query\" qui sotto.",
 	"warning.share.long": "Attenzione: questo link di condivisione è abbastanza lungo e quindi non potrebbe funzionare in alcune circostanze",
 	"warning.share.very_long": "Attenzione: questo link è molto lungo. E' probabile che possa creare problemi in circostanze normali (browser, server web). Utilizzare con cautela.",
