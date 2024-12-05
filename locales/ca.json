@@ -226,7 +226,7 @@
 	"warning.incomplete.expl.1": "Aquesta consulta no ha retornat cap node. En l'OHM, només els nodes contenen coordenades. Per exemple, una via no es pot mostrar sense els seus nodes.",
 	"warning.incomplete.expl.2": "Si això no és el que volíeu obtenir, l'<i>overpass turbo</i> us pot ajudar a autocompletar la consulta seleccionant l'opció «repara la consulta» següent. Altrament podeu continuar amb les dades.",
 	"warning.incomplete.not_again": "no mostris més aquest missatge.",
-	"warning.incomplete.remote.expl.1": "Sembla que aquesta consulta no retorna dades OSM en format XML amb metadades. Els editors com el JOSM requereixen que les dades estiguin en aquest format.",
+	"warning.incomplete.remote.expl.1": "Sembla que aquesta consulta no retorna dades OSM en format XML amb metadades. Els editors com el JOHM requereixen que les dades estiguin en aquest format.",
 	"warning.incomplete.remote.expl.2": "L'<i>overpass turbo</i> us pot ajudar a corregir la consulta si seleccioneu «repara la consulta» següent.",
 	"warning.share.long": "Atenció: aquest enllaç de compartició és molt llarg. Potser no funcioni en algunes circumstàncies",
 	"warning.share.very_long": "Atenció: aquest enllaç de compartició és molt llarg. Potser no funcioni en algunes circumstàncies (p. e. navegadors o servidors web). Useu-lo amb precaució!",
