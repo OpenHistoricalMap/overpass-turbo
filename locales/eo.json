@@ -226,7 +226,7 @@
 	"warning.incomplete.expl.1": "Ĉi tiu informpeto liveris neniujn datumojn. En OHM nur nodoj enhavas koordinatoj. Ekzemple linio ne povas esti montrata sen ĝiaj nodoj.",
 	"warning.incomplete.expl.2": "Se ĉi tio ne estas esperita rezulto, <i>overpass turbo</i> povas helpi al vi ripari (mem-kompletigi) la informpeton per elekti \"ripari informpeton\" sube. Aliokaze vi povas pluigi al datumoj.",
 	"warning.incomplete.not_again": "ne montri ĉi tiun mesaĝon denove",
-	"warning.incomplete.remote.expl.1": "Ŝajnas, ke ĉi tiu informpeto ne liveros OSM-datumojn en XML formo kun metadatumoj. Redaktiloj kiel JOSM postulas por ke datumoj estu en tiu formo.",
+	"warning.incomplete.remote.expl.1": "Ŝajnas, ke ĉi tiu informpeto ne liveros OSM-datumojn en XML formo kun metadatumoj. Redaktiloj kiel JOHM postulas por ke datumoj estu en tiu formo.",
 	"warning.incomplete.remote.expl.2": "<i>overpass turbo</i> povas helpi al vi korekti la informpeton oer elekti \"ripari informpeton\" sube.",
 	"warning.share.long": "Averto: ĉi tiu por-diskoniga ligilo estas eĉ longa. Ĝi povas ne funkcii.",
 	"warning.share.very_long": "Averto: ĉi tiu por-diskoniga ligilo estas tre longa. Ĝi probable ne funkcios dum kutimaj situacioj (foliumiloj, ret-serviloj). Uzu ĝin singarde!",
