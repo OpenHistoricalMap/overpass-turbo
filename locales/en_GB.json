@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Abijeet Patro"
+		]
 	},
 	"nav.run": "Run",
 	"nav.run_tt": "execute this query on Overpass API",
