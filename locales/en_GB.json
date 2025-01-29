@@ -29,5 +29,5 @@
 	"warning.incomplete.expl.2": "If this is not what you were meant to get, <i>overpass turbo</i> can help you to repair (autocomplete) the query by choosing 'repair query' below. Otherwise you can continue to the data.",
 	"warning.share.long": "Warning: This share link is quite long. It may not work under certain circumstances",
 	"warning.share.very_long": "Warning: This sharelink is very long. It is likely to fail under normal circumstances (browsers, webservers). Use with caution!",
-	"warning.huge_data.expl.2": "Your browser may have a hard time trying to render this. Would you really like to continue?",
+	"warning.huge_data.expl.2": "Your browser may have a hard time trying to render this. Would you really like to continue?"
 }

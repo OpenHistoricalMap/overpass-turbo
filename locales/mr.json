@@ -163,5 +163,5 @@
 	"error.ajax.expl": "overpass विचारणा चालवताना एक त्रुटी आढळली!",
 	"warning.incomplete.remote.expl.2": "\"विचारणा दुरुस्त करा\" हे निवडून <i>overpass turbo</i> तुम्हाला विचारणा दुरुस्त करण्यात मदत करू शकते.",
 	"warning.huge_data.expl.1": "ह्या विचारणााचे प्रचंड मोठे उत्तर आले (जवळपास. {{amount_txt}}).",
-	"waiter.processing_query": "विचारणा प्रक्रियेत आहे...",
+	"waiter.processing_query": "विचारणा प्रक्रियेत आहे..."
 }
