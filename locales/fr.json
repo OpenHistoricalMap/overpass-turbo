@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Eihel"
+		]
 	},
 	"nav.run": "Exécuter",
 	"nav.run_tt": "Exécuter cette requête avec l'API Overpass",
@@ -15,6 +17,8 @@
 	"nav.load_tt": "Charger une requête enregistrée ou un exemple",
 	"nav.wizard": "Assistant",
 	"nav.wizard_tt": "Un générateur de requêtes",
+	"nav.styler": "Style",
+	"nav.styler_tt": "styliser le résultat en fonction d'une balise donnée",
 	"nav.settings": "Paramètres",
 	"nav.settings_tt": "réglages divers",
 	"nav.help": "Aide",
@@ -52,6 +56,7 @@
 	"settings.show_data_stats": "Affiche des statistiques à propos des données chargées et affichées.",
 	"settings.section.sharing": "Partager",
 	"settings.include_map_state": "Inclure l'état actuel de la carte dans les permaliens",
+	"settings.compression": "Compression",
 	"settings.section.export": "Exporter",
 	"settings.export_image_scale": "Affiche l'échelle sur les images exportées.",
 	"settings.export_image_attr": "Affiche les crédits sur les images exportées.",
@@ -94,8 +99,11 @@
 	"export.geoJSON_gist.title": "Enregistrer sur gist",
 	"export.geoJSON_gist.gist": "Gist :",
 	"export.geoJSON_gist.geojsonio": "Editer avec :",
+	"export.geoJSON_gist.geojsonio_link": "geojson.io",
+	"export.GPX.title": "Exporter - GPX",
 	"export.GPX.expl": "Les données affichées actuellement en GPX :",
 	"export.GPX.no_data": "Aucune donnée  GPX disponible ! Merci d'exécuter une requête.",
+	"export.KML.title": "Exporter - KML",
 	"export.KML.expl": "Les données affichées actuellement en KML :",
 	"export.KML.no_data": "Aucune donnée KML disponible ! Merci d'exécuter une requête.",
 	"export.raw.title": "Export - données brutes",
@@ -107,6 +115,7 @@
 	"export.map_view.bounds": "Limites",
 	"export.map_view.bounds_selection": "Limites (sélection manuelle des limites bbox)",
 	"export.map_view.bounds_expl": "sud, ouest, nord, est",
+	"export.map_view.zoom": "Zoom",
 	"export.image.title": "Exporter - Image",
 	"export.image.alt": "la carte exportée",
 	"export.image.download": "Télécharger",
@@ -114,6 +123,7 @@
 	"share.title": "Partage",
 	"share.header": "Permalien",
 	"share.copy_this_link": "Copier ce <a href=\"\" id=\"share_link_a\">lien</a> pour partager le code actuel :",
+	"share.options": "Options",
 	"share.incl_map_state": "Inclure l'état actuel de la carte",
 	"share.run_immediately": "Lancer cette requête immédiatement après le chargement",
 	"help.title": "Aide",
@@ -172,6 +182,9 @@
 	"ffs.parse_error": "Désolé, cette recherche ne peut pas être comprise.",
 	"ffs.parse_error_expl": "Notez que vous devez utiliser des guillemets pour les chaines contenant des espaces ou des caractères spéciaux. Si vous utilisez plusieurs filtres de recherche, vous devez les séparer par l'opérateur booléen adéquat (<i>and</i> ou <i>or</i>). Lisez la <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard\" target=\"_blank\">documentation</a> pour plus d'informations.",
 	"ffs.typo": "Est-ce que vous vouliez dire :",
+	"styler.palette": "Choisir une palette :",
+	"styler.palette.sequential": "séquentiel",
+	"styler.palette.qualitative": "qualitatif",
 	"dialog.dismiss": "Annuler",
 	"dialog.cancel": "annuler",
 	"dialog.save": "Enregistrer",
@@ -187,6 +200,7 @@
 	"dialog.show_data": "montrer les données",
 	"dialog.wizard_build": "construire la requête",
 	"dialog.wizard_run": "Construire et exécuter une requête",
+	"dialog.styler_run": "appliquer le style",
 	"dialog.delete_query.title": "Supprimer la requête ?",
 	"dialog.delete_query.expl": "Êtes-vous sûr de vouloir supprimer cette requête ?",
 	"dialog.delete_query.expl-osm": "Êtes-vous sûr de vouloir supprimer cette requête ?",
