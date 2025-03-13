@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eihel"
+			"Eihel",
+			"Mahabarata"
 		]
 	},
 	"nav.run": "Exécuter",
@@ -182,6 +183,9 @@
 	"ffs.parse_error": "Désolé, cette recherche ne peut pas être comprise.",
 	"ffs.parse_error_expl": "Notez que vous devez utiliser des guillemets pour les chaines contenant des espaces ou des caractères spéciaux. Si vous utilisez plusieurs filtres de recherche, vous devez les séparer par l'opérateur booléen adéquat (<i>and</i> ou <i>or</i>). Lisez la <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard\" target=\"_blank\">documentation</a> pour plus d'informations.",
 	"ffs.typo": "Est-ce que vous vouliez dire :",
+	"styler.title": "Style automatisé",
+	"styler.expl": "Styliser le résultat de la requête en fonction des valeurs de l'attribut spécifié",
+	"styler.placeholder": "Sélectionnez une clé d'attribut",
 	"styler.palette": "Choisir une palette :",
 	"styler.palette.sequential": "séquentiel",
 	"styler.palette.qualitative": "qualitatif",
@@ -236,6 +240,7 @@
 	"data_stats.displayed": "Affiché",
 	"data_stats.nodes": "nœuds",
 	"data_stats.ways": "chemins",
+	"data_stats.relations": "relations",
 	"data_stats.areas": "surfaces",
 	"data_stats.pois": "points d'intérêt - POIs",
 	"data_stats.lines": "lignes",
@@ -251,6 +256,8 @@
 	"popup.nodes": "Nœuds",
 	"popup.way": "Chemin",
 	"popup.ways": "Chemins",
+	"popup.relation": "Relation",
+	"popup.relations": "Relations",
 	"popup.incomplete_geometry": "Attention, géométrie incomplète (par exemple des nœuds manquants)",
 	"map.intentionally_blank": "La carte est volontairement laissée vide."
 }
