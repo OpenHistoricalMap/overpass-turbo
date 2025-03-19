@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eihel"
+			"Eihel",
+			"Mahabarata"
 		]
 	},
 	"nav.run": "Exécuter",
@@ -184,9 +185,9 @@
 	"ffs.parse_error": "Désolé, cette recherche ne peut pas être comprise.",
 	"ffs.parse_error_expl": "Notez que vous devez utiliser des guillemets pour les chaines contenant des espaces ou des caractères spéciaux. Si vous utilisez plusieurs filtres de recherche, vous devez les séparer par l'opérateur booléen adéquat (<i>and</i> ou <i>or</i>). Lisez la <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard\" target=\"_blank\">documentation</a> pour plus d'informations.",
 	"ffs.typo": "Est-ce que vous vouliez dire :",
-    "styler.title": "Auto Styler",
-    "styler.expl": "Style the query result based on the values of the specified tag",
-    "styler.placeholder": "Select a tag key",
+	"styler.title": "Style automatisé",
+	"styler.expl": "Styliser le résultat de la requête en fonction des valeurs de l'attribut spécifié",
+	"styler.placeholder": "Sélectionnez une clé d'attribut",
 	"styler.palette": "Choisir une palette :",
 	"styler.palette.sequential": "séquentiel",
 	"styler.palette.qualitative": "qualitatif",
