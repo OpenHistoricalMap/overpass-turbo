@@ -256,10 +256,10 @@
 	"popup.coordinates": "Coordinates",
 	"popup.node": "ノード",
 	"popup.nodes": "ノード",
-    "popup.way": "ウェイ",
-    "popup.ways": "ウェイ",
-    "popup.relation": "リレーション",
-    "popup.relations": "リレーション",
+	"popup.way": "ウェイ",
+	"popup.ways": "ウェイ",
+	"popup.relation": "リレーション",
+	"popup.relations": "リレーション",
 	"popup.incomplete_geometry": "Attention: incomplete geometry (e.g. some nodes missing)",
 	"map.intentionally_blank": "この地図表示は意図して空白になっています。"
 }
