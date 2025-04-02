@@ -57,7 +57,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: 'the-sacrifice'
+          branch: "the-sacrifice"
 
       - name: Check out 'the-sacrifice', our new sacrificial branch
         uses: actions/checkout@v4
