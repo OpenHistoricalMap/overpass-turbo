@@ -31,6 +31,9 @@ jobs:
           if git show-ref --quiet refs/heads/release-candidate; then
             git branch --remote -D origin/release-candidate
           fi
+          if git show-ref --quiet refs/heads/the-sacrifice; then
+            git branch --remote -D origin/the-sacrifice
+          fi
 
       - name: List all branches
         run: |
@@ -49,17 +52,19 @@ jobs:
         run: |
           git branch --all | egrep 'main|master|sacrifice|candidate'
 
-      - name: Create 'release-candidate', our new sacrificial branch
+      - name: Create 'the-sacrifice', our new sacrificial branch
         uses: peterjgrainger/action-create-branch@v3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'the-sacrifice'
 
-      - name: Check out 'release-candidate', our new sacrificial branch
+      - name: Check out 'the-sacrifice', our new sacrificial branch
         uses: actions/checkout@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          ref: "release-candidate"
+          ref: "the-sacrifice"
           fetch-depth: 0
 
       - name: List all branches
