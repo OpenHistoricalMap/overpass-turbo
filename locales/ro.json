@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Trotinel Iftode"
+		]
 	},
 	"nav.run": "Executa",
 	"nav.run_tt": "Executa interogarea cu Overpass API",
@@ -208,7 +210,7 @@
 	"dialog.delete_query.expl": "Do you really want to delete the following query",
 	"dialog.delete_query.expl-osm": "Do you really want to delete the following synchronized query",
 	"error.query.title": "Query Error",
-	"error.query.expl": "An error occurred during the execution of the overpass query! This is what overpass API returned:",
+	"error.query.expl": "A apărut o eroare în timpul execuției interogării de trecere! Acesta este ceea ce a returnat API-ul overpass:",
 	"error.ajax.title": "Ajax Error",
 	"error.ajax.expl": "An error occurred during the execution of the overpass query!",
 	"error.mapcss.title": "MapCSS Error",
