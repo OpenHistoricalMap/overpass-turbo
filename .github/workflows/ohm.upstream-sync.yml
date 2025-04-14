@@ -30,6 +30,7 @@ jobs:
         run: |
           if git show-ref --quiet refs/heads/release-candidate; then
             git branch --remote -D origin/release-candidate
+            git branch -D release-candidate
           fi
           if git show-ref --quiet refs/heads/the-sacrifice; then
             git branch --remote -D origin/the-sacrifice

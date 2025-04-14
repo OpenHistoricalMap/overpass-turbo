@@ -1,11 +1,11 @@
 {
   "name": "overpass-turbo",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "A web based data mining tool for OpenHistoricalMap using Overpass API",
   "homepage": "https://overpass-turbo.openhistoricalmap.org/",
   "repository": "git+https://github.com/OpenHistoricalMap/overpass-turbo.git",
   "license": "MIT",
-  "packageManager": "yarn@4.3.1",
+  "packageManager": "yarn@4.5.3",
   "scripts": {
     "prepare": "husky",
     "test": "yarn run test:eslint && yarn run test:style && yarn run test:vitest",
@@ -14,7 +14,7 @@
     "test:vitest": "vitest",
     "fix:style": "prettier --write .",
     "start": "vite",
-    "dev": "vite --host=127.0.0.1",
+    "dev": "vite",
     "build": "vite build"
   },
   "devDependencies": {
@@ -26,23 +26,23 @@
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "eslint": "^8.38.0",
-    "happy-dom": "^14.12.0",
+    "happy-dom": "^15.10.2",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "peggy": "^3.0.2",
     "prettier": "^3.3.2",
     "request": "^2.67.0",
     "typescript": "^5.0.4",
-    "vite": "^5.2.14",
+    "vite": "^6.0.12",
     "vite-plugin-favicons-inject": "^2.2.0",
-    "vitest": "^1.6.0"
+    "vitest": "^3.0.0-beta.3"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@maplibre/maplibre-gl-leaflet": "^0.0.20",
     "@openstreetmap/id-tagging-schema": "^3.5.1",
     "bulma": "^0.9.4",
-    "canvg": "4.0.1",
+    "canvg": "4.0.3",
     "codemirror": "https://github.com/codemirror/CodeMirror/archive/v2.38.tar.gz",
     "colorbrewer": "^1.5.7",
     "colormap": "^2.3.2",
@@ -68,6 +68,6 @@
     "trailingComma": "none"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern"
   }
 }
