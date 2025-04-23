@@ -6,7 +6,7 @@ export default {
   // https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass#Query_examples
   suggestedServers: [],
   vectorTileStyleUrl:
-    "https://openhistoricalmap.github.io/map-styles/historical/historical.json",
+    "https://www.openhistoricalmap.org/map-styles/historical/historical.json",
   vectorTileAttribution:
     'Historical vector tiles, OpenHistoricalMap.org &hearts; <a href="https://openstreetmap.app.neoncrm.com/forms/ohm">Make a Donation</a></small>',
   defaultTiles: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
