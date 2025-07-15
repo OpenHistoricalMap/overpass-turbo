@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"아라"
+		]
 	},
 	"nav.run": "실행",
 	"nav.run_tt": "Overpass API로 이 질의문을 실행합니다",
@@ -22,7 +24,7 @@
 	"nav.help": "도움말",
 	"nav.help_tt": "도움말, 소개, 저작자 표기",
 	"nav.logout": "로그아웃",
-	"nav.logout_tt": "현재 동기화된 오픈스트리트맵 계정에서 로그아웃합니다",
+	"nav.logout_tt": "현재 동기화된 오스맵 계정에서 로그아웃합니다",
 	"tabs.map": "지도",
 	"tabs.map_tt": "지도 보기",
 	"tabs.data": "데이터",
@@ -90,7 +92,7 @@
 	"export.format_text_umap": "<abbr title=\"For usage with umap.openstreetmap.fr\">umap</abbr> 원격 데이터 URL",
 	"export.to_xml": "<a id=\"export-convert-xml\" href=\"\" target=\"_blank\" class=\"external\">Overpass-XML</a>로 변환하기",
 	"export.to_ql": " (<a id=\"export-convert-compact\" href=\"\" target=\"_blank\" class=\"external\">압축</a>) <a id=\"export-convert-ql\" href=\"\" target=\"_blank\" class=\"external\">OverpassQL</a>로 변환하기",
-	"export.editors": "데이터를 오픈스트리트맵 편집기로 불러오기:",
+	"export.editors": "데이터를 오히맵 편집기로 불러오기:",
 	"export.geoJSON.title": "내보내기 - GeoJSON",
 	"export.geoJSON.expl": "현재 보이는 데이터를 GeoJSON으로 내보내기",
 	"export.geoJSON.no_data": "내보낼 GeoJSON 데이터가 없습니다! 먼저 질의문을 실행하세요.",
