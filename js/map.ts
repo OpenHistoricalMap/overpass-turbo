@@ -32,6 +32,7 @@ $(document).ready(() => {
           cache,
           true,
           undefined,
+          undefined,
           ide.mapcss
         );
       }
@@ -103,6 +104,7 @@ $(document).ready(() => {
         query_lang,
         cache,
         false,
+        undefined,
         undefined,
         ide.mapcss
       );
@@ -188,7 +190,13 @@ $(document).ready(() => {
   overpass.handlers["onPopupReady"] = (p) => {
     p.openOn(ide.map);
   };
-  overpass.handlers["onDataReceived"] = (amount, txt, abortCB, continueCB) => {
+  overpass.handlers["onDataReceived"] = (
+    amount,
+    txt,
+    elements,
+    abortCB,
+    continueCB
+  ) => {
     continueCB();
   };
   overpass.handlers["onRawDataPresent"] = () => {

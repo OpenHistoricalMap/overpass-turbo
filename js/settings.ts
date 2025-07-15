@@ -26,6 +26,7 @@ class Settings {
   ui_language: string;
   disable_poiomatic: boolean;
   show_data_stats: boolean;
+  disable_warning_huge_data: boolean;
 
   // meta settings
   first_time_visit: boolean;
@@ -334,7 +335,7 @@ const examples_initial_example = "Theatres in 1975";
 // global settings object
 const settings = new Settings(
   configs.settingNamespace || configs.appname,
-  38 // settings version number
+  39 // settings version number
 );
 
 export default settings;
@@ -382,6 +383,8 @@ settings.define_setting("ui_language", "String", "auto", 19);
 settings.define_setting("disable_poiomatic", "boolean", false, 21);
 // show data stats
 settings.define_setting("show_data_stats", "boolean", true, 21);
+// disable poi-o-matic
+settings.define_setting("disable_warning_huge_data", "boolean", false, 39);
 
 //settings.define_setting(,,,);
 
