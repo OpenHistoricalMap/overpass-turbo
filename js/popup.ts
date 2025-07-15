@@ -26,8 +26,8 @@ export function featurePopupContent(feature: GeoJSON.Feature) {
       ` <a href="//www.openhistoricalmap.org/relation/${feature.properties.id}" target="_blank">${feature.properties.id}</a>` +
       ` <a href="//www.openhistoricalmap.org/edit?relation=${feature.properties.id}" target="_blank">✏</a>` +
       `</h4>`;
-  else
-    popup += `<h5 class="subtitle is-5">${feature.properties.type} #${feature.properties.id}</h5>`;
+  else if (feature.properties.id)
+    popup += `<h5 class="subtitle is-5">${feature.properties.type || ""} #${feature.properties.id}</h5>`;
   if (
     feature.properties &&
     feature.properties.tags &&
@@ -47,7 +47,7 @@ export function featurePopupContent(feature: GeoJSON.Feature) {
       let urls;
       if (
         (urls = v.match(
-          /\b((?:(https?|ftp):\/\/|www\d{0,3}[.]|[a-z0-9.-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()[\]{};:'".,<>?«»“”‘’]))/gi
+          /\b(?:(?:https?|ftp):\/\/|www\d?\.|[a-z0-9.-]+[.][a-z]{2,4}\/)(?:\([^\s()<>]*\)|[^\s()<>])*(?:\([^\s()<>]*\)|[^\s`!()[\]{};:'".,<>?«»“”‘’])/gim
         ))
       ) {
         urls.forEach((url) => {

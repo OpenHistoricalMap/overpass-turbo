@@ -1,6 +1,6 @@
 {
   "name": "overpass-turbo",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "A web based data mining tool for OpenHistoricalMap using Overpass API",
   "homepage": "https://overpass-turbo.openhistoricalmap.org/",
   "repository": "git+https://github.com/OpenHistoricalMap/overpass-turbo.git",
@@ -33,7 +33,7 @@
     "prettier": "^3.3.2",
     "request": "^2.67.0",
     "typescript": "^5.0.4",
-    "vite": "^6.0.12",
+    "vite": "^6.2.7",
     "vite-plugin-favicons-inject": "^2.2.0",
     "vitest": "^3.0.0-beta.3"
   },
@@ -55,7 +55,7 @@
     "leaflet.locationfilter": "tmgreensolutions/leaflet-locationfilter#ba59b65af08ebb9fcd5ca8a0a2e5fec971e5e48d",
     "lodash": ">=4.17.5",
     "maplibre-gl": "~3.3.1",
-    "osm-auth": "^2.2.0",
+    "osm-auth": "^3.0.0",
     "osmtogeojson": "^3.0.0-beta.5",
     "rgbcolor": "^1.0.1",
     "stackblur": "^1.0.0",
