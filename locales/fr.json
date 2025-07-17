@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Derugon",
 			"Eihel",
 			"Mahabarata"
 		]
@@ -43,6 +44,7 @@
 	"settings.ui_lang": "Langue de l'interface",
 	"settings.server": "Serveur",
 	"settings.disable_autorepair": "Désactiver les messages d'avertissement/d'auto-réparation quand l'API Overpass ne renvoie aucune donnée affichable.",
+	"settings.disable_warning_huge_data": "Désactiver les messages d’avertissement quand l’API Overpass renvoie de grandes quantités de données.",
 	"settings.section.editor": "Éditeur",
 	"settings.enable_rich_editor": "Active l'éditeur de code enrichi",
 	"settings.enable_rich_editor_expl": "à désactiver sur les mobiles ; nécessite un rechargement de la page pour être pris en compte",
