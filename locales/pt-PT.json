@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"B3rnas",
+			"Mansil alfalb",
 			"Selva"
 		]
 	},
@@ -43,6 +44,7 @@
 	"settings.ui_lang": "Idioma do interface",
 	"settings.server": "Servidor",
 	"settings.disable_autorepair": "Disable warning/autorepair message when Overpass API returns no visible data.",
+	"settings.disable_warning_huge_data": "Desativar o aviso quando a API Overpass retorna grandes quantidades de dados.",
 	"settings.section.editor": "Editor",
 	"settings.enable_rich_editor": "Habilitar editor de código avançado",
 	"settings.enable_rich_editor_expl": "disable this on mobile devices; requires a page-reload to take effect",
