@@ -1,6 +1,6 @@
 {
   "name": "overpass-turbo",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "A web based data mining tool for OpenHistoricalMap using Overpass API",
   "homepage": "https://overpass-turbo.openhistoricalmap.org/",
   "repository": "git+https://github.com/OpenHistoricalMap/overpass-turbo.git",
