@@ -42,6 +42,7 @@
 	"settings.ui_lang": "Ngôn ngữ Giao diện",
 	"settings.server": "Máy chủ",
 	"settings.disable_autorepair": "Tắt cảnh báo / thông báo tự động sửa chữa khi Overpass API không cho ra dữ liệu có thể hiển thị trên bản đồ.",
+	"settings.disable_warning_huge_data": "Tắt cảnh báo khi API Overpass trả về lượng dữ liệu lớn.",
 	"settings.section.editor": "Trình soạn thảo",
 	"settings.enable_rich_editor": "Bật trình soạn thảo mã nguồn đặc biệt",
 	"settings.enable_rich_editor_expl": "tắt trên thiết bị di động; cần tải lại trang để áp dụng",
