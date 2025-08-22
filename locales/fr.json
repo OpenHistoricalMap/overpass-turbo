@@ -3,7 +3,8 @@
 		"authors": [
 			"Derugon",
 			"Eihel",
-			"Mahabarata"
+			"Mahabarata",
+			"Urhixidur"
 		]
 	},
 	"nav.run": "Exécuter",
@@ -167,7 +168,7 @@
 	"help.section.about": "À propos",
 	"help.about.maintained": "<i>overpass turbo</i> est maintenu par Martin Raifer (tyr.asd at gmail.com)",
 	"help.about.feedback.title": "Feedback, signaler un bug, demander une amélioration",
-	"help.about.feedback": "Si vous souhaitez nous laisser un retour, signaler un problème ou demander une fonctionnalité particulière, merci d'utiliser le <a href=\"https://github.com/tyrasd/overpass-ide/issues\">traqueur de bugs</a> sur github ou la <a href=\"https://wiki.openstreetmap.org/wiki/Talk:Overpass_turbo\">page de discussion</a> sur le wiki d'OSM.",
+	"help.about.feedback": "Si vous souhaitez nous laisser un retour, signaler un problème ou demander une fonctionnalité particulière, merci d’utiliser le <a href=\"https://github.com/tyrasd/overpass-ide/issues\">traqueur de bogues</a> sur github ou la <a href=\"https://wiki.openstreetmap.org/wiki/Talk:Overpass_turbo\">page de discussion</a> sur le wiki d’OSM.",
 	"help.about.source.title": "Code source",
 	"help.about.source": "Le <a href=\"https://github.com/tyrasd/overpass-turbo\">code source</a> de cette application est disponible sous <a href=\"LICENSE\">licence</a> MIT.",
 	"help.section.attribution": "Crédits",
