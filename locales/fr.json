@@ -226,7 +226,7 @@
 	"error.nominatim.expl": "Ne trouve pas de lieu avec le nom suivant :",
 	"warning.browser.title": "Votre navigateur n'est pas supporté :(",
 	"warning.browser.expl.1": "Le navigateur que vous utilisez n'est (probablement) pas capable d'exécuter tout ou partie de cette application. <small>Il doit supporter <a href=\"https://fr.wikipedia.org/wiki/Stockage_web_local\">l'API de stockage web local</a> et le <a href=\"https://en.wikipedia.org/wiki/Cross-origin_resource_sharing\">cross origin resource sharing (CORS)</a>.</small>",
-	"warning.browser.expl.2": "Veuillez noter que vous aurez peut-être à autoriser les cookies et/ou les \"données locales\" pour ce site sur certains navigateurs (comme Firefox et Chrome).",
+	"warning.browser.expl.2": "Veuillez noter que vous aurez peut-être à autoriser les témoins (''cookies'') ou les « données locales » pour ce site sur certains navigateurs (comme Firefox et Chrome).",
 	"warning.browser.expl.3": "Veuillez mettre à jour votre navigateur ou passez à un plus performant ! Les versions récentes de <a href=\"https://www.opera.com\">Opera</a>, <a href=\"https://www.google.com/intl/de/chrome/browser/\">Chrome</a> et <a href=\"https://www.mozilla.org/de/firefox/\">Firefox</a> ont été testées et fonctionnent.\n\nAutrement vous pouvez toujours utiliser le <a href=\"https://overpass-api.de/query_form.html\">formulaire de requêtes de l'API Overpass</a>.",
 	"warning.incomplete.title": "Données Incomplètes",
 	"warning.incomplete.expl.1": "Cette requête n'a retourné aucun nœud. Dans OHM, seuls les nœuds contiennent des coordonnées. Par exemple, un chemin ne peut pas être affiché sans ses nœuds.",

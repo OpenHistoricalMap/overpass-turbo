@@ -72,7 +72,7 @@
 	"load.no_saved_query": "attualmente nessuna query salvata",
 	"export.title": "Esporta",
 	"export.download-error": "Esporta - Errore",
-	"export.copy_to_clipboard": "Copia il testo negli appunti",
+	"export.copy_to_clipboard": "Copia questo testo negli appunti",
 	"export.copy_to_clipboard_success": "Esporta - Copiato con successo negli appunti",
 	"export.copy_to_clipboard_success-message": "<span class=\"export-copy_to_clipboard-content\"></span> è stato copiato con successo negli appunti.",
 	"export.section.map": "Mappa",
