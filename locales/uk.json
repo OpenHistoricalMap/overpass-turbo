@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"SaldırganSincap"
+		]
 	},
 	"nav.run": "Старт",
 	"nav.run_tt": "виконати цей запит в Overpass API",
@@ -87,7 +89,7 @@
 	"export.format_text": "<abbr title=\"For direct use with the Overpass API, has expanded shortcuts and doesn't include additional overpass turbo features such as MapCSS.\">самостійний запит</abbr>",
 	"export.format_text_raw": "<abbr title=\"Unaltered overpass turbo query – just as in the code editor\">сирці запиту</abbr>",
 	"export.format_text_wiki": "<abbr title=\"For usage in the OHM wiki as a OverpassTurboExample-Template\">вікі ohm</abbr>",
-	"export.format_text_umap": "url для <abbr title=\"For usage with umap.openstreetmap.fr\">umap",
+	"export.format_text_umap": "url для <abbr title=\"For usage with umap.openstreetmap.fr\">umap</abbr>",
 	"export.to_xml": " перетворити в <a id=\"export-convert-xml\" href=\"\" target=\"_blank\" class=\"external\">Overpass-XML</a>",
 	"export.to_ql": " перетворити в (<a id=\"export-convert-compact\" href=\"\" target=\"_blank\" class=\"external\">компактний</a>) <a id=\"export-convert-ql\" href=\"\" target=\"_blank\" class=\"external\">OverpassQL</a>",
 	"export.editors": "завантажити дані в OHM-редактор:",

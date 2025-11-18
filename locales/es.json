@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"SaldırganSincap"
+		]
 	},
 	"nav.run": "Ejecutar",
 	"nav.run_tt": "ejecutar esta consulta en la API Overpass",
@@ -224,7 +226,7 @@
 	"warning.browser.expl.3": "¡Actualice a una versión más reciente de su navegador o cambie a otro con más capacidades! Las versiones recientes de <a href=\"https://www.opera.com\">Opera</a>, <a href=\"https://www.google.com/intl/de/chrome/browser/\">Chrome</a> y <a href=\"https://www.mozilla.org/de/firefox/\">Firefox</a> han sido probados para trabajar. Alternativamente, puede utilizar el <a href=\"https://overpass-api.de/query_form.html\">formulario de consulta Overpass API</a>.",
 	"warning.incomplete.title": "Datos incompletos",
 	"warning.incomplete.expl.1": "Esta consulta no devolvió ningún nodo. En OHM, sólo los nodos contienen coordenadas. Por ejemplo, una vía no se puede visualizar sin sus nodos.",
-	"warning.incomplete.expl.2": "Si esto no es lo que quería obtener, <i>overpass turbo</ i> puede ayudarle a reparar (auto-completar) la consulta eligiendo a continuación «reparar consulta». De lo contrario, puede continuar a los datos.",
+	"warning.incomplete.expl.2": "Si esto no es lo que quería obtener, <i>overpass turbo</i> puede ayudarle a reparar (auto-completar) la consulta eligiendo a continuación «reparar consulta». De lo contrario, puede continuar a los datos.",
 	"warning.incomplete.not_again": "no mostrar este mensaje de nuevo.",
 	"warning.incomplete.remote.expl.1": "Parece como si esta consulta no devolviera los datos de OSM en formato XML con los metadatos. Sin embargo, editores como JOSM requieren que los datos estén en ese formato.",
 	"warning.incomplete.remote.expl.2": "<i>overpass turbo</i> te puede ayudar a corregir la consulta seleccionando «reparar consulta» a continuación.",
