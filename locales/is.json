@@ -43,6 +43,7 @@
 	"settings.ui_lang": "UI Language",
 	"settings.server": "Netþjónn",
 	"settings.disable_autorepair": "Disable warning/autorepair message when Overpass API returns no visible data.",
+	"settings.disable_warning_huge_data": "Slökkva á viðvörun þegar Overpass API-viðmótið skilar miklu magni af gögnum.",
 	"settings.section.editor": "Ritill",
 	"settings.enable_rich_editor": "Enable rich code editor",
 	"settings.enable_rich_editor_expl": "disable this on mobile devices; requires a page-reload to take effect",
