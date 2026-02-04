@@ -180,7 +180,7 @@
 	"ffs.placeholder": "søk",
 	"ffs.expl": "<a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard\" target=\"_blank\">Søkeveilederen</a> hjelper deg å skape Overpass søk. Her er noen eksempler på bruk:",
 	"ffs.parse_error": "Beklager, dette søket kan ikke utføres.",
-	"ffs.parse_error_expl": "Merk at du må bruke anførselstegn rundt strenger som inneholder mellomrom eller spesialtegn og at søkefiltere må skilles med riktige boolske operatorer (<i>and</ i> eller <i>or</ i>). Les <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard\" target=\"_blank\"> dokumentasjonen</a> for mer informasjon.",
+	"ffs.parse_error_expl": "Merk at du må bruke anførselstegn rundt strenger som inneholder mellomrom eller spesialtegn og at søkefiltere må skilles med riktige boolske operatorer (<i>and</i> eller <i>or</i>). Les <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/Wizard\" target=\"_blank\"> dokumentasjonen</a> for mer informasjon.",
 	"ffs.typo": "Mente du:",
 	"styler.title": "Auto Styler",
 	"styler.expl": "Style the query result based on the values of the specified tag",
