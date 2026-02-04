@@ -1,0 +1,2 @@
+const e={"@metadata":{authors:["McDutchie"]},"export.generic_download_copy":`Translate the “title” attribute content (<span style="white-space: nowrap"><code>title="</code>…<code>"</code>)</span> and the link text (<span style="white-space: nowrap"><code>&gt;</code>…<code><nowiki></a></nowiki></code>),</span> but leave everything else ''exactly'' as it is.`};export{e as default};
+//# sourceMappingURL=qqq-Ca-MuazG.js.map
