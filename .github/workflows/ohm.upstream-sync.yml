@@ -73,6 +73,7 @@ jobs:
         run: |
           git merge --no-ff --no-commit upstream/master
           git status
+        continue-on-error: true
 
       - name: Continue the merge where there are no concerns
         run: ./scripts/upstream_sync.sh
