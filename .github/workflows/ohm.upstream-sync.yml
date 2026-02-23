@@ -16,29 +16,21 @@ jobs:
         shell: bash
     steps:
       - name: Check out our repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           fetch-depth: 0
 
-      - name: List all branches
-        run: |
-          git branch --all | egrep 'main|master|sacrifice|candidate'
-
       - name: Delete previous sacrificial branch
         run: |
-          if git show-ref --quiet refs/heads/release-candidate; then
-            git branch --remote -D origin/release-candidate
-            git branch -D release-candidate
-          fi
           if git show-ref --quiet refs/heads/the-sacrifice; then
             git branch --remote -D origin/the-sacrifice
           fi
 
       - name: List all branches
         run: |
-          git branch --all | egrep 'main|master|sacrifice|candidate'
+          git branch --all | egrep 'main|master|sacrifice'
 
       - name: Check out upstream master
         env:
@@ -51,17 +43,17 @@ jobs:
 
       - name: List all branches
         run: |
-          git branch --all | egrep 'main|master|sacrifice|candidate'
+          git branch --all | egrep 'main|master|sacrifice'
 
       - name: Create 'the-sacrifice', our new sacrificial branch
-        uses: peterjgrainger/action-create-branch@v3.0.0
+        uses: peterjgrainger/action-create-branch@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           branch: "the-sacrifice"
 
       - name: Check out 'the-sacrifice', our new sacrificial branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -70,7 +62,7 @@ jobs:
 
       - name: List all branches
         run: |
-          git branch --all | egrep 'main|master|sacrifice|candidate'
+          git branch --all | egrep 'main|master|sacrifice'
 
       - name: Make our scripts executable
         run: chmod +x ./scripts/*.sh
