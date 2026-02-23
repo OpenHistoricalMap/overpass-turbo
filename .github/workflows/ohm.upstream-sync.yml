@@ -74,9 +74,9 @@ jobs:
           git merge --no-ff --no-commit upstream/master
           git status
 
-#      - name: Continue the merge where there are no concerns
-#        run: ./scripts/upstream_sync.sh
-#
+      - name: Continue the merge where there are no concerns
+        run: ./scripts/upstream_sync.sh
+
 #      - name: Push updates
 #        run: |
 #          git push release-candidate
