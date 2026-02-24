@@ -20,6 +20,7 @@ import {
   ffs_repair_search
 } from "./ffs";
 import i18n from "./i18n";
+import {maplibreLayer} from "./MaplibreLayer";
 import {Base64, htmlentities, lzw_encode, lzw_decode} from "./misc";
 import overpass from "./overpass";
 import Query from "./query";
@@ -27,7 +28,6 @@ import settings from "./settings";
 import shortcuts, {Shortcut} from "./shortcuts";
 import sync from "./sync-with-osm";
 import urlParameters from "./urlParameters";
-import {maplibreLayer} from "./MaplibreLayer";
 
 declare const CodeMirror;
 

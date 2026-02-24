@@ -3,8 +3,8 @@
   "version": "2.1.10",
   "description": "A web based data mining tool for OpenHistoricalMap using Overpass API",
   "homepage": "https://overpass-turbo.openhistoricalmap.org/",
-  "repository": "git+https://github.com/OpenHistoricalMap/overpass-turbo.git",
   "license": "MIT",
+  "repository": "git+https://github.com/OpenHistoricalMap/overpass-turbo.git",
   "scripts": {
     "prepare": "husky",
     "test": "pnpm run test:lint && pnpm run test:style && pnpm run test:vitest",
@@ -32,7 +32,8 @@
     "leaflet-polylineoffset": "^1.1.1",
     "leaflet.locationfilter": "https://github.com/kajic/leaflet-locationfilter/archive/ba59b65af08ebb9fcd5ca8a0a2e5fec971e5e48d.tar.gz",
     "lodash": ">=4.17.23",
-    "maplibre-gl": "~3.3.1",    "osm-auth": "^3.0.0",
+    "maplibre-gl": "~3.3.1",
+    "osm-auth": "^3.0.0",
     "osmtogeojson": "^3.0.0-beta.5",
     "rgbcolor": "^1.0.1",
     "stackblur": "^1.0.0",
@@ -62,5 +63,5 @@
     "bracketSpacing": false,
     "trailingComma": "none"
   },
-  "packageManager": "pnpm@10.28.2+sha512.41872f037ad22f7348e3b1debbaf7e867cfd448f2726d9cf74c08f19507c31d2c8e7a11525b983febc2df640b5438dee6023ebb1f84ed43cc2d654d2bc326264"
+  "packageManager": "pnpm@10.30.2+sha512.36cdc707e7b7940a988c9c1ecf88d084f8514b5c3f085f53a2e244c2921d3b2545bc20dd4ebe1fc245feec463bb298aecea7a63ed1f7680b877dc6379d8d0cb4"
 }
