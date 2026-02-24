@@ -32,11 +32,8 @@ jobs:
           git branch --all | egrep 'main|master|sacrifice'
 
       - name: Create 'the-sacrifice', our new sacrificial branch
-        uses: peterjgrainger/action-create-branch@v3.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          branch: "the-sacrifice"
+        run: |
+          git checkout -b the-sacrifice
 
       - name: Check out 'the-sacrifice', our new sacrificial branch
         uses: actions/checkout@v6
