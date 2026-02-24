@@ -25,28 +25,16 @@ jobs:
 
       - name: Delete previous sacrificial branch
         run: |
-          git branch --remote -D origin/the-sacrifice
+          if git show-ref --quiet refs/heads/the-sacrifice; then
+            git branch --remote -D origin/the-sacrifice
+          fi
 
       - name: List all branches
         run: |
           git branch --all | egrep 'main|master|sacrifice'
-
-      - name: Check out upstream master
-        env:
-          UPSTREAM: https://github.com/tyrasd/overpass-turbo
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@users.noreply.github.com"
-          git remote add upstream "${UPSTREAM}"
-          git fetch upstream master
-
-      - name: List all branches
-        run: |
-          git branch --all | egrep 'main|master|sacrifice'
-          git status
 
       - name: Create 'the-sacrifice', our new sacrificial branch
-        uses: peterjgrainger/action-create-branch@v3.0.0
+        uses: peterjgrainger/action-create-branch@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -65,6 +53,20 @@ jobs:
           git branch --all | egrep 'main|master|sacrifice'
           git status
           git diff origin/main
+
+      - name: Check out upstream master
+        env:
+          UPSTREAM: https://github.com/tyrasd/overpass-turbo
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git remote add upstream "${UPSTREAM}"
+          git fetch upstream master
+
+      - name: List all branches
+        run: |
+          git branch --all | egrep 'main|master|sacrifice'
+          git status
 
       - name: Make our scripts executable
         run: chmod +x ./scripts/*.sh
