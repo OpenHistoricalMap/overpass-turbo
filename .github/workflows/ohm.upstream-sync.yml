@@ -23,6 +23,10 @@ jobs:
           ref: "main"
           fetch-depth: 0
 
+      - name: List all branches
+        run: |
+          git branch --all | egrep 'main|master|sacrifice'
+
       - name: Delete previous sacrificial branch
         run: |
           git branch --remote -D origin/the-sacrifice
