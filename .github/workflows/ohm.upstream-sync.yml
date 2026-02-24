@@ -25,9 +25,7 @@ jobs:
 
       - name: Delete previous sacrificial branch
         run: |
-          if git show-ref --quiet refs/heads/the-sacrifice; then
-            git branch --remote -D origin/the-sacrifice
-          fi
+          git branch --remote -D origin/the-sacrifice
 
       - name: List all branches
         run: |
