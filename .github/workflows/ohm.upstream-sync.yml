@@ -20,13 +20,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          ref: "main"
           fetch-depth: 0
 
       - name: Delete previous sacrificial branch
         run: |
-          if git show-ref --quiet refs/heads/the-sacrifice; then
+#          if git show-ref --quiet refs/heads/the-sacrifice; then
             git branch --remote -D origin/the-sacrifice
-          fi
+#          fi
 
       - name: List all branches
         run: |
