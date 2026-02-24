@@ -43,6 +43,7 @@ jobs:
       - name: List all branches
         run: |
           git branch --all | egrep 'main|master|sacrifice'
+          git status
 
       - name: Create 'the-sacrifice', our new sacrificial branch
         uses: peterjgrainger/action-create-branch@v3.0.0
@@ -62,6 +63,7 @@ jobs:
       - name: List all branches
         run: |
           git branch --all | egrep 'main|master|sacrifice'
+          git status
 
       - name: Make our scripts executable
         run: chmod +x ./scripts/*.sh
