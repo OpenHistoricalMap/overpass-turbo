@@ -20,8 +20,6 @@ Our philosophy is to stay as close to the upstream version as possible with modi
 
 As with all OHM projects, issues are filed in [the standalone Issues repository](https://github.com/OpenHistoricalMap/issues). Development is typically carried out on feature branches created from our `main` branch and merged via Pull Requests.
 
-The `master` branch is deprecated and will be removed.
-
 ### Gotchas
 
 Upstream `overpass-turbo` makes extensive use of `localStorage`. If your code alterations are not being picked up, you may want to go beyond clearing your browser cache to wiping out `localStorage` using your JavaScript developer tools.
