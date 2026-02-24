@@ -25,6 +25,7 @@ jobs:
 
       - name: Delete previous sacrificial branch
         run: |
+          git push origin :the-sacrifice 
           git branch --remote -D origin/the-sacrifice
         continue-on-error: true
 
