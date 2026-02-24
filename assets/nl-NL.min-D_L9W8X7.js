@@ -1,0 +1,2 @@
+var e={"nl-NL":{presets:{fields:{cuisine:{options:{indian:`Indiaas`}}},presets:{"amenity/restaurant/indian":{name:`Indiaas restaurant`}}}}};export{e as default};
+//# sourceMappingURL=nl-NL.min-D_L9W8X7.js.map
