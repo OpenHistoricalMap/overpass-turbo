@@ -25,8 +25,8 @@ jobs:
 
       - name: Delete previous sacrificial branch
         run: |
-          git push origin :the-sacrifice 
           git branch --remote -D origin/the-sacrifice
+          git push origin :the-sacrifice
         continue-on-error: true
 
       - name: List all branches
@@ -36,14 +36,6 @@ jobs:
       - name: Create 'the-sacrifice', our new sacrificial branch
         run: |
           git switch --force-create the-sacrifice
-
-      - name: Check out 'the-sacrifice', our new sacrificial branch
-        uses: actions/checkout@v6
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          ref: "the-sacrifice"
-          fetch-depth: 0
 
       - name: List all branches
         run: |
