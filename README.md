@@ -11,15 +11,14 @@ Our philosophy is to stay as close to the upstream version as possible with modi
 
 ### Quick start
 
-1. `yarn install`
-2. `yarn run start` for a Development server listening at http://localhost:5173
-3. `yarn run build` for a minified build in `./dist`
+0. Use `corepack enable` to install [pnpm](https://pnpm.io/).
+1. `pnpm install`
+2. `pnpm run start` for a Development server listening at http://localhost:5173
+3. `pnpm run build` for a minified build in `./dist`
 
 ### git-branches
 
 As with all OHM projects, issues are filed in [the standalone Issues repository](https://github.com/OpenHistoricalMap/issues). Development is typically carried out on feature branches created from our `main` branch and merged via Pull Requests.
-
-The `master` branch is deprecated and will be removed.
 
 ### Gotchas
 
