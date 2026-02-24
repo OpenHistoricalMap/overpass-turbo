@@ -29,6 +29,7 @@ jobs:
 
       - name: Delete previous sacrificial branch
         run: |
+          git branch -D the-sacrifice
           git branch --remote -D origin/the-sacrifice
 
       - name: List all branches
