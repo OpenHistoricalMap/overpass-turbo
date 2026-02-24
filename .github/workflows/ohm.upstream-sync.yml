@@ -23,10 +23,6 @@ jobs:
           ref: "main"
           fetch-depth: 0
 
-      - name: List all branches
-        run: |
-          git branch --all | egrep 'main|master|sacrifice'
-
       - name: Delete previous sacrificial branch
         run: |
           git branch -D the-sacrifice
@@ -38,7 +34,7 @@ jobs:
 
       - name: Create 'the-sacrifice', our new sacrificial branch
         run: |
-          git checkout -b the-sacrifice
+          git switch --force-create --no-guess the-sacrifice
 
       - name: Check out 'the-sacrifice', our new sacrificial branch
         uses: actions/checkout@v6
