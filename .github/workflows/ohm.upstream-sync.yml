@@ -29,19 +29,9 @@ jobs:
           git push origin :the-sacrifice
         continue-on-error: true
 
-      - name: List all branches
-        run: |
-          git branch --all | egrep 'main|master|sacrifice'
-
       - name: Create 'the-sacrifice', our new sacrificial branch
         run: |
           git switch --force-create the-sacrifice
-
-      - name: List all branches
-        run: |
-          git branch --all | egrep 'main|master|sacrifice'
-          git status
-          git diff origin/main
 
       - name: Check out upstream master
         env:
@@ -52,10 +42,11 @@ jobs:
           git remote add upstream "${UPSTREAM}"
           git fetch upstream master
 
-      - name: List all branches
+      - name: List relevant branches & check status
         run: |
           git branch --all | egrep 'main|master|sacrifice'
           git status
+          git diff origin/main
 
       - name: Make our scripts executable
         run: chmod +x ./scripts/*.sh

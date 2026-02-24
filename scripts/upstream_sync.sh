@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Ignore upstream translations
-for t in ../locales/*.json; do
+for t in ./locales/*.json; do
   git checkout HEAD "$t"
 done
-git commit -m "Ignore upstream translations"../locales/*.json
+git commit -m "Ignore upstream translations" ./locales/*.json
 
 
 #concerns=('js/ide.js' 'js/map.ts')
