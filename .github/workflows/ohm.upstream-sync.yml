@@ -34,7 +34,7 @@ jobs:
 
       - name: Create 'the-sacrifice', our new sacrificial branch
         run: |
-          git switch --force-create --no-guess the-sacrifice
+          git switch --force-create --no-guess 'the-sacrifice'
 
       - name: Check out 'the-sacrifice', our new sacrificial branch
         uses: actions/checkout@v6
