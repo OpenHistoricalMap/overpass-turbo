@@ -40,6 +40,7 @@ const languages = {
   es: "Spanish",
   et: "Estonian",
   fr: "French",
+  ga: "Irish",
   gl: "Galician",
   hr: "Croatian",
   hu: "Hungarian",
