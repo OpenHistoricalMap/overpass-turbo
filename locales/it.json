@@ -38,7 +38,7 @@
 	"map_controlls.toggle_data": "attiva/disattiva la sovrapposizione dei dati",
 	"map_controlls.suggest_zoom_to_data": "premere qui per visualizzare i dati",
 	"settings.title": "Impostazioni",
-	"settings.section.general": "Impostazioni Generali",
+	"settings.section.general": "Impostazioni generali",
 	"settings.ui_lang": "Lingua",
 	"settings.server": "Server",
 	"settings.disable_autorepair": "Disabilita messaggi di avvertimento/autoriparazione quando Overpass API restituisce dati non visualizzabili.",
