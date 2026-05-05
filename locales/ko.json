@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hangukhistory",
+			"Tensama0415",
 			"아라"
 		]
 	},
@@ -79,7 +80,7 @@
 	"export.copy_to_clipboard_success-message": "<span class=\"export-copy_to_clipboard-content\"></span> 이(가) 성공적으로 클립보드에 복사되었습니다.",
 	"export.section.map": "지도",
 	"export.as_png": "<a id=\"export-image\" href=\"\">png 이미지</a>로 내보내기",
-	"export.as_interactive_map": "<a id=\"export-interactive-map\" href=\"\">반응형 지도</a>로 내보내기",
+	"export.as_interactive_map": "<a id=\"export-interactive-map\" href=\"\">대화형 지도</a>로 내보내기",
 	"export.current_map_view": "현재 <a id=\"export-map-state\" href=\"\">지도 화면</a> 내보내기",
 	"export.map_view_expl": "경계 상자, 가운데의 위치 등",
 	"export.section.data": "데이터",
