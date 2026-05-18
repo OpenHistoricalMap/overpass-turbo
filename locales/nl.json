@@ -216,7 +216,7 @@
 	"error.ajax.title": "Ajax-fout",
 	"error.ajax.expl": "Er is een fout opgetreden tijdens de uitvoering van de overpass-zoekopdracht!",
 	"error.mapcss.title": "MapCSS-fout",
-	"error.mapcss.expl": "Ongeldig MapCSS-stijlbestand:",
+	"error.mapcss.expl": "Onjuist MapCSS-stijlbestand:",
 	"error.remote.title": "Foutmelding van extern systeem",
 	"error.remote.incompat": "Fout: incompatibele JOSM-versie voor remote control",
 	"error.remote.not_found": "\"Remove control\" niet gevonden. Zorg ervoor dat JOSM al actief is en correct is ingesteld.",

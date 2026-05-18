@@ -138,7 +138,7 @@
 	"help.section.queries": "Запити Overpass",
 	"help.queries.expl": "Overpass API дозволяє отримувати дані OHM відповідно до ваших власних потреб.  Для цих цілей існує спеціальна <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">мова запитів</a>.",
 	"help.intro.shortcuts": "На доданок до звичайних запитів Overpass API можна використовувати такі зручні скорочення в overpass turbo:",
-	"help.intro.shortcuts.bbox": "координати поточної видимої ділянки мапи",
+	"help.intro.shortcuts.bbox": "координати поточної видимої рамки межі мапи",
 	"help.intro.shortcuts.center": "координати центру мапи",
 	"help.intro.shortcuts.date": "час у форматі ISO 8601, дозволяє обчислювати також проміжки часу між двома значеннями (наприклад, \"24 години\")",
 	"help.intro.shortcuts.style": "для використання  <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_turbo/MapCSS\">MapCSS-стилів</a>",
