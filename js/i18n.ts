@@ -55,6 +55,7 @@ const languages = {
   pt: "Portuguese",
   "pt-BR": "Portuguese (Brazil)",
   ru: "Russian",
+  sk: "Slovak",
   sl: "Slovenian",
   th: "Thai",
   tr: "Turkish",
