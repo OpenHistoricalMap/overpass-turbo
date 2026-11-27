@@ -1,6 +1,4 @@
 // query parser module
-import _ from "lodash";
-
 import type {Shortcut} from "./shortcuts";
 
 export default class parser {
@@ -21,7 +19,7 @@ export default class parser {
       // remove constant definitions
       query = query.replace(constant, "");
     }
-    _.extend(shortcuts, constants, (b, a) => (typeof a == "undefined" ? b : a));
+    Object.assign(shortcuts, constants);
     // 2. replace overpass turbo this.statements, user-constants and shortcuts
     this.statements = {};
     if (_found_statements) this.statements = _found_statements;
@@ -37,11 +35,9 @@ export default class parser {
       // if the statement is a shortcut, replace its content
       const shortcut = shortcuts[s_name];
       if (shortcut !== undefined) {
-        // these shortcuts can also be callback functions, like {{date:-1day}}
+        // these shortcuts can also be functions, like {{date:-1day}}
         if (typeof shortcut === "function") {
-          const res = await new Promise<string>((resolve) =>
-            shortcut(s_instr, (s) => resolve(s))
-          );
+          const res = await shortcut(s_instr);
           const seed = Math.round(Math.random() * Math.pow(2, 22)); // todo: use some kind of checksum of s_instr if possible
           shortcuts[`__statement__${s_name}__${seed}`] = res;
           query = query.replace(

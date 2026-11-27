@@ -1,7 +1,11 @@
 // Settings class
-import _ from "lodash";
-
 import configs from "./configs";
+
+/**
+ * A value a setting can hold. Anything but a `String` setting is stored as
+ * JSON, so any serialisable value will do.
+ */
+type SettingValue = string | number | boolean | string[] | object;
 
 class Settings {
   // settings.define_setting
@@ -24,9 +28,11 @@ class Settings {
   no_autorepair: boolean;
   editor_width: string;
   ui_language: string;
+  theme: string;
   disable_poiomatic: boolean;
   show_data_stats: boolean;
   disable_warning_huge_data: boolean;
+  editor_preference: string;
 
   // meta settings
   first_time_visit: boolean;
@@ -36,7 +42,7 @@ class Settings {
     string,
     {
       type: string;
-      preset: string | number | boolean | string[];
+      preset: SettingValue;
       version: number;
     }
   >;
@@ -46,7 +52,10 @@ class Settings {
   constructor(namespace: string, version: number) {
     this.prefix = `${namespace}_`;
     this.settings_version = version;
-    this.version = +localStorage.getItem(`${this.prefix}version`);
+    this.version =
+      typeof localStorage === "undefined"
+        ? 0
+        : +localStorage.getItem(`${this.prefix}version`);
     this.settings = {};
     this.upgrade_callbacks = [];
   }
@@ -55,7 +64,7 @@ class Settings {
   define_setting(
     name: string,
     type: string,
-    preset: string | number | boolean | string[],
+    preset: SettingValue,
     version: number
   ) {
     this.settings[name] = {type: type, preset: preset, version: version};
@@ -64,16 +73,18 @@ class Settings {
     this.upgrade_callbacks[version] = fun;
   }
 
-  set(name: string, value: string) {
+  set(name: string, value?: SettingValue) {
     if (
       value === undefined // use preset if no value is given
     )
       value = this.settings[name].preset;
-    if (this.settings[name].type != "String") {
+    localStorage.setItem(
+      this.prefix + name,
       // stringify all non-string values.
-      value = JSON.stringify(value);
-    }
-    localStorage.setItem(this.prefix + name, value);
+      this.settings[name].type == "String"
+        ? String(value)
+        : JSON.stringify(value)
+    );
   }
   get(name: string) {
     // initialize new settings
@@ -100,7 +111,7 @@ class Settings {
           this.upgrade_callbacks[v](this);
       }
       this.version = this.settings_version;
-      localStorage.setItem(`${this.prefix}version`, this.version);
+      localStorage.setItem(`${this.prefix}version`, String(this.version));
     }
   }
   save() {
@@ -335,7 +346,7 @@ const examples_initial_example = "Theatres in 1975";
 // global settings object
 const settings = new Settings(
   configs.settingNamespace || configs.appname,
-  39 // settings version number
+  40 // settings version number
 );
 
 export default settings;
@@ -379,10 +390,14 @@ settings.define_setting("no_autorepair", "Boolean", false, 16);
 settings.define_setting("editor_width", "String", "", 17);
 // UI language
 settings.define_setting("ui_language", "String", "auto", 19);
+// color theme ("auto" follows the OS preference)
+settings.define_setting("theme", "String", "auto", 40);
 // disable poi-o-matic
 settings.define_setting("disable_poiomatic", "boolean", false, 21);
 // show data stats
 settings.define_setting("show_data_stats", "boolean", true, 21);
+// editor preference (osm.org or josm)
+settings.define_setting("editor_preference", "String", "osmdotorg", 1);
 // disable poi-o-matic
 settings.define_setting("disable_warning_huge_data", "boolean", false, 39);
 
@@ -509,7 +524,7 @@ settings.define_upgrade_callback(28, (s) => {
 });
 settings.define_upgrade_callback(29, (s) => {
   // convert templates to wizard-syntax
-  _.each(s.saves, (save, name) => {
+  Object.entries(s.saves).forEach(([name, save]) => {
     if (save.type !== "template") return;
     switch (name) {
       case "key":
@@ -538,7 +553,7 @@ settings.define_upgrade_callback(29, (s) => {
 settings.define_upgrade_callback(30, (s) => {
   // add comments for templates
   const chooseAndRun = "\nChoose your region and hit the Run button above!";
-  _.each(s.saves, (save, name) => {
+  Object.entries(s.saves).forEach(([name, save]) => {
     if (save.type !== "template") return;
     switch (name) {
       case "key":
@@ -576,7 +591,7 @@ settings.define_upgrade_callback(30, (s) => {
 
 settings.define_upgrade_callback(31, (s) => {
   // rewrite examples in OverpassQL
-  _.each(s.saves, (save, name) => {
+  Object.entries(s.saves).forEach(([name, save]) => {
     if (save.type !== "example") return;
     switch (name) {
       case "Theatres in 1975":
