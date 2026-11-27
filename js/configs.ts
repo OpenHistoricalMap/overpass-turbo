@@ -1,3 +1,5 @@
+import type {OSMAuthOptions} from "osm-auth";
+
 export default {
   appname: "overpass-turbo",
   // used for localStorage and openstreetmap.org/api/0.6/user/preferences
@@ -5,6 +7,8 @@ export default {
   defaultServer: "https://overpass-api.openhistoricalmap.org/api/",
   // https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass#Query_examples
   suggestedServers: [],
+  // OSM wiki lists only OSM instances, keep it off for OHM
+  wikiServerList: false,
   vectorTileStyleUrl:
     "https://www.openhistoricalmap.org/map-styles/historical/historical.json",
   vectorTileAttribution:
@@ -38,5 +42,5 @@ export default {
   osmAuth: {
     url: "https://www.openhistoricalmap.org",
     client_id: "CH-v_CNb_YyMPVsyvVTWD648gosdmYnLJkFBhHi95Bk"
-  }
+  } as Partial<OSMAuthOptions>
 };

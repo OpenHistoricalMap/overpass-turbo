@@ -2,9 +2,13 @@
 // https://github.com/maplibre/maplibre-gl-leaflet/issues/44#issuecomment-1919448448
 
 import "leaflet";
+import type * as Leaflet from "leaflet";
 import mapLibre, {Map, MapOptions} from "maplibre-gl";
 
-type LeafletMaplibreGLOptions = Omit<MapOptions, "container">;
+// leaflet plugins extend the global L, not the module namespace
+declare const L: typeof Leaflet;
+
+type LeafletMaplibreGLOptions = Omit<MapOptions, "container"> & {pane?: string};
 
 interface MaplibreGL extends L.Layer {
   getMaplibreMap(): Map;
@@ -104,7 +108,7 @@ const MaplibreLayer = L.Layer.extend({
   getBounds: function () {
     const halfSize = this.getSize().multiplyBy(0.5);
     const center = this._map.latLngToContainerPoint(this._map.getCenter());
-    return latLngBounds(
+    return L.latLngBounds(
       this._map.containerPointToLatLng(center.subtract(halfSize)),
       this._map.containerPointToLatLng(center.add(halfSize))
     );
