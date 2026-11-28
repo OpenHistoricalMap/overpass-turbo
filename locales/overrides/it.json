@@ -1,0 +1,16 @@
+{
+    "load.saved_queries-osm": "Richieste salvate (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Caricamento da openhistoricalmap.org delle richieste salvate...",
+    "load.saved_queries-osm-error": "È avvenuto un errore mentre venivano caricate le richieste salvate da openhistoricalmap.org :(",
+    "export.raw_data": "dati OHM grezzi",
+    "export.format_text_wiki": "<abbr title=\"Da utilizzare nella wiki di OpenStreetMap come modello di esempio per Overpass Turbo\">wiki OHM</abbr>",
+    "export.editors": "carica dati in un editor OHM:",
+    "export.map_view.permalink_osm": "da openhistoricalmap.org",
+    "help.intro.0": "Questo è <i>overpass turbo</i>, uno strumento web-based per l'estrazione di dati <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Utilizzando overpass turbo puoi eseguire query per <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> e analizzare dati OHM su mappa in maniera interattiva.",
+    "help.queries.expl": "Overpass API permette di interrogare i dati di OpenHistoricalMap seguendo i tuoi criteri di ricerca. A tale scopo, è stato sviluppato un particolare <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">linguaggio di ricerca</a>.",
+    "help.attr.data": "Data &copy; contributori <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "help.attr.tiles": "Tasselli della mappa &copy; contributori <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "salva su openhistoricalmap.org",
+    "warning.incomplete.expl.1": "La query non ha restituito alcun node. In OHM, solo i nodi contengono coordinate. Ad esempio, una linea (way) non può essere rappresentata senza i suoi nodi."
+}

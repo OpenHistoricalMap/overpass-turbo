@@ -1,0 +1,16 @@
+{
+    "load.saved_queries-osm": "Opgeslagen zoekopdrachten (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Opgeslagen zoekopdrachten van openhistoricalmap.org worden geladen...",
+    "load.saved_queries-osm-error": "Er is een fout opgetreden tijdens het laden van opgeslagen zoekopdrachten van openhistoricalmap.org",
+    "export.raw_data": "ruwe OHM-gegevens",
+    "export.format_text_wiki": "<abbr title=\"Voor gebruik in de OHM-wiki als een OverpassTurboExample-Template\">ohm-wiki</abbr>",
+    "export.editors": "gegevens in een OHM-tekstverwerker laden:",
+    "export.map_view.permalink_osm": "naar openhistoricalmap.org",
+    "help.intro.0": "Dit is <i>overpass turbo</i>, een web-gebaseerd gegevensfiltergereedschap voor <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Met overpass turbo kan u <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> zoekopdrachten uitvoeren en de daaruit voortkomende OHM-gegevens interactief analyseren op een kaart.",
+    "help.queries.expl": "Met de Overpass API kunt u OHM-gegevens opvragen op basis van uw eigen zoekcriteria. Hiervoor beschikt de API over een speciaal ontwikkelde <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">zoektaal</a>.",
+    "help.attr.data": "Gegevens &copy; bijdragers aan <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "help.attr.tiles": "Kaarttegels &copy; bijdragers aan <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "opslaan op openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Deze zoekopdracht leverde geen resultaten op. In OHM bevatten alleen knooppunten coördinaten. Een route kan bijvoorbeeld niet worden weergegeven zonder de bijbehorende knooppunten."
+}

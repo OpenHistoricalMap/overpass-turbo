@@ -1,0 +1,14 @@
+{
+    "load.saved_queries-osm": "Zapisane kwerendy (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Ładowanie zapisanych kwerend z openhistoricalmap.org...",
+    "export.raw_data": "surowe dane OHM",
+    "export.format_text_wiki": "<abbr title=\"Do używania w wiki OHM jako przykładowy szablon OverpassTurbo\">ohm wiki</abbr>",
+    "export.editors": "załaduj dane do edytora OHM:",
+    "export.map_view.permalink_osm": "do openhistoricalmap.org",
+    "help.intro.0": "To jest <i>overpass turbo</i>, internetowa aplikacja służąca do filtrowania danych <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Poprzez overpass turbo możesz uruchamiać kwerendy <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> i analizować zwrócone dane OHM na interaktywnej mapie.",
+    "help.queries.expl": "Overpass API pozwala wykonywać kwerendy na danych OHM według zadanych kryteriów wyszukiwania. W tym celu posługuje się specjalnie zaprojektowanym <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">językiem kwerend</a>.",
+    "help.attr.data": "Dane: &copy; autorzy <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "zapisz na openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Ta kwerenda nie zwróciła węzłów. W OHM tylko węzły mają współrzędne geograficzne. Przykładowo nie da się wyświetlić linii bez jej węzłów."
+}

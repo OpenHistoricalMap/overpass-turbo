@@ -1,0 +1,15 @@
+{
+    "load.saved_queries-osm": "Konservitaj informpetoj (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Ŝargado de konservitaj informpetoj el openhistoricalmap.org…",
+    "load.saved_queries-osm-error": "Eraro okazis dum ŝargi konservitajn informpetojn el openhistoricalmap.org :(",
+    "export.raw_data": "krudajn OHM-datumojn",
+    "export.format_text_wiki": "<abbr title=\"por uzi en la OSM-vikio kiel ŝablonon OverpassTurboExample\">OHM-vikion</abbr>",
+    "export.editors": "ŝargi datumojn al OHM-redaktilo:",
+    "export.map_view.permalink_osm": "al openhistoricalmap.org",
+    "help.intro.0": "Ĉi tio estas <i>overpass turbo</i>, ret-bazita datum-filtrilo por <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Per overpass turbo vi povas ruli informpetojn je <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">overpass API</a> kaj analizi la rezultajn OHM-datumojn interage sur la mapo.",
+    "help.queries.expl": "Overpass API ebligas informpeti pri OHM-datumoj laŭ viaj propraj serĉaj kriterioj. Por tiu ĉi celo ĝi havas speciale konstruitan <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">informpetan lingvon</a>.",
+    "help.attr.data": "Datumoj &copy; kontribuintoj de <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "konservi en openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Ĉi tiu informpeto liveris neniujn datumojn. En OHM nur nodoj enhavas koordinatoj. Ekzemple linio ne povas esti montrata sen ĝiaj nodoj."
+}

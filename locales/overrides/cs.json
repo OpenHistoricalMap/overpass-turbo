@@ -1,0 +1,16 @@
+{
+    "load.saved_queries-osm": "Uložené databázové dotazy (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Načítání uložených databázových dotazů z openhistoricalmap.org ...",
+    "load.saved_queries-osm-error": "Při načítání uložených databázových dotazů z openhistoricalmap.org došlo k chybě :(",
+    "export.raw_data": "hrubá OHM data",
+    "export.format_text_wiki": "<abbr title=\"Pro použití ve wiki OHM jako šablonu OverpassTurboExample\">ohm wiki</abbr>",
+    "export.editors": "načíst data do OHM editoru:",
+    "export.map_view.permalink_osm": "na openhistoricalmap.org",
+    "help.intro.0": "Toto je <i>overpass turbo</i>, webový nástroj pro filtrování dat pro <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "S overpass turbo můžete spouštět databázové dotazy <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> a interaktivně analyzovat výsledná data OHM na mapě.",
+    "help.queries.expl": "Overpass API umožňuje vyhledávat data OHM podle vašich vlastních vyhledávacích kritérií. Za tímto účelem má specificky vytvořený <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">jazyk databázového dotazu</a>.",
+    "help.attr.data": "Přispěvatelé dat &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "help.attr.tiles": "Poskytovatelé mapových dlaždic &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "uložit na openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Tento databázový dotaz nevrátil žádné uzly. V OHM obsahují souřadnice pouze uzly. Například cestu nelze zobrazit bez jejích uzlů."
+}

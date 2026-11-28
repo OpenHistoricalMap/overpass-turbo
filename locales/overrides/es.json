@@ -1,0 +1,15 @@
+{
+    "load.saved_queries-osm": "Consultas guardadas (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Cargando consultas guardadas desde openhistoricalmap.org...",
+    "load.saved_queries-osm-error": "Se produjo un error al cargar consultas guardadas desde openhistoricalmap.org :(",
+    "export.raw_data": "datos OHM sin procesar",
+    "export.format_text_wiki": "<abbr title=\"For usage in the OHM wiki as a OverpassTurboExample-Template\">wiki ohm</abbr>",
+    "export.editors": "carga los datos en un editor OHM:",
+    "export.map_view.permalink_osm": "a openhistoricalmap.org",
+    "help.intro.0": "Este es <i>overpass turbo</i>, una herramienta de filtrado de datos basado en la web para <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Con overpass turbo puede ejecutar consultas <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> y analizar los datos resultantes de OHM de forma interactiva en un mapa.",
+    "help.queries.expl": "Overpass API permite consultar los datos OHM con sus propios criterios de búsqueda. Para este propósito, tiene específicamente un <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">lenguaje de consulta</a> diseñado.",
+    "help.attr.data": "Datos &copy; contribuidores <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "guardar en openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Esta consulta no devolvió ningún nodo. En OHM, sólo los nodos contienen coordenadas. Por ejemplo, una vía no se puede visualizar sin sus nodos."
+}

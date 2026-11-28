@@ -1,0 +1,12 @@
+{
+    "load.saved_queries-osm": "Consultes guardaes (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Cargando consultes guardaes d'openhistoricalmap.org...",
+    "export.raw_data": "datos OHM en bruto",
+    "export.format_text_wiki": "<abbr title=\"For usage in the OHM wiki as a OverpassTurboExample-Template\">wiki ohm</abbr>",
+    "export.editors": "cargar los datos nun editor d'OHM:",
+    "export.map_view.permalink_osm": "a openhistoricalmap.org",
+    "help.intro.0": "Esto ye <i>overpass turbo</i>, una ferramienta de filtriáu de datos basada na web pa<a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Con overpass turbo puedes executar consultes <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> y analizar los datos d'OHM resultantes de forma interactiva nun mapa.",
+    "help.queries.expl": "Overpass API te permite consultar datos d'OHM colos tos propios criterios de gueta. Pa esti propósitu, tien un <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">llinguaxe de consultes</a> diseñáu específicamente.",
+    "dialog.save-osm": "guardar en openhistoricalmap.org"
+}

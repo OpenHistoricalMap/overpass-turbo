@@ -1,0 +1,15 @@
+{
+    "load.saved_queries-osm": "Consultas Gravadas (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "A carregar consultas gravadas de openhistoricalmap.org...",
+    "export.raw_data": "dados OHM em bruto",
+    "export.format_text_wiki": "<abbr title=\"Para utilização na wiki do OHM como modelo OverpassTurboExample\">wiki ohm</abbr>",
+    "export.editors": "carregar dados num editor OHM:",
+    "export.map_view.permalink_osm": "para o openhistoricalmap.org",
+    "help.intro.0": "Isto é o <i>overpass turbo</i>, uma ferramenta de filtrar baseada na Internet para o <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Com o overpass turbo pode executar consultas <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> e analisar os dados OHM resultantes de forma interativa num mapa.",
+    "help.queries.expl": "A Overpass API permite consultar dados do OHM pelos seus critérios de pesquisa. Para este fim, tem uma <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">linguagem de consultas</a> criada de propósito.",
+    "help.attr.data": "Dados &copy; contribuidores do <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "help.attr.tiles": "Mosaicos do mapa &copy; contribuidores do <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "Gravar em openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Esta consulta não obteve nós. No OHM apenas os nós têm coordenadas. Por exemplo, uma via não pode ser mostrada sem os seus nós."
+}

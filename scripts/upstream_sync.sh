@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# Ignore upstream translations
-for t in ./locales/*.json; do
-  echo "$t"
-  git checkout HEAD "$t"
-done
-# git commit -m "Ignore upstream translations" ./locales/*.json
+# Take upstream translations as they are (Transifex). OHM strings live in
+# locales/overrides/ (translatewiki.net), which upstream never touches.
+git checkout upstream/master -- locales/
+git add locales/
 
 concerns=('js/configs.ts', 'js/ide.js' 'js/map.ts')
 for i in $(git diff --name-only --diff-filter=U --relative); do

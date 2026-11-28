@@ -1,0 +1,15 @@
+{
+    "load.saved_queries-osm": "پرس‌وجوهای ذخیره‌شده (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "در حال بارکردن پرس‌وجوهای ذخیره‌شده از openhistoricalmap.org...",
+    "load.saved_queries-osm-error": "هنگام بارکردن پرس‌وجوهای ذخیره‌شده از openhistoricalmap.org خطایی رخ داد :(",
+    "export.raw_data": "دادهٔ خام OHM",
+    "export.format_text_wiki": "<abbr title=\"For usage in the OHM wiki as a OverpassTurboExample-Template\">ویکی ohm</abbr>",
+    "export.editors": "بارکردن داده‌ها در یک ویرایشگر OHM:",
+    "export.map_view.permalink_osm": "به openhistoricalmap.org",
+    "help.intro.0": "این <i>overpass turbo</i> است؛ ابزاری تحت‌وب برای پالایش داده‌های <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "با overpass turbo می‌توانید پرس‌وجوهای <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> را اجرا کنید و سپس داده‌های به‌دست‌آمده از OHM را به‌شکل تعاملی روی نقشه تحلیل کنید.",
+    "help.queries.expl": "با استفاده از Overpass API می‌توانید داده‌های OHM را با استفاده از معیارهای جست‌وجوی خودتان بجویید. برای این منظور، <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">زبان پرس‌وجوی</a> ویژه‌ای ساخته شده است.",
+    "help.attr.data": "داده‌ها &copy; مشارکت‌کنندگان‏ <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "ذخیره در openhistoricalmap.org",
+    "warning.incomplete.expl.1": "این پرس‌وجو هیچ گِرهی برنگرداند. در OHM، فقط گره‌ها هستند که مختصات دارند. برای مثال، یک راه بدون گره‌هایش قابل‌نمایش نیست."
+}

@@ -1,0 +1,15 @@
+{
+    "load.saved_queries-osm": "Salvar Consultas (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Carregando consultas salvas do openhistoricalmap.org ...",
+    "load.saved_queries-osm-error": "Ocorreu um erro ao carregar as consultas salvas de openhistoricalmap.org :(",
+    "export.raw_data": "dados OHM brutos",
+    "export.editors": "carregar dados em um editor do OHM:",
+    "export.map_view.permalink_osm": "para openhistoricalmap.org",
+    "help.intro.0": "Este é o <i>overpass turbo</i>, uma ferramenta web para filtrar dados do <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Com o overpass turbo é possível executar consultas <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> e analisar os resultados de maneira interativamente no mapa.",
+    "help.queries.expl": "Overpass API permite consultar dados OHM por seus próprios critérios de pesquisa. Para isso, possui uma estrutura e <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">linguagem de consulta</a> específica.",
+    "help.attr.data": "Dados e cópia;<a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a> contribuidores",
+    "help.attr.tiles": "Blocos de mapa &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a> contribuidores",
+    "dialog.save-osm": "salvar em openhistoricalmap.org",
+    "warning.incomplete.expl.1": "A consulta não retornou nenhum ponto. No OHM, somente pontos possuem coordenadas. Por exemplo, uma linha não pode ser exibida sem os seus pontos."
+}

@@ -1,0 +1,16 @@
+{
+    "load.saved_queries-osm": "Các Truy vấn đã Lưu (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Đang tải các truy vấn đã lưu từ openhistoricalmap.org…",
+    "load.saved_queries-osm-error": "Đã xuất hiện lỗi tải các truy vấn đã lưu từ openhistoricalmap.org :(",
+    "export.raw_data": "dữ liệu OHM thô",
+    "export.format_text_wiki": "<abbr title=\"Để sử dụng trong Wiki OHM như một lần gọi bản mẫu OverpassTurboExample\">Wiki OHM</abbr>",
+    "export.editors": "tải dữ liệu vào trình vẽ OHM:",
+    "export.map_view.permalink_osm": "đi đến openhistoricalmap.org",
+    "help.intro.0": "Đây là <i>overpass turbo</i>, công cụ trực tuyến để lọc dữ liệu <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Với overpass turbo, bạn có thể thực thi các truy vấn <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> và phân tích dữ liệu kết quả OHM bằng cách tương tác với bản đồ.",
+    "help.queries.expl": "Overpass API cho phép tìm kiếm dữ liệu OHM theo các điều khiển với một <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL?uselang=vi\">cú pháp truy vấn</a> đặc biệt.",
+    "help.attr.data": "Dữ liệu &copy; những người đóng góp vào <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "help.attr.tiles": "Mảnh bản đồ &copy; những người đóng góp vào <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "lưu vào openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Truy vấn này không cho ra nốt nào. Trong OHM, chỉ có nốt có tọa độ, cho nên nếu không có các nốt của một lối chẳng hạn, lối đó không thể được hiển thị."
+}

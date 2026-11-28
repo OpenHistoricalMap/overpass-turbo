@@ -1,0 +1,16 @@
+{
+    "load.saved_queries-osm": "Sparade sökfrågor (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Laddar in sparade sökfrågor från openhistoricalmap.org...",
+    "load.saved_queries-osm-error": "Ett fel uppstod när den sparade sökfrågan skulle laddas in från openhistoricalmap.org :(",
+    "export.raw_data": "rå OHM-data",
+    "export.format_text_wiki": "<abbr title=\"För användning i OHM-wikin som en OverpassTurboExample-Template\">ohm-wikin</abbr>",
+    "export.editors": "ladda in data i en OHM-redigerare:",
+    "export.map_view.permalink_osm": "till openhistoricalmap.org",
+    "help.intro.0": "Detta är <i>overpass turbo</i>, ett webbaserat verktyg för att filtrera data för <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Med overpass turbo kan du köra <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass-API</a>-sökfrågor och analysera det resulterande OHM-data interaktivt på en karta.",
+    "help.queries.expl": "Med Overpass API kan man skriva sökfrågor för OHM-data efter eget sökkriterium. På grund av detta har det ett eget <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">sökfrågespråk</a>.",
+    "help.attr.data": "Data &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>-bidragsgivare",
+    "help.attr.tiles": "Kartrutor &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a> bidragsgivare",
+    "dialog.save-osm": "spara på openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Den här sökfrågan innehåller inga noder. I OHM innehåller endast noder koordinater. Till exempel kan en väg inte visas utan dess noder."
+}

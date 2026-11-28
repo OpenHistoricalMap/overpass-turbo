@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Aindriu80"
+        ]
+    },
+    "load.saved_queries-osm": "Ceisteanna Sábháilte (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Ag lódáil ceisteanna sábháilte ó openhistoricalmap.org...",
+    "load.saved_queries-osm-error": "Tharla earráid agus fiosrúcháin shábháilte á lódáil ó openhistoricalmap.org :(",
+    "export.raw_data": "sonraí amh OHM",
+    "export.format_text_wiki": "<abbr title=\"Le húsáid i vicí OHM mar OverpassTurboExample-Teimpléad\">vicí ohm</abbr>",
+    "export.editors": "luchtú sonraí isteach in eagarthóir OHM:",
+    "export.map_view.permalink_osm": "chuig openhistoricalmap.org",
+    "help.intro.0": "Seo <i>overpass turbo</i>, uirlis scagtha sonraí gréasánbhunaithe do <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Le turbo thar-pháis is féidir leat fiosrúcháin <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> a rith agus na sonraí OHM a eascraíonn a anailísiú go hidirghníomhach ar léarscáil.",
+    "help.queries.expl": "Le Overpass API is féidir leat fiosrúcháin a dhéanamh ar shonraí OHM de réir do chritéir chuardaigh féin. Chun na críche seo, tá <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">teanga fiosrúcháin</a> aige atá ceaptha go sonrach.",
+    "help.attr.data": "Rannpháirtithe sonraí &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "help.attr.tiles": "Tíleanna léarscáile &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a> rannpháirtithe",
+    "dialog.save-osm": "sábháil ar openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Níor thug an fiosrúchán seo aon nóid ar ais. In OHM, níl comhordanáidí ach sna nóid. Mar shampla, ní féidir bealach a thaispeáint gan a nóid."
+}

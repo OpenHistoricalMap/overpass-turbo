@@ -1,0 +1,9 @@
+{
+    "load.saved_queries-osm": "Ymholiadau wedi'i Cadw (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Wrthi'n llwytho ymholiadau wedi'i cadw o openhistoricalmap.org...",
+    "export.raw_data": "data crai OHM",
+    "export.editors": "llwytho data mewn golygydd OHM",
+    "export.map_view.permalink_osm": "i openhistoricalmap.org",
+    "help.attr.tiles": "Teiliau map &copy; Cyfranwyr<a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "cadw ar openhistoricalmap.org"
+}

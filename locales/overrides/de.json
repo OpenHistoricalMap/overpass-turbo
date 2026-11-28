@@ -1,0 +1,16 @@
+{
+    "load.saved_queries-osm": "Meine Abfragen (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Lade gespeicherte Abfragen von openhistoricalmap.org...",
+    "load.saved_queries-osm-error": "Während des Ladens der gespeicherten Daten von openhistoricalmap.org ist ein Fehler aufgetreten :(",
+    "export.raw_data": "OHM Rohdaten",
+    "export.format_text_wiki": "<abbr title=\"Für die Verwendung im OHM Wiki als OverpassTurboExample-Template\">OHM Wiki</abbr>",
+    "export.editors": "In einen OHM-Editor laden:",
+    "export.map_view.permalink_osm": "nach openhistoricalmap.org",
+    "help.intro.0": "<i>overpass turbo</i> ist ein online Daten-Filterungs-Werkzeug für <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Mit overpass turbo kannst du <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass-API</a>-Abfragen ausführen und die gewonnenen OHM Daten interaktiv auf einer Karte analysieren.",
+    "help.queries.expl": "Die Overpass API erlaubt es OHM-Daten nach selbst definierten Kriterien zu durchsuchen. Dies ermöglicht eine eigens dafür geschaffene <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">Abfragesprache</a>.",
+    "help.attr.data": "Daten &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>-Mitwirkende",
+    "help.attr.tiles": "Karten-Kacheln &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>-Mitwirkende",
+    "dialog.save-osm": "Auf openhistoricalmap.org speichern",
+    "warning.incomplete.expl.1": "Diese Abfrage hat keine Punkte zurückgeliefert. In OHM werden Koordinaten nur in den Punkten gespeichert. Das heißt, dass ein Weg ohne seine Punkte auf der Karte nicht angezeigt werden kann."
+}

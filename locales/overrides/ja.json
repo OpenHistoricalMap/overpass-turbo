@@ -1,0 +1,14 @@
+{
+    "load.saved_queries-osm": "保存済みクエリ (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "openhistoricalmap.orgに保存したクエリを読み込み中...",
+    "load.saved_queries-osm-error": "openhistoricalmap.orgに保存したクエリの読み込みに失敗しました :(",
+    "export.raw_data": "OHM生データ",
+    "export.format_text_wiki": "<abbr title=\"For usage in the OSM wiki as a OverpassTurboExample-Template\">OHMwiki</abbr>",
+    "export.editors": "OHMエディタでデータ読み込み",
+    "export.map_view.permalink_osm": "openhistoricalmap.orgで表示",
+    "help.intro.0": "この <i>overpass turbo</i>は <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>のデータをフィルタリングするウェブベースのツールです。",
+    "help.intro.1": "overpass turboでは <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> クエリを使用し、抽出結果のOHMデータを地図上に表示させながら分析することが可能です。",
+    "help.queries.expl": "Overpass APIでは検索式によってOHMデータをクエリできます。そのために特別に作られた<a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">クエリ言語</a>があります。",
+    "dialog.save-osm": "openhistoricalmap.orgに保存",
+    "warning.incomplete.expl.1": "クエリ結果がありません。OHMで位置座標情報を持っているのはノードだけです。例えば、ウェイを表示するにはそのウェイを形成しているノードが必要となります。"
+}

@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "B3rnas",
+            "Mansil alfalb",
+            "Selva"
+        ]
+    },
+    "load.saved_queries-osm": "Consultas salvas (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Carregando as consultas guardadas desde openhistoricalmap.org...",
+    "load.saved_queries-osm-error": "Ocorreu um erro ao carregar consultas salvas do openhistoricalmap.org :(",
+    "export.raw_data": "dados em bruto de OHM",
+    "export.format_text_wiki": "<abbr title=\"Para uso no wiki OHM como um OverpassTurboExample-Template\">ohm wiki</abbr>",
+    "export.editors": "carregar dados em um editor OHM:",
+    "export.map_view.permalink_osm": "para openhistoricalmap.org",
+    "help.queries.expl": "A API Overpass permite consultar dados OHM por seus próprios critérios de pesquisa. Para esse propósito, ela tem uma <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">linguagem de consulta</a> especificamente criada.",
+    "warning.incomplete.expl.1": "Esta consulta não retornou nenhum nó. Em OHM, apenas nós contêm coordenadas. Por exemplo, uma via não pode ser exibida sem seus nós."
+}

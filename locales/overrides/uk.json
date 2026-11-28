@@ -1,0 +1,15 @@
+{
+    "load.saved_queries-osm": "Збережені запити  (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Завантаження збережених запитів з openhistoricalmap.org…",
+    "load.saved_queries-osm-error": "Під час завантаження збережених запитів з openhistoricalmap.org виникла помилка :(",
+    "export.raw_data": "сирцеві дані OHM",
+    "export.format_text_wiki": "<abbr title=\"For usage in the OHM wiki as a OverpassTurboExample-Template\">вікі ohm</abbr>",
+    "export.editors": "завантажити дані в OHM-редактор:",
+    "export.map_view.permalink_osm": "на openhistoricalmap.org",
+    "help.intro.0": "Це <i>overpass turbo</i> — вебінструмент отримання даних <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a> за потрібними критеріями.",
+    "help.intro.1": "З overpass turbo Ви можете надсилати запити до <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> та аналізувати дані OHM, отримані у відповідь, на мапі.",
+    "help.queries.expl": "Overpass API дозволяє отримувати дані OHM відповідно до ваших власних потреб.  Для цих цілей існує спеціальна <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">мова запитів</a>.",
+    "help.attr.data": " Дані &copy; учасники <a href=\"https://openhistoricalmap.org/\">OpenHhelp.attr.tilesistoricalMap</a>",
+    "dialog.save-osm": "зберегти на openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Відповідь на цей запит не містить точок.  У OHM лише точки містять координати.  Наприклад, без інформації про точки лінію не можна показати на мапі."
+}

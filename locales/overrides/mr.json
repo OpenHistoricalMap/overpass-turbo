@@ -1,0 +1,11 @@
+{
+    "load.saved_queries-osm": "साठवलेले प्रश्न (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "openhistoricalmap.org वरून साठवलेले प्रश्न उतरवत आहे...",
+    "load.saved_queries-osm-error": "openhistoricalmap.org वरून साठवलेले प्रश्न उतरवताना त्रुटी आढळली :(",
+    "export.raw_data": "कच्चा OHM डेटा",
+    "export.editors": "OHM संपादकात डेटा लोड करा:",
+    "export.map_view.permalink_osm": "openhistoricalmap.org कडे",
+    "help.intro.0": "<i>overpass turbo</i> (ओव्हरपास टर्बो) हे <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>साठीचे इंटरनेटवर आधारित एक चाळणी करणारे साधन आहे.",
+    "help.intro.1": "Overpass turbo च्या आधारे आपण <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> क्वेरी (विचारणा) करू शकता व परिणामी OHM डेटाचे नकाशावर परस्पर विश्लेषण करू शकता.",
+    "help.queries.expl": "Overpass API द्वारे स्वतःचे शोध निकष वापरुन आपण OHM डेटाची विचारणा करू शकता. ह्या कामासाठी एका विशिष्ट <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">query language</a>, म्हणजे विचारणा भाषेचा निर्माण करण्यात आला आहे."
+}

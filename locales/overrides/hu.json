@@ -1,0 +1,14 @@
+{
+    "load.saved_queries-osm": "Mentett lekérdezések (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Mentett lekérdezések betöltése openhistoricalmap.org-ról…",
+    "load.saved_queries-osm-error": "Hiba történt az openhistoricalmap.org-ra mentett lekérdezések betöltése közben :(",
+    "export.raw_data": "nyers OHM adatok",
+    "export.editors": "adatok betöltése egy OHM szerkesztőbe:",
+    "export.map_view.permalink_osm": "openhistoricalmap.org-ra",
+    "help.intro.0": "Ez az <i>overpass turbo</i>, egy webes adatszűrő eszköz az <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a> térképhez.",
+    "help.intro.1": "Overpass turbóval futtathat <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> lekérdezéseket és interaktív térképen elemezheti a kapott OHM adatokat.",
+    "help.queries.expl": "Az Overpass API lehetővé teszi OHM adatok lekérdezését az ön keresési feltételei szerint. Erre a célra egy speciális <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">lekérdezőnyelvet</a> használ.",
+    "help.attr.data": "Adatok &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a> közreműködők",
+    "dialog.save-osm": "mentés openhistoricalmap.org-ra",
+    "warning.incomplete.expl.1": "A lekérdezés nem adott vissza pontokat. Az OHM-ben csak a pontoknak van koordinátája. Egy vonal például nem jeleníthető meg a pontjai nélkül."
+}

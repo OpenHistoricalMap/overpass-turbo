@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+        "authors": [
+            "Saraiki",
+            "Tauqeerkhansurani"
+        ]
+    },
+    "load.saved_queries-osm": "محفوظ کوئریاں (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "openhistoricalmap.org توں محفوظ کوئریاں لوڈ تھیندیاں پئیاں ہن…",
+    "load.saved_queries-osm-error": "openhistoricalmap.org توں محفوظ کوئریاں لوڈ کریندے ویلے ہک مسئلہ پیش آیا :(",
+    "export.raw_data": "کچّا OHM ڈیٹا",
+    "export.format_text_wiki": "<abbr title=\"For usage in the OHM wiki as a OverpassTurboExample-Template\">ohm ویکی</abbr>",
+    "export.editors": "ڈیٹا کوں OHM ایڈیٹر وچ لوڈ کرو:",
+    "export.map_view.permalink_osm": "openhistoricalmap.org تے",
+    "help.intro.0": "ایہ <i>overpass turbo</i> ہے، <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a> کیتے ہک ویب-بنیاد ڈیٹا فلٹرنگ ٹول۔",
+    "help.intro.1": "overpass turbo نال تساں <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> کوئریاں چلا سڳدے او تے نقشے تے نکلݨ آلا OHM ڈیٹا انٹرایکٹیو طور تے تجزیہ کر سڳدے او۔",
+    "help.queries.expl": "Overpass API تہاکوں آپݨے ڳولݨ دے معیاراں مطابق OHM ڈیٹا کیتے کوئری کرݨ دی اجازت ݙیندا ہے۔ ایں مقصد کیتے ایہدی ہک خصوصی طور تے بݨائی ڳئی <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">کوئری زبان</a> ہے۔",
+    "help.attr.data": "ڈیٹا &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a> دے شراکت دار",
+    "help.attr.tiles": "نقشے دیاں ٹائلاں &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a> دے شراکت دار",
+    "dialog.save-osm": "openhistoricalmap.org تے محفوظ کرو",
+    "warning.incomplete.expl.1": "ایں کوئری نے کوئی نوڈ نئیں لوٹایا۔ OHM وچ، صرف نوڈز وچ کوآرڈینیٹس ہوندے ہن۔ مثال دے طور تے، ہک way کوں آپݨے نوڈز دے بغیر ݙکھایا نئیں جا سڳدا۔"
+}

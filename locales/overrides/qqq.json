@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "McDutchie"
+        ]
+    },
+    "load.saved_queries-osm": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "load.saved_queries-osm-loading": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "load.saved_queries-osm-error": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "export.raw_data": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "export.format_text_wiki": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "export.editors": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "export.map_view.permalink_osm": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "help.intro.0": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "help.intro.1": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "help.queries.expl": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "help.attr.data": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "help.attr.tiles": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "dialog.save-osm": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM).",
+    "warning.incomplete.expl.1": "OHM-specific version of the upstream overpass turbo string. Keep references to OpenHistoricalMap (OHM)."
+}

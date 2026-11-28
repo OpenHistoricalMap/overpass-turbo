@@ -1,0 +1,16 @@
+{
+    "load.saved_queries-osm": "已保存的查询（OHM官网）",
+    "load.saved_queries-osm-loading": "从OSM官网载入已保存的查询",
+    "load.saved_queries-osm-error": "从OSM官网载入已保存的查询时发生错误",
+    "export.raw_data": "原始OHM数据",
+    "export.format_text_wiki": "<abbr title=\"For usage in the OHM wiki as a OverpassTurboExample-Template\">OHMWiki</abbr>",
+    "export.editors": "在OHM编辑器中加载数据",
+    "export.map_view.permalink_osm": "转到OHM官网",
+    "help.intro.0": "这是<i>Overpass Turbo</i>，一个网页端<a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>数据筛选工具。",
+    "help.intro.1": "通过Overpass Turbo你可以进行<a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> 查询并在地图上交互式的分析OHM数据的结果。",
+    "help.queries.expl": "Overpass API允许你通过自定义条件查询OHM数据，并为此设计了 <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">Overpass查询语言</a>。",
+    "help.attr.data": "数据与版权；<a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>贡献者",
+    "help.attr.tiles": "地图瓦片&copy;<a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>贡献者",
+    "dialog.save-osm": "保存（OHM官网）",
+    "warning.incomplete.expl.1": "这次查询未返回任何点。在OHM，只有点才包含坐标信息。举个例子，您无法在没有点的情况下显示一条路径。"
+}

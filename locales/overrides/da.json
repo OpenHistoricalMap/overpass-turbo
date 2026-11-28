@@ -1,0 +1,12 @@
+{
+    "load.saved_queries-osm": "Gemte søgninger (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Indlæser gemte søgninger fra openhistoricalmap.org...",
+    "export.raw_data": "rå OHM data",
+    "export.editors": "Indlæs geodata i en OHM editor:",
+    "export.map_view.permalink_osm": "til openhistoricalmap.org",
+    "help.intro.0": "Dette er  <i>overpass turbo</i>, et webbaseret datafilteringsværktøj for  <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Med  <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a>  kan du lave Overpass API søgninger og analysere OHM geodata på et interaktivt kort.",
+    "help.queries.expl": "Overpass API gør det muligt at søge efter OHM data med dine egne søgekriterier. Til dette formål, har det et specielt udformet <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">søge sprog</a>.",
+    "help.attr.data": "Geodata &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a> bidragsydere",
+    "dialog.save-osm": "gem på openhistoricalmap.org"
+}

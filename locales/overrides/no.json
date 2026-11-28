@@ -1,0 +1,8 @@
+{
+    "export.editors": "hent data i en OHM editor:",
+    "export.map_view.permalink_osm": "til openhistoricalmap.org",
+    "help.intro.0": "Dette er <i>Overpass Turbo</i>, et web-basert verktøy for å filtrere data fra <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Med Overpass Turbo kan du utføre <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> søk og analysere de resulterende <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a> dataene interaktivt i et kart.",
+    "help.attr.data": "Kartdata &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>-bidragsytere",
+    "warning.incomplete.expl.1": "Dette søker returnerte ingen noder. I OHM kan bare noder inneholde koordinater, og en strekning kan derfor ikke vises uten tilhørende noder."
+}

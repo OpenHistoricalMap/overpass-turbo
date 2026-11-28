@@ -1,0 +1,13 @@
+{
+    "load.saved_queries-osm": "Αποθηκευμένα ερωτήματα (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Φόρτωση αποθηκευμένων ερωτημάτων από openhistoricalmap.org...",
+    "export.raw_data": "ακατέργαστα δεδομένα OHM",
+    "export.editors": "φόρτωση δεδομένων σε έναν διορθωτή OHM:",
+    "export.map_view.permalink_osm": "σε openhistoricalmap.org",
+    "help.intro.0": "Αυτό είναι το <i>overpass turbo</i>, ένα εργαλείο βασιζόμενο στον ιστό, που φιλτράρει δεδομένα από το <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Με το overpass turbo μπορείτε να εκτελέσετε ερωτήματα <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> και να αναλύσετε διαδραστικά πάνω στον χάρτη, τα δεδομένα του OHM που θα προκύψουν.",
+    "help.queries.expl": "Το Overpass API επιτρέπει να γίνονται ερωτήματα στα δεδομένα OHM με τα δικά σας κριτήρια αναζήτησης. Ειδικά για αυτό τον σκοπό έχει κατασκευαστεί η <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">γλώσσα ερωτημάτων</a>.",
+    "help.attr.data": "Δεδομένα &copy; συνεισφέροντες του <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "αποθήκευση στο openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Αυτό το ερώτημα δεν επέστρεψε κόμβους. Στο OHM μόνο οι κόμβοι περιέχουν συντεταγμένες. Για παράδειγμα, ένας δρόμος δεν μπορεί να προβληθεί χωρίς τους κόμβους του."
+}

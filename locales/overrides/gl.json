@@ -1,0 +1,14 @@
+{
+    "load.saved_queries-osm": "Consultas gardadas (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Estasen a cargar as consultas gardadas dende o openhistoricalmap.org...",
+    "export.raw_data": "datos do OHM sen procesar",
+    "export.format_text_wiki": "<abbr title=\"For usage in the OHM wiki as a OverpassTurboExample-Template\">wiki do ohm</abbr>",
+    "export.editors": "carga os datos nun editor do OHM:",
+    "export.map_view.permalink_osm": "ó openhistoricalmap.org",
+    "help.intro.0": "Este é o <i>overpass turbo</i>, unha ferramenta de filtraxe de datos baseado na web para o <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Co overpass turbo podes executar consultas do <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> e analizar os datos resultantes do OHM de xeito interactivo nun mapa.",
+    "help.queries.expl": "O Overpass API permite consultar os datos do OHM cos teus propios criterios de procura. Para este obxectivo, tes deseñada de xeito específico unha <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">linguaxe de consulta</a>.",
+    "help.attr.data": "Datos &copy; contribuíntes do <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "gardar no openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Esta consulta non devolveu ningún nó. No OHM, só os nós conteñen coordenadas. Por exemplo, unha vía non se pode amosar sen os seus nós."
+}

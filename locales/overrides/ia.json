@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "McDutchie"
+        ]
+    },
+    "load.saved_queries-osm": "Consultas salveguardate (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Cargamento de consultas salveguardate desde openhistoricalmap.org…",
+    "load.saved_queries-osm-error": "Un error ha occurrite durante le cargamento de consultas salveguardate desde openhistoricalmap.org :(",
+    "export.raw_data": "datos OHM crude"
+}

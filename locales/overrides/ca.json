@@ -1,0 +1,15 @@
+{
+    "load.saved_queries-osm": "Consultes Guardades (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Carregant les consultes guardades des de openhistoricalmap.org...",
+    "load.saved_queries-osm-error": "S'ha produït un error en carregar les consultes desades a openhistoricalmap.org :(",
+    "export.raw_data": "dades en brut d'OHM",
+    "export.editors": "carrega les dades en un editor OHM:",
+    "export.map_view.permalink_osm": "a openhistoricalmap.org",
+    "help.intro.0": "Això és l'<i>overpass turbo</i>, una eina web per a filtrar dades de l'<a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Amb l'overpass turbo podeu executar consultes <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> i analitzar les dades OHM resultants interactivament en un mapa.",
+    "help.queries.expl": "L'API Overpass us permet consultar dades de l'OHM amb els vostres criteris. Per a aquest motiu, s'ha creat específicament un <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">llenguatge de consulta</a>.",
+    "help.attr.data": "Dades &copy; col·laboradors de l'<a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "help.attr.tiles": "Tessel·les del mapa &copy; Contribuïdors d'<a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "desa a openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Aquesta consulta no ha retornat cap node. En l'OHM, només els nodes contenen coordenades. Per exemple, una via no es pot mostrar sense els seus nodes."
+}

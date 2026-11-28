@@ -1,0 +1,15 @@
+{
+    "load.saved_queries-osm": "已儲存的檢索 (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "從 openhistoricalmap.org 載入已儲存的檢索...",
+    "load.saved_queries-osm-error": "從 openhistoricalmap.org 載入已儲存的檢索時發生錯誤 :(",
+    "export.raw_data": "原始 OHM 資料",
+    "export.editors": "載入資料到OHM編輯器",
+    "export.map_view.permalink_osm": "連到openhistoricalmap.org",
+    "help.intro.0": "這是適用<a href=\"https://www.openhistoricalmap.org\">開放街圖</a>，基於網路的資料篩選工具 <i>overpass turbo</i>。",
+    "help.intro.1": "當你使用overpass turbo執行<a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a>，就能夠用互動地圖顯示的方式，檢索和分析OHM資料。",
+    "help.queries.expl": "Overpass API允許你用自訂的條件檢索OHM圖資。為了這個目的，特定設計了<a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">檢索語言</a>。",
+    "help.attr.data": "資料和版權；<a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a> 貢獻者",
+    "help.attr.tiles": "地圖圖磚 &copy;<a href=\"https://openhistoricalmap.org/\">開放街圖</a>貢獻者",
+    "dialog.save-osm": "儲存到 openhistoricalmap.org",
+    "warning.incomplete.expl.1": "這次檢索並未回傳節點。在OHM，只有節點才有座標資訊。舉例來說，你無法在沒有節點的情況下顯示路徑。"
+}

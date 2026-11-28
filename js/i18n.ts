@@ -2,10 +2,17 @@
 import $ from "jquery";
 
 import en from "../locales/en.json";
+import en_overrides from "../locales/overrides/en.json";
 import settings from "./settings";
 
+/**
+ * OHM-specific strings. locales/*.json stay identical to upstream (Transifex);
+ * locales/overrides/*.json hold only the strings OHM changes (translatewiki.net).
+ */
+const en_ohm: Record<string, string> = en_overrides;
+
 /** the source language, used for keys a translation does not (yet) cover */
-const en_td: Record<string, string> = en;
+const en_td: Record<string, string> = {...en, ...en_ohm};
 
 function browser_locale(): string {
   /* taken from https://github.com/maxogden/browser-locale by Max Ogden, BSD licensed */
@@ -132,12 +139,20 @@ export default class i18n {
       console.log(`failed to load language file ${lng}`, e);
       return;
     }
+    // OHM overrides for this language (optional file)
+    let overrides: Record<string, string> = {};
+    try {
+      overrides = (await import(`../locales/overrides/${lng}.json`)).default;
+    } catch {}
     // replace, don't merge: strings of a previously loaded language must
-    // not survive as a stand-in for keys the new one does not cover
-    this.td = data.default;
+    // not survive as a stand-in for keys the new one does not cover.
+    // OHM English goes over the upstream translation, so an untranslated
+    // override shows the OHM text instead of the upstream (OSM) one.
+    const {"@metadata": _meta, ...ohm} = overrides;
+    this.td = {...data.default, ...en_ohm, ...ohm};
     this.translate_ui();
     // todo: nicer implementation
-    return data.default;
+    return this.td;
   }
   static translate_ui(element?: string | HTMLElement) {
     // if a DOM object is provided, only translate that one, otherwise

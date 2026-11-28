@@ -1,0 +1,16 @@
+{
+    "load.saved_queries-osm": "Requêtes enregistrées (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Chargement des requêtes sauvegardées depuis openhistoricalmap.org ...",
+    "load.saved_queries-osm-error": "Une erreur est survenue lors du chargement des requêtes sauvegardées sur openhistoricalmap.org :(",
+    "export.raw_data": "données brutes de OHM",
+    "export.format_text_wiki": "<abbr title=\"For usage in the OHM wiki as a OverpassTurboExample-Template\">wiki d'ohm </abbr>",
+    "export.editors": "charger les données dans un éditeur externe OHM :",
+    "export.map_view.permalink_osm": "sur openhistoricalmap.org",
+    "help.intro.0": "Ceci est <i>overpass turbo</i>, un outil web de filtrage de données pour <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMap</a>.",
+    "help.intro.1": "Avec overpass turbo vous pouvez exécuter des requêtes de l'<a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">API Overpass</a> et analyser les données OHM interactivement sur une carte",
+    "help.queries.expl": "L'API Overpass permet de faire des requêtes sur les données OHM selon vos propres critères de recherche. Pour cela, il existe un <a href=\"https://wiki.openstreetmap.org/wiki/FR:Overpass_API/Overpass_QL\">langage de requête </a> spécifique.",
+    "help.attr.data": "Données &copy; contributeurs <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "help.attr.tiles": "Carte &copy; les contributeurs d'<a href=\"https://openhistoricalmap.org/\">OpenHistoricalMap</a>",
+    "dialog.save-osm": "enregistrer sur openhistoricalmap.org",
+    "warning.incomplete.expl.1": "Cette requête n'a retourné aucun nœud. Dans OHM, seuls les nœuds contiennent des coordonnées. Par exemple, un chemin ne peut pas être affiché sans ses nœuds."
+}

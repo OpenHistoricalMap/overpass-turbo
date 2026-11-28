@@ -1,0 +1,14 @@
+{
+    "load.saved_queries-osm": "Salvestatud päringud (openhistoricalmap.org)",
+    "load.saved_queries-osm-loading": "Salvestatud päringu laadimine openhistoricalmap.org lehelt...",
+    "load.saved_queries-osm-error": "Salvestatud päringute openhistoricalmap.org lehelt laadimisel tekkis tõrge :(",
+    "export.raw_data": "OHMi toorandmed",
+    "export.editors": "laadi andmed OHM redaktorisse:",
+    "export.map_view.permalink_osm": "openhistoricalmap.org saidile",
+    "help.intro.0": "See on <i>overpass turbo</i>, veebipõhine <a href=\"https://www.openhistoricalmap.org\">OpenHistoricalMapi</a> andmete filtreerimise tööriist.",
+    "help.intro.1": "Overpass turbo võimaldab luua <a href=\"https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Overpass\">Overpass API</a> päringuid ja interaktiivselt analüüsida kaardil kuvatud OHM andmeid.",
+    "help.queries.expl": "Overpass API võimaldab teostada OHM andmete päringuid enda loodud otsingu kriteeriumite järgi. Selle teostamiseks on loodud omaette <a href=\"https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL\">päringu keel</a>.",
+    "help.attr.data": "Andmed &copy; <a href=\"https://openhistoricalmap.org/\">OpenHistoricalMapi</a> kaastöölised",
+    "dialog.save-osm": "salvesta openhistoricalmap.org lehele",
+    "warning.incomplete.expl.1": "See päring ei andnud tulemuseks sõlmi. OHMis saavad ainult sõlmed omada koordinaate. Näiteks joont ei saa kuvada ilma selle sõlmedeta."
+}
